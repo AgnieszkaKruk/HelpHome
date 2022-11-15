@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "5cTQKScYu9ISoa4r7DiPQzLYTOFSqnNXvnsCJPpQiQw=",
-  "Source": "HelpHome",
-  "BasePath": "_content/HelpHome",
+  "Hash": "YliVvb2yHw/cvcXgfLqc95fKl/P64iNwLKml/M/xJto=",
+  "Source": "HelpHomeApi",
+  "BasePath": "_content/HelpHomeApi",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Dell\\source\\repos\\HelpHome\\Data\\Data.csproj",
+      "Version": 2,
+      "Source": "Data",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }
