@@ -13,8 +13,9 @@ namespace Domain.Entities
         public string City { get; set; }
         public string Street { get; set; }
         public string PostalCode { get; set; }
-        public Seeker Seeker { get; set; }
         public Offerent Offerent { get; set; }
+        public int OfferentId { get; set; }
+       
 
     
     

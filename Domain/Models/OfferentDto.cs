@@ -14,12 +14,12 @@ namespace Domain.Models
 
         public int Id { get; set; }
         public string Name { get; set; }
-        public string City { get; set; }
-        public string Street { get; set; }
-        public string PostalCode { get; set; }
-        public ContactBy contact { get; set; }
+        //public string City { get; set; }
+        //public string Street { get; set; }
+        //public string PostalCode { get; set; }
+        //public ContactBy contact { get; set; }
 
-        public List<Preference> preferences { get; set; } = new List<Preference>();
+        // public List<Preference> preferences { get; set; } = new List<Preference>();
 
     }
 }

@@ -23,10 +23,10 @@ namespace Domain.Models
         public string City { get; set; }
         public string Street { get; set; }
         public string PostalCode { get; set; }
-        public ContactBy contact { get; set; }
-        [Required]
-        public int Area { get; set; }
-        public List<Preference> preferences { get; set; } = new List<Preference>();
+        //public ContactBy contact { get; set; }
+        //[Required]
+        //public int Area { get; set; }
+        // public List<Preference> preferences { get; set; } = new List<Preference>();
 
     }
 }

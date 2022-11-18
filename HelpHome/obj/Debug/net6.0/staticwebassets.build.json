@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "YliVvb2yHw/cvcXgfLqc95fKl/P64iNwLKml/M/xJto=",
+  "Hash": "F3jl1z4ktYvTScirUr5w4NQ4K9HiNdTzqBpQsF0HuNY=",
   "Source": "HelpHomeApi",
   "BasePath": "_content/HelpHomeApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\HelpHome\\Data\\Data.csproj",
+      "Identity": "C:\\Users\\Ewa\\source\\Grande\\HelpHome\\Data\\Data.csproj",
       "Version": 2,
       "Source": "Data",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

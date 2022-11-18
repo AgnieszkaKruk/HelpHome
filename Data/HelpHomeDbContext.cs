@@ -16,7 +16,7 @@ namespace Data
         public DbSet<Seeker> Seekers { get; set; }
         public DbSet<Offerent> Oferrents { get; set; }
         public DbSet<Address> Addresses { get; set; }
-       
+
         public DbSet<Cleaning> CleaningOffers { get; set; }
         public DbSet<CarpetWashing> CarpetWashingOffers { get; set; }
         public DbSet<WindowsCleaning> WindowsCleaningOffers { get; set; }
@@ -26,21 +26,21 @@ namespace Data
         {
             modelBuilder.Entity<Seeker>(eb =>
             {
-                eb.Property(u => u.Name).IsRequired();
+                eb.Property(u => u.Name).HasMaxLength(25).IsRequired();
                 eb.Property(u => u.Email).IsRequired();
-                eb.Property(u => u.Name).HasMaxLength(25);
+              
  
-                eb.HasOne(u => u.Address).WithOne(t => t.Seeker).HasForeignKey<Seeker>(u => u.AddressId);
+                //eb.HasOne(u => u.Address).WithOne(t => t.Seeker).HasForeignKey<Seeker>(u => u.AddressId);
             });
             modelBuilder.Entity<Offerent>(eb =>
             {
-                eb.Property(u => u.Name).IsRequired();
+                eb.Property(u => u.Name).HasMaxLength(25).IsRequired();
                 eb.Property(u => u.Email).IsRequired();
-                eb.Property(u => u.preferences).IsRequired();
-                eb.Property(u => u.Name).HasMaxLength(25);
-                eb.Property(u => u.Area).IsRequired();
-                eb.Property(u => u.Address).IsRequired();
-                eb.HasOne(u => u.Address).WithOne(t => t.Offerent).HasForeignKey<Offerent>(u => u.AddressId);
+                //eb.Property(u => u.preferences).IsRequired();
+
+                //eb.Property(u => u.Area).IsRequired();
+                //eb.Property(u => u.Address).IsRequired();
+                //eb.HasOne(u => u.Address).WithOne(t => t.Offerent).HasForeignKey<Offerent>(u => u.AddressId);
 
 
             });
@@ -54,7 +54,12 @@ namespace Data
                 eb.Property(d => d.CarpetCount).IsRequired();
                 eb.HasOne(d => d.Seeker).WithMany(o => o.CarpetWaschingOffers).HasForeignKey(d => d.SeekerId);
             });
-        
+
+            //modelBuilder.Entity<Address>()
+            //    .Property(a => a.City)
+                
+            //    .HasMaxLength(50);
+
 
             modelBuilder.Entity<Cleaning>(eb =>
             {
@@ -75,7 +80,17 @@ namespace Data
                 eb.Property(d => d.WindowsCount).IsRequired();
                 eb.HasOne(d => d.Seeker).WithMany(o => o.WindowsCleaningOffers).HasForeignKey(d => d.SeekerId);
             });
-        
+            modelBuilder.Entity<Address>()
+                .Property(a => a.City)
+
+                //.IsRequired()
+                .HasMaxLength(50);
+
+            //modelBuilder.Entity<Address>()
+            //    .Property(a => a.Street)
+            //    //.IsRequired()
+            //    .HasMaxLength(50);
+
 
             modelBuilder.Entity<Offerent>()
                 .HasData(new Offerent { Name = "Jan Kowalski", Id = 1, Email = "jdsks@com", PhoneNumber = "123456" }, new Offerent
@@ -83,7 +98,14 @@ namespace Data
                     Name = "Ania Nowak",
                     Id = 2,
                     Email = "Ania@pl",
-                    PhoneNumber = "234123111"
+                    PhoneNumber = "234123111",
+                    //Address = new Address
+                    //{
+                    //    City = "Bytom",
+                    //    Street = "Dworcowa",
+                    //    PostalCode = "4310383"
+                    //}
+
                 });
             modelBuilder.Entity<Seeker>()
                 .HasData(new Seeker { Name = "Romuald Krawczyk", Id = 1, Email = "jdsks@com", PhoneNumber = "123456" }, new Seeker
@@ -103,7 +125,17 @@ namespace Data
                     Regularity = Domain.Entities.Utils.Regularity.OnceAWeek,
                     SurfaceToClean = 100
                 });
+            modelBuilder.Entity<Address>()
+                .HasData(new Address()
+                {
+                    Id = 1,
+                    OfferentId=1,
+                    City = "Orzesze",
+                    Street = "Dworcowa",
+                    PostalCode = "43-190"
+                });
         }
     }
+   
 }
 

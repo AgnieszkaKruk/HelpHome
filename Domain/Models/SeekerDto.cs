@@ -13,7 +13,7 @@ namespace Domain.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ContactBy contact { get; set; }
+        //public ContactBy contact { get; set; }
 
 
         public List<Cleaning> CleaningOffers = new List<Cleaning>();

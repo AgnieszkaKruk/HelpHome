@@ -19,10 +19,10 @@ namespace Domain.Models
         public string Email { get; set; }
         [Phone]
         public string PhoneNumber { get; set; }
-        public ContactBy contact { get; set; }
-        public string City { get; set; }
-        public string Street { get; set; }
-        public string PostalCode { get; set; }  
-       
+        //public ContactBy contact { get; set; }
+        //public string City { get; set; }
+        //public string Street { get; set; }
+        //public string PostalCode { get; set; }
+
     }
 }

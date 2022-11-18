@@ -24,7 +24,7 @@ namespace Domain.Services
 
         public IEnumerable<OfferentDto> GetAllWithPreferences() //bool w parametrach 
         {
-            var offerents = _context.Oferrents.Include(u => u.preferences).ToList(); // do poprawienia
+            var offerents = _context.Oferrents.Include(r => r.Addresses).ToList(); // do poprawienia
 
             var offerentsDto = _mapper.Map<List<OfferentDto>>(offerents);
             return offerentsDto;
@@ -32,7 +32,7 @@ namespace Domain.Services
 
         public IEnumerable<OfferentDto> GetAll()
         {
-            var offerents = _context.Oferrents.ToList(); 
+            var offerents = _context.Oferrents.Include(r => r.Addresses).ToList(); 
 
             var offerentsDto = _mapper.Map<List<OfferentDto>>(offerents);
             return offerentsDto;
@@ -40,7 +40,7 @@ namespace Domain.Services
 
         public OfferentDto GetById(int id)
         {
-            var offerent = _context.Oferrents.Include(u => u.preferences).FirstOrDefault(u => u.Id == id);
+            var offerent = _context.Oferrents.FirstOrDefault(u => u.Id == id);
 
             var offerentDto = _mapper.Map<OfferentDto>(offerent);
             return offerentDto;
