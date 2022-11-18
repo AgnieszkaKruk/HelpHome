@@ -1,16 +1,17 @@
 
 using Domain.Services;
 using Microsoft.EntityFrameworkCore;
+using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 //klasa ze wspólnymi wartoœciami, s³ownik ze wszystkimi dodatkowymi w³aœciwoœciami ???
 // s³ownik ze jesli mam do czynienia z kategori¹ X to mogê tylko to i to..
-
+builder.Host.UseNLog();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<Data.HelpHomeDbContext>(
-    option => option.UseSqlServer(builder.Configuration.GetConnectionString("HelpHomeConnectionString"))
+    option => option.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString"))
     );
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IOfferentServices, OfferentServices>();

@@ -188,7 +188,7 @@ namespace Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 11, 17, 18, 27, 57, 481, DateTimeKind.Utc).AddTicks(3975),
+                            CreatedDate = new DateTime(2022, 11, 18, 14, 4, 41, 0, DateTimeKind.Utc).AddTicks(4904),
                             Name = "Sprzątanie",
                             PriceOffer = 50,
                             Regularity = 0,

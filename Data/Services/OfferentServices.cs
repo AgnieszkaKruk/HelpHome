@@ -15,11 +15,12 @@ namespace Domain.Services
     {
         private readonly HelpHomeDbContext _context;
         private readonly IMapper _mapper;
-        public OfferentServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper)
+        private readonly ILogger<OfferentServices> _logger;
+        public OfferentServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper, ILogger<OfferentServices> logger)
         {
             _context = helpHomeDbContext;
             _mapper = mapper;
-
+            _logger = logger;
         }
 
         public IEnumerable<OfferentDto> GetAllWithPreferences() //bool w parametrach 
@@ -50,6 +51,7 @@ namespace Domain.Services
 
         public bool Delete(int id)
         {
+            _logger.LogWarning($"Offerent with id: {id} DELETE action invoked");
             var offerent = _context.Oferrents.FirstOrDefault(u => u.Id == id);
             if (offerent is null) return false;
             else
