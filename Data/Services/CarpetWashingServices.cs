@@ -3,6 +3,7 @@ using Data;
 using Domain.Models;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
+using HelpHomeApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,16 +16,19 @@ namespace Domain.Services
     {
         private readonly HelpHomeDbContext _context;
         private readonly IMapper _mapper;
-        public CarpetWashingServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper)
+        private readonly ILog _logger;
+        public CarpetWashingServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper, ILog logger)
         {
             _context = helpHomeDbContext;
             _mapper = mapper;
+            _logger = logger;
 
         }
 
 
         public CarpetWashingDto GetById(int seekerId, int offerId)
         {
+            _logger.Info($"CarpetWashing offer with id: {offerId} GET action invoked");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
@@ -42,6 +46,7 @@ namespace Domain.Services
 
         public List<CarpetWashingDto> GetAll(int seekerId)
         {
+            _logger.Info($"All CarpetWashing offers from Seeker with id: {seekerId} GET All action invoked");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
@@ -59,7 +64,7 @@ namespace Domain.Services
 
         public int CreateOffer(CreateCarpetWashingDto dto, int seekerId)
         {
-
+            _logger.Info($"New CarpetWashing offer from Seeker with id: {seekerId} was created");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {

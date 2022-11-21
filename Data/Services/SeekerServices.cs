@@ -2,6 +2,7 @@
 using Data;
 using Domain.Models;
 using HelpHome.Entities;
+using HelpHomeApi;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,16 +16,19 @@ namespace Domain.Services
     {
         private readonly HelpHomeDbContext _context;
         private readonly IMapper _mapper;
-        public SeekerServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper)
+        private readonly ILog _logger;
+        public SeekerServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper, ILog logger)
         {
             _context = helpHomeDbContext;
             _mapper = mapper;
+            _logger = logger;
 
         }
 
         public IEnumerable<SeekerDto> GetAllWithOffers()
         {
-            var seekers = _context.Seekers.ToList(); // do poprawienia, dodac ich oferty
+            _logger.Info($"Seekers GET AllWithOffers action invoked");
+            var seekers = _context.Seekers.ToList(); 
 
             var seekersDto = _mapper.Map<List<SeekerDto>>(seekers);
             return seekersDto;
@@ -32,6 +36,7 @@ namespace Domain.Services
 
         public IEnumerable<SeekerDto> GetAll()
         {
+            _logger.Info($"Seekers GET All action invoked");
             var seekers = _context.Seekers.ToList();
 
             var seekersDto = _mapper.Map<List<SeekerDto>>(seekers);
@@ -40,6 +45,7 @@ namespace Domain.Services
 
         public SeekerDto GetById(int id)
         {
+            _logger.Info($"Seeker with id: {id} GET action invoked");
             var seeker = _context.Seekers.FirstOrDefault(s => s.Id == id);
             var seekerDto = _mapper.Map<SeekerDto>(seeker);
             return seekerDto;
@@ -49,6 +55,7 @@ namespace Domain.Services
 
         public bool Delete(int id)
         {
+            _logger.Warn($"Seeker with id: {id} DELETE action invoked");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == id);
             if (seeker is null) return false;
             else
@@ -61,6 +68,7 @@ namespace Domain.Services
 
         public bool Update(CreateSeekerDto dto, int id)
         {
+            _logger.Info($"Seeker with id: {id} UPDATE action invoked");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == id);
             if (seeker is null) return false;
             else
@@ -77,7 +85,7 @@ namespace Domain.Services
 
         public int CreateSeeker(CreateSeekerDto dto)
         {
-
+            _logger.Info($"New Seeker with id:{dto.Id} is created");
             var seeker = _mapper.Map<Seeker>(dto);
             _context.Seekers.Add(seeker);
             _context.SaveChanges();

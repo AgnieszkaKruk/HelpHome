@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BZ0VtL50wRHZ4wrRS8wGZ9R7Fxo8God+Nb4bhY2+86RqRiC9f+XZvfiKytWi8EvbxsBaPOBs5W1G5BIVZgeAOQ==",
+  "dgSpecHash": "aR/e81BTGWC6UsAxEmdPEAnsBkigdCkZmC0X23Lny+9HYj7lJ2+grPJddcfXCvqEKynRnl0iSagtIb0SYTGn0g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\source\\repos\\HelpHome\\Data\\Data.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,9 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\nlog\\5.0.5\\nlog.5.0.5.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\nlog.extensions.logging\\5.1.0\\nlog.extensions.logging.5.1.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\nlog.web.aspnetcore\\5.1.5\\nlog.web.aspnetcore.5.1.5.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
