@@ -1,14 +1,9 @@
 ﻿using AutoMapper;
 using Data;
 using Domain.Models;
-using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
 using HelpHomeApi;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HelpHomeApi.Exeptions;
 
 namespace Domain.Services
 {
@@ -31,12 +26,12 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
-                return null; ///throw new NotFpundExeption
+                throw new NotFoundExeption("Seeker is not found");
             }
             var offer = _context.CleaningOffers.FirstOrDefault(u => u.Id == offerId);
             if (offer is null || offer.SeekerId != seekerId)
             {
-                return null; ///throw new NotFoundExeption
+                throw new NotFoundExeption("Offer is not found");
             }
 
             var offerDto = _mapper.Map<CleaningDto>(offer);
@@ -49,7 +44,7 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
-                return null; ///throw new NotFoundExeption
+                throw new NotFoundExeption("Seeker is not found");
             }
 
             var allOffers = seeker.CleaningOffers;
@@ -68,7 +63,7 @@ namespace Domain.Services
             if (seeker is null)
             {
 
-                return 0; ///throw new NotFpundExeption
+                throw new NotFoundExeption("Seeker is not found");
             }
             var offer = _mapper.Map<Cleaning>(dto);
             offer.SeekerId = seekerId;

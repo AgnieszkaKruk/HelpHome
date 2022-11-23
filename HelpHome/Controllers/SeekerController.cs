@@ -24,9 +24,7 @@ namespace HelpHomeApi.Controllers
         public ActionResult<IEnumerable<SeekerDto>> GetAll()
         {
             var seekers = _seekerServices.GetAllWithOffers();
-            if (seekers == null) return NotFound();
             return Ok(seekers);
-
         }
 
         [HttpGet("{id}")]
@@ -34,8 +32,6 @@ namespace HelpHomeApi.Controllers
         public ActionResult<SeekerDto> GetById([FromRoute] int id)
         {
             var seeker = _seekerServices.GetById(id);
-
-            if (seeker == null) return NotFound();
             return Ok(seeker);
         }
 
@@ -56,30 +52,23 @@ namespace HelpHomeApi.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete([FromRoute] int id)
         {
-            var isDeleted = _seekerServices.Delete(id);
-            if (isDeleted)
-            { 
-                return NoContent(); 
-            }
-            return NotFound();
+            _seekerServices.Delete(id);
+
+            return NoContent();
 
         }
 
         [HttpPut("{id}")]
 
-        public ActionResult Update([FromBody] CreateSeekerDto dto,[FromRoute] int id)
+        public ActionResult Update([FromBody] CreateSeekerDto dto, [FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
-            var isUpdated = _seekerServices.Update(dto, id);
-            if (isUpdated)
-            {
-                return Ok();
-            }
-            return NotFound();
-
+             _seekerServices.Update(dto, id);   
+            return Ok();
+            
         }
 
     }

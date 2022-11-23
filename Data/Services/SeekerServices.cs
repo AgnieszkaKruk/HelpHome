@@ -3,12 +3,7 @@ using Data;
 using Domain.Models;
 using HelpHome.Entities;
 using HelpHomeApi;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HelpHomeApi.Exeptions;
 
 namespace Domain.Services
 {
@@ -28,49 +23,74 @@ namespace Domain.Services
         public IEnumerable<SeekerDto> GetAllWithOffers()
         {
             _logger.Info($"Seekers GET AllWithOffers action invoked");
-            var seekers = _context.Seekers.ToList(); 
-
-            var seekersDto = _mapper.Map<List<SeekerDto>>(seekers);
-            return seekersDto;
+            var seekers = _context.Seekers.ToList();
+            if (seekers is null)
+            {
+                throw new NotFoundExeption("Seekers not found");
+            }
+            else
+            {
+                var seekersDto = _mapper.Map<List<SeekerDto>>(seekers);
+                return seekersDto;
+            }
         }
 
         public IEnumerable<SeekerDto> GetAll()
         {
             _logger.Info($"Seekers GET All action invoked");
             var seekers = _context.Seekers.ToList();
+            if (seekers is null)
+            {
+                throw new NotFoundExeption("Seekers not found");
+            }
+            else
+            {
+                var seekersDto = _mapper.Map<List<SeekerDto>>(seekers);
+                return seekersDto;
+            }
 
-            var seekersDto = _mapper.Map<List<SeekerDto>>(seekers);
-            return seekersDto;
         }
 
         public SeekerDto GetById(int id)
         {
             _logger.Info($"Seeker with id: {id} GET action invoked");
             var seeker = _context.Seekers.FirstOrDefault(s => s.Id == id);
-            var seekerDto = _mapper.Map<SeekerDto>(seeker);
-            return seekerDto;
-
+            if (seeker is null)
+            {
+                throw new NotFoundExeption("Seeker is not found");
+            }
+            else
+            {
+                var seekerDto = _mapper.Map<SeekerDto>(seeker);
+                return seekerDto;
+            }
 
         }
 
-        public bool Delete(int id)
+        public void Delete(int id)
         {
             _logger.Warn($"Seeker with id: {id} DELETE action invoked");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == id);
-            if (seeker is null) return false;
+            if (seeker is null)
+            {
+                throw new NotFoundExeption("Seeker is not found");
+            }
             else
             {
                 _context.Seekers.Remove(seeker);
                 _context.SaveChanges();
-                return true;
+                
             }
         }
 
-        public bool Update(CreateSeekerDto dto, int id)
+        public void Update(CreateSeekerDto dto, int id)
         {
             _logger.Info($"Seeker with id: {id} UPDATE action invoked");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == id);
-            if (seeker is null) return false;
+            if (seeker is null)
+            {
+                throw new NotFoundExeption("Seeker is not found");
+            }
             else
             {
                 seeker.Name = dto.Name;
@@ -78,7 +98,7 @@ namespace Domain.Services
                 seeker.PhoneNumber = dto.PhoneNumber;
 
                 _context.SaveChanges();
-                return true;
+                
             }
 
         }

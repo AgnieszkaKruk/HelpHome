@@ -24,9 +24,7 @@ namespace HelpHomeApi.Controllers
         public ActionResult<IEnumerable<OfferentDto>> GetAllWithPreferences()
         {
             var offerents = _offerentServices.GetAllWithPreferences();
-            if (offerents == null) return NotFound();
             return Ok(offerents);
-
         }
 
         [HttpGet("{id}")]
@@ -34,8 +32,6 @@ namespace HelpHomeApi.Controllers
         public ActionResult<OfferentDto> GetById([FromRoute] int id)
         {
             var offerent = _offerentServices.GetById(id);
-
-            if (offerent == null) return NotFound();
             return Ok(offerent);
         }
 
@@ -56,13 +52,9 @@ namespace HelpHomeApi.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete([FromRoute] int id)
         {
-            var isDeleted = _offerentServices.Delete(id);
-            if (isDeleted)
-            { 
-                return NoContent(); 
-            }
-            return NotFound();
-
+             _offerentServices.Delete(id); 
+             return NoContent(); 
+          
         }
 
         [HttpPut("{id}")]
@@ -73,13 +65,8 @@ namespace HelpHomeApi.Controllers
             {
                 return BadRequest();
             }
-            var isUpdated = _offerentServices.Update(dto, id);
-            if (isUpdated)
-            {
-                return Ok();
-            }
-            return NotFound();
-
+             _offerentServices.Update(dto, id);
+             return Ok();
         }
 
 

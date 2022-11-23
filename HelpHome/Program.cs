@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using NLog.Web;
 using NLog;
 using HelpHomeApi;
+using HelpHomeApi.Middleware;
 
 var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
 
@@ -25,12 +26,13 @@ builder.Services.AddScoped<ICarpetWashingServices, CarpetWashingServices>();
 builder.Services.AddScoped<ICleaningServices, CleaningServices>(); 
 builder.Services.AddScoped<IWindowsCleaningServices, WindowsCleaningServices>();
 builder.Services.AddSingleton<ILog,Log>();
+builder.Services.AddScoped<ErrorHandlingMiddleware>();
 
 
     var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-
+    // Configure the HTTP request pipeline.
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

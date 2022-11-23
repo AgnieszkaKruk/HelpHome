@@ -4,8 +4,6 @@ C:\Users\Dell\source\repos\HelpHome\Data\obj\Debug\net6.0\Data.AssemblyInfoInput
 C:\Users\Dell\source\repos\HelpHome\Data\obj\Debug\net6.0\Data.AssemblyInfo.cs
 C:\Users\Dell\source\repos\HelpHome\Data\obj\Debug\net6.0\Data.csproj.CoreCompileInputs.cache
 C:\Users\Dell\source\repos\HelpHome\Data\obj\Debug\net6.0\Data.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\appsettings.json
 C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\Data.exe
 C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\Data.deps.json
 C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\Data.runtimeconfig.json

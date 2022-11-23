@@ -7,8 +7,8 @@ namespace Domain.Services
         int CreateOfferent(CreateOfferentDto dto);
         IEnumerable<OfferentDto> GetAllWithPreferences();
         OfferentDto GetById(int id);
-        bool Delete(int id);
-        bool Update(CreateOfferentDto dto, int id);
+        void Delete(int id);
+        void Update(CreateOfferentDto dto, int id);
         IEnumerable<OfferentDto> GetAll();
     }
 }
