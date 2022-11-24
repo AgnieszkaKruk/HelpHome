@@ -10,6 +10,21 @@ namespace Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Addresses",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Addresses", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Oferrents",
                 columns: table => new
                 {
@@ -22,28 +37,6 @@ namespace Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Oferrents", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Addresses",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    City = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    OfferentId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Addresses", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Addresses_Oferrents_OfferentId",
-                        column: x => x.OfferentId,
-                        principalTable: "Oferrents",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -79,11 +72,18 @@ namespace Data.Migrations
                     Regularity = table.Column<int>(type: "int", nullable: false),
                     PriceOffer = table.Column<int>(type: "int", nullable: false),
                     SeekerId = table.Column<int>(type: "int", nullable: false),
+                    AddressId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CarpetWashingOffers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CarpetWashingOffers_Addresses_AddressId",
+                        column: x => x.AddressId,
+                        principalTable: "Addresses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CarpetWashingOffers_Seekers_SeekerId",
                         column: x => x.SeekerId,
@@ -104,11 +104,18 @@ namespace Data.Migrations
                     SurfaceToClean = table.Column<int>(type: "int", nullable: false),
                     PriceOffer = table.Column<int>(type: "int", nullable: false),
                     SeekerId = table.Column<int>(type: "int", nullable: false),
+                    AddressId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CleaningOffers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CleaningOffers_Addresses_AddressId",
+                        column: x => x.AddressId,
+                        principalTable: "Addresses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CleaningOffers_Seekers_SeekerId",
                         column: x => x.SeekerId,
@@ -129,17 +136,34 @@ namespace Data.Migrations
                     WindowsCount = table.Column<int>(type: "int", nullable: false),
                     PriceOffer = table.Column<int>(type: "int", nullable: false),
                     SeekerId = table.Column<int>(type: "int", nullable: false),
+                    AddressId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_WindowsCleaningOffers", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_WindowsCleaningOffers_Addresses_AddressId",
+                        column: x => x.AddressId,
+                        principalTable: "Addresses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_WindowsCleaningOffers_Seekers_SeekerId",
                         column: x => x.SeekerId,
                         principalTable: "Seekers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Addresses",
+                columns: new[] { "Id", "City", "PostalCode", "Street" },
+                values: new object[,]
+                {
+                    { 1, "Orzesze", "43-190", "Dworcowa" },
+                    { 2, "Mikołów", "43-190", "Majowa" },
+                    { 3, "Katowice", "43-190", "Głogowa" }
                 });
 
             migrationBuilder.InsertData(
@@ -161,19 +185,34 @@ namespace Data.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "CarpetWashingOffers",
+                columns: new[] { "Id", "AddressId", "CarpetCount", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "UpdateDate" },
+                values: new object[] { 1, 2, 1, new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2676), "Pranie dywanów", 110, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+
+            migrationBuilder.InsertData(
                 table: "CleaningOffers",
-                columns: new[] { "Id", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "SurfaceToClean", "UpdateDate" },
-                values: new object[] { 1, new DateTime(2022, 11, 17, 18, 24, 52, 808, DateTimeKind.Utc).AddTicks(9579), "Sprzątanie", 50, 0, 1, 100, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "SurfaceToClean", "UpdateDate" },
+                values: new object[] { 1, 1, new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2643), "Sprzątanie", 50, 0, 1, 100, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+
+            migrationBuilder.InsertData(
+                table: "WindowsCleaningOffers",
+                columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "UpdateDate", "WindowsCount" },
+                values: new object[] { 1, 3, new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2710), "Mycie okien", 50, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 15 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Addresses_OfferentId",
-                table: "Addresses",
-                column: "OfferentId");
+                name: "IX_CarpetWashingOffers_AddressId",
+                table: "CarpetWashingOffers",
+                column: "AddressId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CarpetWashingOffers_SeekerId",
                 table: "CarpetWashingOffers",
                 column: "SeekerId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CleaningOffers_AddressId",
+                table: "CleaningOffers",
+                column: "AddressId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CleaningOffers_SeekerId",
@@ -186,6 +225,11 @@ namespace Data.Migrations
                 column: "OfferentId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_WindowsCleaningOffers_AddressId",
+                table: "WindowsCleaningOffers",
+                column: "AddressId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_WindowsCleaningOffers_SeekerId",
                 table: "WindowsCleaningOffers",
                 column: "SeekerId");
@@ -194,9 +238,6 @@ namespace Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Addresses");
-
-            migrationBuilder.DropTable(
                 name: "CarpetWashingOffers");
 
             migrationBuilder.DropTable(
@@ -204,6 +245,9 @@ namespace Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "WindowsCleaningOffers");
+
+            migrationBuilder.DropTable(
+                name: "Addresses");
 
             migrationBuilder.DropTable(
                 name: "Seekers");

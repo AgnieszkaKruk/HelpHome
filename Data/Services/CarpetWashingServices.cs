@@ -3,6 +3,7 @@ using Data;
 using Domain.Models;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace Domain.Services
             {
                 return null; ///throw new NotFpundExeption
             }
-            var offer = _context.CarpetWashingOffers.FirstOrDefault(u => u.Id == offerId);
+            var offer = _context.CarpetWashingOffers.Include(x => x.Address).FirstOrDefault(u => u.Id == seekerId);
             if (offer is null || offer.SeekerId != seekerId)
             {
                 return null; ///throw new NotFoundExeption
@@ -42,7 +43,7 @@ namespace Domain.Services
 
         public List<CarpetWashingDto> GetAll(int seekerId)
         {
-            var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
+            var seeker = _context.Seekers.Include(x=>x.CarpetWaschingOffers).FirstOrDefault(x=>x.Id==seekerId);
             if (seeker is null)
             {
                 return null; ///throw new NotFoundExeption

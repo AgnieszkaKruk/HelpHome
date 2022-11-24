@@ -1,6 +1,9 @@
 
+using Data.Services;
 using Domain.Services;
 using Microsoft.EntityFrameworkCore;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +21,7 @@ builder.Services.AddScoped<ISeekerServices, SeekerServices>();
 builder.Services.AddScoped<ICarpetWashingServices, CarpetWashingServices>();
 builder.Services.AddScoped<ICleaningServices, CleaningServices>(); 
 builder.Services.AddScoped<IWindowsCleaningServices, WindowsCleaningServices>();
-
+builder.Services.AddScoped<IAddressServices, AddressServices>();
 
 var app = builder.Build();
 

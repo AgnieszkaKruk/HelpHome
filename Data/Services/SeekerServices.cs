@@ -24,7 +24,7 @@ namespace Domain.Services
 
         public IEnumerable<SeekerDto> GetAllWithOffers()
         {
-            var seekers = _context.Seekers.ToList(); // do poprawienia, dodac ich oferty
+            var seekers = _context.Seekers.Include(x=>x.CleaningOffers).Include(x=>x.CarpetWaschingOffers).Include(x=>x.WindowsCleaningOffers).ToList(); // do poprawienia, dodac ich oferty
 
             var seekersDto = _mapper.Map<List<SeekerDto>>(seekers);
             return seekersDto;
