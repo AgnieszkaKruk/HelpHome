@@ -2,6 +2,7 @@
 using Domain.Models;
 using HelpHome.Entities;
 using HelpHomeApi;
+using Microsoft.AspNetCore.Identity;
 
 namespace Data.Services
 {
@@ -11,12 +12,14 @@ namespace Data.Services
         private readonly HelpHomeDbContext _context;
         private readonly IMapper _mapper;
         private readonly ILog _logger;
-        public AccountServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper, ILog logger)
+        private readonly IPasswordHasher<Seeker> _passwordHasher;
+
+        public AccountServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper, ILog logger, IPasswordHasher<Seeker> passwordHasher)
         {
             _context = helpHomeDbContext;
             _mapper = mapper;
             _logger = logger;
-
+            _passwordHasher = passwordHasher;
         }
 
         public void RegisterSeeker(RegisterSeekerDto dto)
@@ -27,9 +30,11 @@ namespace Data.Services
                 Email = dto.Email,
                 RoleId = dto.RoleId,
                 PhoneNumber = dto.PhoneNumber,
-                PasswordHash = dto.Password
+                
 
             };
+            var newSeekerPassword = _passwordHasher.HashPassword(newSeeker, dto.Password);
+            newSeeker.PasswordHash = newSeekerPassword;
             _context.Seekers.Add(newSeeker);
             _context.SaveChanges();
         }

@@ -6,6 +6,8 @@ using NLog;
 using HelpHomeApi;
 using HelpHomeApi.Middleware;
 using Data.Services;
+using Microsoft.AspNetCore.Identity;
+using HelpHome.Entities;
 
 var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
 
@@ -29,6 +31,8 @@ try
     builder.Services.AddScoped<IAccountServices, AccountServices>();
     builder.Services.AddSingleton<ILog, Log>();
     builder.Services.AddScoped<ErrorHandlingMiddleware>();
+    builder.Services.AddScoped<IPasswordHasher<Seeker>, PasswordHasher<Seeker>>();
+    builder.Services.AddScoped<IPasswordHasher<Offerent>, PasswordHasher<Offerent>>();
     builder.Services.AddSwaggerGen();
 
 
