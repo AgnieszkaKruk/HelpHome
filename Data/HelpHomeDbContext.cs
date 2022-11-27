@@ -22,6 +22,7 @@ namespace Data
         public DbSet<WindowsCleaning> WindowsCleaningOffers { get; set; }
 
 
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Seeker>(eb =>
@@ -30,18 +31,13 @@ namespace Data
                 eb.Property(u => u.Email).IsRequired();
               
  
-                //eb.HasOne(u => u.Address).WithOne(t => t.Seeker).HasForeignKey<Seeker>(u => u.AddressId);
+
             });
             modelBuilder.Entity<Offerent>(eb =>
             {
                 eb.Property(u => u.Name).HasMaxLength(25).IsRequired();
                 eb.Property(u => u.Email).IsRequired();
-                //eb.Property(u => u.preferences).IsRequired();
-
-                //eb.Property(u => u.Area).IsRequired();
-                //eb.Property(u => u.Address).IsRequired();
-                //eb.HasOne(u => u.Address).WithOne(t => t.Offerent).HasForeignKey<Offerent>(u => u.AddressId);
-
+            
 
             });
 
@@ -55,11 +51,7 @@ namespace Data
                 eb.HasOne(d => d.Seeker).WithMany(o => o.CarpetWaschingOffers).HasForeignKey(d => d.SeekerId);
             });
 
-            //modelBuilder.Entity<Address>()
-            //    .Property(a => a.City)
-                
-            //    .HasMaxLength(50);
-
+            
 
             modelBuilder.Entity<Cleaning>(eb =>
             {
@@ -80,16 +72,10 @@ namespace Data
                 eb.Property(d => d.WindowsCount).IsRequired();
                 eb.HasOne(d => d.Seeker).WithMany(o => o.WindowsCleaningOffers).HasForeignKey(d => d.SeekerId);
             });
+
             modelBuilder.Entity<Address>()
                 .Property(a => a.City)
-
-                //.IsRequired()
                 .HasMaxLength(50);
-
-            //modelBuilder.Entity<Address>()
-            //    .Property(a => a.Street)
-            //    //.IsRequired()
-            //    .HasMaxLength(50);
 
 
             modelBuilder.Entity<Offerent>()
@@ -99,14 +85,8 @@ namespace Data
                     Id = 2,
                     Email = "Ania@pl",
                     PhoneNumber = "234123111",
-                    //Address = new Address
-                    //{
-                    //    City = "Bytom",
-                    //    Street = "Dworcowa",
-                    //    PostalCode = "4310383"
-                    //}
-
                 });
+
             modelBuilder.Entity<Seeker>()
                 .HasData(new Seeker { Name = "Romuald Krawczyk", Id = 1, Email = "jdsks@com", PhoneNumber = "123456" }, new Seeker
                 {

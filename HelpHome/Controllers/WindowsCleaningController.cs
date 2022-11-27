@@ -13,7 +13,6 @@ namespace HelpHomeApi.Controllers
         public WindowsCleaningController(IWindowsCleaningServices windowsCleaningServices)
         {
             _windowsCleaningServices= windowsCleaningServices;
-
         }
 
         [HttpPost]

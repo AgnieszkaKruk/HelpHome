@@ -1,13 +1,9 @@
 ﻿using AutoMapper;
 using Data;
 using Domain.Models;
-using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HelpHomeApi;
+using HelpHomeApi.Exeptions;
 
 namespace Domain.Services
 {
@@ -15,25 +11,27 @@ namespace Domain.Services
     {
         private readonly HelpHomeDbContext _context;
         private readonly IMapper _mapper;
-        public WindowsCleaningServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper)
+        private readonly ILog _logger;
+        public WindowsCleaningServices(HelpHomeDbContext helpHomeDbContext, IMapper mapper, ILog logger)
         {
             _context = helpHomeDbContext;
             _mapper = mapper;
-
+            _logger = logger;
         }
 
 
         public WindowsCleaningDto GetById(int seekerId, int offerId)
         {
+            _logger.Info($"WindowsCleaning offer with id: {offerId} GET action invoked");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
-                return null; ///throw new NotFpundExeption
+                throw new NotFoundExeption("Seeker is not found");
             }
             var offer = _context.WindowsCleaningOffers.FirstOrDefault(u => u.Id == offerId);
             if (offer is null || offer.SeekerId != seekerId)
             {
-                return null; ///throw new NotFoundExeption
+                throw new NotFoundExeption("Offer is not found");
             }
 
             var offerDto = _mapper.Map<WindowsCleaningDto>(offer);
@@ -42,10 +40,11 @@ namespace Domain.Services
 
         public List<WindowsCleaningDto> GetAll(int seekerId)
         {
+            _logger.Info($"All CWindowsCleaning offers from Seeker with id: {seekerId} GET All action invoked");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
-                return null; ///throw new NotFoundExeption
+                throw new NotFoundExeption("Seeker is not found");
             }
 
             var allOffers = seeker.WindowsCleaningOffers;
@@ -59,12 +58,12 @@ namespace Domain.Services
 
         public int CreateOffer(CreateWindowsCleaningDto dto, int seekerId)
         {
-
+            _logger.Info($"New WindowsCleaning offer from Seeker with id: {seekerId} was created");
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
 
-                return 0; ///throw new NotFpundExeption
+                throw new NotFoundExeption("Seeker is not found");
             }
             var offer = _mapper.Map<WindowsCleaning>(dto);
             offer.SeekerId = seekerId;
