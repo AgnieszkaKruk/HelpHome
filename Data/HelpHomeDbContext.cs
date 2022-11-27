@@ -1,10 +1,11 @@
 ﻿using Domain.Entities;
+using Domain.Entities.Utils;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Data 
+namespace Data
 {
     public class HelpHomeDbContext : DbContext
     {
@@ -12,32 +13,54 @@ namespace Data
         {
 
         }
-       
+
         public DbSet<Seeker> Seekers { get; set; }
         public DbSet<Offerent> Oferrents { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         public DbSet<Cleaning> CleaningOffers { get; set; }
         public DbSet<CarpetWashing> CarpetWashingOffers { get; set; }
         public DbSet<WindowsCleaning> WindowsCleaningOffers { get; set; }
 
 
-        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Role>(eb =>
+            {
+                eb.HasData(new Role
+                {
+                    Id = 1,
+                    Name = "Seeker"
+                }, new Role
+                {
+                    Id = 2,
+                    Name = "Offerent"
+                }, new Role
+                {
+                    Id = 3,
+                    Name = "Administrator"
+                }
+                );
+            });
             modelBuilder.Entity<Seeker>(eb =>
             {
                 eb.Property(u => u.Name).HasMaxLength(25).IsRequired();
                 eb.Property(u => u.Email).IsRequired();
-              
- 
 
             });
+
             modelBuilder.Entity<Offerent>(eb =>
             {
                 eb.Property(u => u.Name).HasMaxLength(25).IsRequired();
                 eb.Property(u => u.Email).IsRequired();
-            
+
+            });
+
+            modelBuilder.Entity<Role>(eb =>
+            {
+                eb.Property(u => u.Name).IsRequired();
 
             });
 
@@ -51,7 +74,7 @@ namespace Data
                 eb.HasOne(d => d.Seeker).WithMany(o => o.CarpetWaschingOffers).HasForeignKey(d => d.SeekerId);
             });
 
-            
+
 
             modelBuilder.Entity<Cleaning>(eb =>
             {
@@ -79,28 +102,36 @@ namespace Data
 
 
             modelBuilder.Entity<Offerent>()
-                .HasData(new Offerent { Name = "Jan Kowalski", Id = 1, Email = "jdsks@com", PhoneNumber = "123456" }, new Offerent
+                .HasData(
+                new Offerent {
+                    Name = "Jan Kowalski",
+                    Id = 1,
+                    Email = "jdsks@com",
+                    PhoneNumber = "123456",
+                    PasswordHash = "#1234#",
+                    RoleId = 2
+                }, new Offerent
                 {
-                    Name = "Ania Nowak",
+                    Name = "Aga Kruk",
                     Id = 2,
-                    Email = "Ania@pl",
-                    PhoneNumber = "234123111",
-                });
+                    Email = "agak@wp.pl",
+                    PhoneNumber = "444555333",
+                    PasswordHash = "#$%%^^&&",
+                    RoleId = 3
+                }
+                );
 
             modelBuilder.Entity<Seeker>()
-                .HasData(new Seeker { Name = "Romuald Krawczyk", Id = 1, Email = "jdsks@com", PhoneNumber = "123456" }, new Seeker
-                {
-                    Name = "Alicja Olos",
-                    Id = 2,
-                    Email = "Ania@pl",
-                    PhoneNumber = "234123111"
-                });
+                .HasData(new Seeker { Name = "Romuald Krawczyk", Id = 1, Email = "jdsks@com", PhoneNumber = "123456", PasswordHash = "#4566#", RoleId = 1 }
+             
+                );
 
             modelBuilder.Entity<Cleaning>()
-                .HasData(new Cleaning {
-                    Id = 1, 
+                .HasData(new Cleaning
+                {
+                    Id = 1,
                     CreatedDate = DateTime.UtcNow,
-                    SeekerId = 1, 
+                    SeekerId = 1,
                     PriceOffer = 50,
                     Regularity = Domain.Entities.Utils.Regularity.OnceAWeek,
                     SurfaceToClean = 100
@@ -109,13 +140,13 @@ namespace Data
                 .HasData(new Address()
                 {
                     Id = 1,
-                    OfferentId=1,
+                    OfferentId = 1,
                     City = "Orzesze",
                     Street = "Dworcowa",
                     PostalCode = "43-190"
                 });
         }
     }
-   
+
 }
 

@@ -63,6 +63,40 @@ namespace Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Domain.Entities.Utils.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Seeker"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Offerent"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Administrator"
+                        });
+                });
+
             modelBuilder.Entity("HelpHome.Entities.Offerent", b =>
                 {
                     b.Property<int>("Id")
@@ -80,11 +114,20 @@ namespace Data.Migrations
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)");
 
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Oferrents");
 
@@ -94,14 +137,18 @@ namespace Data.Migrations
                             Id = 1,
                             Email = "jdsks@com",
                             Name = "Jan Kowalski",
-                            PhoneNumber = "123456"
+                            PasswordHash = "#1234#",
+                            PhoneNumber = "123456",
+                            RoleId = 2
                         },
                         new
                         {
                             Id = 2,
-                            Email = "Ania@pl",
-                            Name = "Ania Nowak",
-                            PhoneNumber = "234123111"
+                            Email = "agak@wp.pl",
+                            Name = "Aga Kruk",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 3
                         });
                 });
 
@@ -188,7 +235,7 @@ namespace Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 11, 18, 14, 4, 41, 0, DateTimeKind.Utc).AddTicks(4904),
+                            CreatedDate = new DateTime(2022, 11, 27, 14, 47, 42, 512, DateTimeKind.Utc).AddTicks(4285),
                             Name = "Sprzątanie",
                             PriceOffer = 50,
                             Regularity = 0,
@@ -258,13 +305,22 @@ namespace Data.Migrations
                     b.Property<int?>("OfferentId")
                         .HasColumnType("int");
 
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("OfferentId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Seekers");
 
@@ -274,14 +330,9 @@ namespace Data.Migrations
                             Id = 1,
                             Email = "jdsks@com",
                             Name = "Romuald Krawczyk",
-                            PhoneNumber = "123456"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Email = "Ania@pl",
-                            Name = "Alicja Olos",
-                            PhoneNumber = "234123111"
+                            PasswordHash = "#4566#",
+                            PhoneNumber = "123456",
+                            RoleId = 1
                         });
                 });
 
@@ -294,6 +345,17 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Offerent");
+                });
+
+            modelBuilder.Entity("HelpHome.Entities.Offerent", b =>
+                {
+                    b.HasOne("Domain.Entities.Utils.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("HelpHome.Entities.OfferTypes.CarpetWashing", b =>
@@ -334,6 +396,14 @@ namespace Data.Migrations
                     b.HasOne("HelpHome.Entities.Offerent", null)
                         .WithMany("BlockedSeekers")
                         .HasForeignKey("OfferentId");
+
+                    b.HasOne("Domain.Entities.Utils.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("HelpHome.Entities.Offerent", b =>

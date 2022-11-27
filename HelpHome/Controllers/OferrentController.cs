@@ -9,8 +9,9 @@ using System.Linq;
 
 namespace HelpHomeApi.Controllers
 {
-    [ApiController]
+   
     [Route("api/offerents")]
+    [ApiController]
     public class OferrentController : Controller
     {
         private readonly IOfferentServices _offerentServices;
@@ -39,12 +40,7 @@ namespace HelpHomeApi.Controllers
 
         public ActionResult CreateOfferent([FromBody] CreateOfferentDto dto)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
             var offerent = _offerentServices.CreateOfferent(dto);
-
             return Created($"/api/offerents/{offerent}", null);
 
         }
@@ -61,16 +57,8 @@ namespace HelpHomeApi.Controllers
 
         public ActionResult Update([FromBody] CreateOfferentDto dto,[FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
              _offerentServices.Update(dto, id);
              return Ok();
         }
-
-
-
-
     }
 }

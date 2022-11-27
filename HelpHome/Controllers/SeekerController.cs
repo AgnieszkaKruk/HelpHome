@@ -9,8 +9,9 @@ using System.Linq;
 
 namespace HelpHomeApi.Controllers
 {
-    [ApiController]
+    
     [Route("api/seekers")]
+    [ApiController]
     public class SeekerController : Controller
     {
         private readonly ISeekerServices _seekerServices;
@@ -39,12 +40,7 @@ namespace HelpHomeApi.Controllers
 
         public ActionResult CreateSeeker([FromBody] CreateSeekerDto dto)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
             var seekerId = _seekerServices.CreateSeeker(dto);
-
             return Created($"/api/Seekers/{seekerId}", null);
 
         }
@@ -53,7 +49,6 @@ namespace HelpHomeApi.Controllers
         public ActionResult Delete([FromRoute] int id)
         {
             _seekerServices.Delete(id);
-
             return NoContent();
 
         }
@@ -62,10 +57,6 @@ namespace HelpHomeApi.Controllers
 
         public ActionResult Update([FromBody] CreateSeekerDto dto, [FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
              _seekerServices.Update(dto, id);   
             return Ok();
             
