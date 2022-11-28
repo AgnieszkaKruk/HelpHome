@@ -98,7 +98,7 @@ namespace Data
                 .HasData(new Address()
                 {
                     Id = 1,
-                    //CleaningId=1,
+                    
                     City = "Orzesze",
                     Street = "Dworcowa",
                     PostalCode = "43-190"
@@ -107,7 +107,7 @@ namespace Data
                .HasData(new Address()
                {
                    Id = 2,
-                   //CarpetWashingId = 1,
+                   
                    City = "Mikołów",
                    Street = "Majowa",
                    PostalCode = "43-190"
@@ -116,7 +116,7 @@ namespace Data
                .HasData(new Address()
                {
                    Id = 3,
-                   //WindowsCleaningId = 1,
+                   
                    City = "Katowice",
                    Street = "Głogowa",
                    PostalCode = "43-190"
@@ -132,7 +132,7 @@ namespace Data
                     SurfaceToClean = 100,
                     AddressId = 1
                 });
-          
+ 
             modelBuilder.Entity<CarpetWashing>()
                 .HasData(new CarpetWashing
                 {

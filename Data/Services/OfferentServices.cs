@@ -27,7 +27,7 @@ namespace Domain.Services
 
         public IEnumerable<OfferentDto> GetAllWithPreferences() 
         {
-            var offerents = _context.Oferrents.Include(r => r.Addresses).ToList();
+            var offerents = _context.Oferrents.ToList();
             if (offerents is null)
             {
                 throw new NotFoundExeption("Offerents not found");
@@ -42,7 +42,7 @@ namespace Domain.Services
         public IEnumerable<OfferentDto> GetAll()
         {
             _logger.Info($"Offerents GET All action invoked");
-            var offerents = _context.Oferrents.Include(r => r.Addresses).ToList();
+            var offerents = _context.Oferrents.ToList();
             if (offerents is null)
             {
                 throw new NotFoundExeption("Offerents not found");

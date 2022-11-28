@@ -4,6 +4,7 @@ using Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(HelpHomeDbContext))]
-    partial class HelpHomeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221128085424_Init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -162,7 +164,7 @@ namespace Data.Migrations
                             Id = 1,
                             AddressId = 2,
                             CarpetCount = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 12, 4, 29, 963, DateTimeKind.Utc).AddTicks(3663),
+                            CreatedDate = new DateTime(2022, 11, 28, 8, 54, 24, 182, DateTimeKind.Utc).AddTicks(6394),
                             Name = "Pranie dywanów",
                             PriceOffer = 110,
                             Regularity = 0,
@@ -220,24 +222,12 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 12, 4, 29, 963, DateTimeKind.Utc).AddTicks(3633),
+                            CreatedDate = new DateTime(2022, 11, 28, 8, 54, 24, 182, DateTimeKind.Utc).AddTicks(6382),
                             Name = "Sprzątanie",
                             PriceOffer = 50,
                             Regularity = 0,
                             SeekerId = 1,
                             SurfaceToClean = 100,
-                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            AddressId = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 12, 4, 29, 963, DateTimeKind.Utc).AddTicks(3647),
-                            Name = "Sprzątanie",
-                            PriceOffer = 50,
-                            Regularity = 4,
-                            SeekerId = 1,
-                            SurfaceToClean = 10,
                             UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
@@ -291,7 +281,7 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 3,
-                            CreatedDate = new DateTime(2022, 11, 28, 12, 4, 29, 963, DateTimeKind.Utc).AddTicks(3681),
+                            CreatedDate = new DateTime(2022, 11, 28, 8, 54, 24, 182, DateTimeKind.Utc).AddTicks(6408),
                             Name = "Mycie okien",
                             PriceOffer = 50,
                             Regularity = 0,

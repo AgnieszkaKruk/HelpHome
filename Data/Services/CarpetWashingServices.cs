@@ -49,7 +49,7 @@ namespace Domain.Services
         public List<CarpetWashingDto> GetAll(int seekerId)
         {
             _logger.Info($"All CarpetWashing offers from Seeker with id: {seekerId} GET All action invoked");
-            var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
+            var seeker = _context.Seekers.Include(x=>x.CarpetWaschingOffers).FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
                 throw new NotFoundExeption("Seeker is not found");

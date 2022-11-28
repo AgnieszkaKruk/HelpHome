@@ -4,6 +4,7 @@ using Domain.Models;
 using HelpHome.Entities;
 using HelpHomeApi;
 using HelpHomeApi.Exeptions;
+using System.Data.Entity;
 
 namespace Domain.Services
 {
@@ -23,7 +24,7 @@ namespace Domain.Services
         public IEnumerable<SeekerDto> GetAllWithOffers()
         {
             _logger.Info($"Seekers GET AllWithOffers action invoked");
-            var seekers = _context.Seekers.ToList();
+            var seekers = _context.Seekers.Include(x=>x.CleaningOffers).Include(x=>x.WindowsCleaningOffers).Include(x=>x.CarpetWaschingOffers);
             if (seekers is null)
             {
                 throw new NotFoundExeption("Seekers not found");
@@ -38,7 +39,7 @@ namespace Domain.Services
         public IEnumerable<SeekerDto> GetAll()
         {
             _logger.Info($"Seekers GET All action invoked");
-            var seekers = _context.Seekers.ToList();
+            var seekers = _context.Seekers.Include(x => x.CleaningOffers).Include(x => x.WindowsCleaningOffers).Include(x => x.CarpetWaschingOffers).ToList();
             if (seekers is null)
             {
                 throw new NotFoundExeption("Seekers not found");
@@ -54,7 +55,7 @@ namespace Domain.Services
         public SeekerDto GetById(int id)
         {
             _logger.Info($"Seeker with id: {id} GET action invoked");
-            var seeker = _context.Seekers.FirstOrDefault(s => s.Id == id);
+            var seeker = _context.Seekers.Include(x => x.CleaningOffers).Include(x => x.WindowsCleaningOffers).Include(x => x.CarpetWaschingOffers).FirstOrDefault(s => s.Id == id);
             if (seeker is null)
             {
                 throw new NotFoundExeption("Seeker is not found");

@@ -187,17 +187,17 @@ namespace Data.Migrations
             migrationBuilder.InsertData(
                 table: "CarpetWashingOffers",
                 columns: new[] { "Id", "AddressId", "CarpetCount", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "UpdateDate" },
-                values: new object[] { 1, 2, 1, new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2676), "Pranie dywanów", 110, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                values: new object[] { 1, 2, 1, new DateTime(2022, 11, 28, 8, 54, 24, 182, DateTimeKind.Utc).AddTicks(6394), "Pranie dywanów", 110, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
 
             migrationBuilder.InsertData(
                 table: "CleaningOffers",
                 columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "SurfaceToClean", "UpdateDate" },
-                values: new object[] { 1, 1, new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2643), "Sprzątanie", 50, 0, 1, 100, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                values: new object[] { 1, 1, new DateTime(2022, 11, 28, 8, 54, 24, 182, DateTimeKind.Utc).AddTicks(6382), "Sprzątanie", 50, 0, 1, 100, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
 
             migrationBuilder.InsertData(
                 table: "WindowsCleaningOffers",
                 columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "UpdateDate", "WindowsCount" },
-                values: new object[] { 1, 3, new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2710), "Mycie okien", 50, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 15 });
+                values: new object[] { 1, 3, new DateTime(2022, 11, 28, 8, 54, 24, 182, DateTimeKind.Utc).AddTicks(6408), "Mycie okien", 50, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 15 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_CarpetWashingOffers_AddressId",
