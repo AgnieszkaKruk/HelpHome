@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(HelpHomeDbContext))]
-    [Migration("20221117182453_Init")]
+    [Migration("20221124183009_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,11 +34,7 @@ namespace Data.Migrations
 
                     b.Property<string>("City")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int>("OfferentId")
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PostalCode")
                         .IsRequired()
@@ -50,9 +46,30 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OfferentId");
-
                     b.ToTable("Addresses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            City = "Orzesze",
+                            PostalCode = "43-190",
+                            Street = "Dworcowa"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            City = "Mikołów",
+                            PostalCode = "43-190",
+                            Street = "Majowa"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            City = "Katowice",
+                            PostalCode = "43-190",
+                            Street = "Głogowa"
+                        });
                 });
 
             modelBuilder.Entity("HelpHome.Entities.Offerent", b =>
@@ -105,6 +122,9 @@ namespace Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("AddressId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CarpetCount")
                         .HasColumnType("int");
 
@@ -132,9 +152,25 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AddressId");
+
                     b.HasIndex("SeekerId");
 
                     b.ToTable("CarpetWashingOffers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AddressId = 2,
+                            CarpetCount = 1,
+                            CreatedDate = new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2676),
+                            Name = "Pranie dywanów",
+                            PriceOffer = 110,
+                            Regularity = 0,
+                            SeekerId = 1,
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("HelpHome.Entities.OfferTypes.Cleaning", b =>
@@ -144,6 +180,9 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AddressId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
@@ -172,6 +211,8 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AddressId");
+
                     b.HasIndex("SeekerId");
 
                     b.ToTable("CleaningOffers");
@@ -180,7 +221,8 @@ namespace Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 11, 17, 18, 24, 52, 808, DateTimeKind.Utc).AddTicks(9579),
+                            AddressId = 1,
+                            CreatedDate = new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2643),
                             Name = "Sprzątanie",
                             PriceOffer = 50,
                             Regularity = 0,
@@ -197,6 +239,9 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AddressId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .ValueGeneratedOnAdd()
@@ -225,9 +270,25 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AddressId");
+
                     b.HasIndex("SeekerId");
 
                     b.ToTable("WindowsCleaningOffers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AddressId = 3,
+                            CreatedDate = new DateTime(2022, 11, 24, 18, 30, 8, 483, DateTimeKind.Utc).AddTicks(2710),
+                            Name = "Mycie okien",
+                            PriceOffer = 50,
+                            Regularity = 0,
+                            SeekerId = 1,
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            WindowsCount = 15
+                        });
                 });
 
             modelBuilder.Entity("HelpHome.Entities.Seeker", b =>
@@ -277,46 +338,59 @@ namespace Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Domain.Entities.Address", b =>
+            modelBuilder.Entity("HelpHome.Entities.OfferTypes.CarpetWashing", b =>
                 {
-                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
-                        .WithMany("Addresses")
-                        .HasForeignKey("OfferentId")
+                    b.HasOne("Domain.Entities.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Offerent");
-                });
-
-            modelBuilder.Entity("HelpHome.Entities.OfferTypes.CarpetWashing", b =>
-                {
                     b.HasOne("HelpHome.Entities.Seeker", "Seeker")
                         .WithMany("CarpetWaschingOffers")
                         .HasForeignKey("SeekerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Address");
+
                     b.Navigation("Seeker");
                 });
 
             modelBuilder.Entity("HelpHome.Entities.OfferTypes.Cleaning", b =>
                 {
+                    b.HasOne("Domain.Entities.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("HelpHome.Entities.Seeker", "Seeker")
                         .WithMany("CleaningOffers")
                         .HasForeignKey("SeekerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Address");
+
                     b.Navigation("Seeker");
                 });
 
             modelBuilder.Entity("HelpHome.Entities.OfferTypes.WindowsCleaning", b =>
                 {
+                    b.HasOne("Domain.Entities.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("HelpHome.Entities.Seeker", "Seeker")
                         .WithMany("WindowsCleaningOffers")
                         .HasForeignKey("SeekerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Address");
 
                     b.Navigation("Seeker");
                 });
@@ -330,8 +404,6 @@ namespace Data.Migrations
 
             modelBuilder.Entity("HelpHome.Entities.Offerent", b =>
                 {
-                    b.Navigation("Addresses");
-
                     b.Navigation("BlockedSeekers");
                 });
 

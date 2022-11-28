@@ -1,4 +1,5 @@
-﻿using Domain.Entities.Utils;
+﻿using Domain.Entities;
+using Domain.Entities.Utils;
 
 namespace HelpHome.Entities.OfferTypes
 {
@@ -19,10 +20,11 @@ namespace HelpHome.Entities.OfferTypes
         {
             return $"Usługa: {Name}. Regularność: {Regularity}.Ilość dywanów do prania: {CarpetCount}. Dodatkowe usługi: {additionalServices}. Cena usługi: {this.PriceOffer}";
         }
+        public virtual Address Address { get; set; }
+        public int AddressId { get; set; }
 
-        
-        
-        
+
+
 
     }
 

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HelpHomeApi.Controllers
 {
-    [Route ("api/Seekers/{seekerId}/offers")]
+    [Route ("api/Seekers/{seekerId}/carpetwashingoffers")]
     [ApiController]
     public class CarpetWashingController : ControllerBase
     {

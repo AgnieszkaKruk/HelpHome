@@ -28,7 +28,7 @@ namespace Domain.Services
             {
                 throw new NotFoundExeption("Seeker is not found");
             }
-            var offer = _context.CleaningOffers.FirstOrDefault(u => u.Id == offerId);
+            var offer = _context.CleaningOffers.Include(x=>x.Address).FirstOrDefault(x=>x.Id==seekerId);
             if (offer is null || offer.SeekerId != seekerId)
             {
                 throw new NotFoundExeption("Offer is not found");

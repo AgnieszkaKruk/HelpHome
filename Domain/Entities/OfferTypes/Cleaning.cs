@@ -1,4 +1,5 @@
-﻿using Domain.Entities.Utils;
+﻿using Domain.Entities;
+using Domain.Entities.Utils;
 using System.Text;
 
 namespace HelpHome.Entities.OfferTypes
@@ -26,9 +27,10 @@ namespace HelpHome.Entities.OfferTypes
             }
             return $"Usługa: {Name}. Regularność: {Regularity}. Powierzchnia do sprzątania: {SurfaceToClean}m kw. Dodatkowe usługi: {additionalServices}. Cena usługi: {this.PriceOffer}";
         }
+        public virtual Address Address { get; set; }
+        public int AddressId { get; set; }
 
-      
 
-      
+
     }
 }

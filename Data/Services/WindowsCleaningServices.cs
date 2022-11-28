@@ -28,7 +28,7 @@ namespace Domain.Services
             {
                 throw new NotFoundExeption("Seeker is not found");
             }
-            var offer = _context.WindowsCleaningOffers.FirstOrDefault(u => u.Id == offerId);
+            var offer = _context.WindowsCleaningOffers.Include(s=>s.Address).FirstOrDefault(u => u.Id == seekerId);
             if (offer is null || offer.SeekerId != seekerId)
             {
                 throw new NotFoundExeption("Offer is not found");
@@ -47,7 +47,7 @@ namespace Domain.Services
                 throw new NotFoundExeption("Seeker is not found");
             }
 
-            var allOffers = seeker.WindowsCleaningOffers;
+            var allOffers = seeker.WindowsCleaningOffers.ToList();
 
             var allOffersDto = _mapper.Map<List<WindowsCleaningDto>>(allOffers);
             return allOffersDto;

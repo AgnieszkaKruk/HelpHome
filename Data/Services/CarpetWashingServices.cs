@@ -5,6 +5,7 @@ using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
 using HelpHomeApi;
 using HelpHomeApi.Exeptions;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,7 @@ namespace Domain.Services
             {
                  throw new NotFoundExeption("Seeker is not found");
             }
-            var offer = _context.CarpetWashingOffers.FirstOrDefault(u => u.Id == offerId);
+            var offer = _context.CarpetWashingOffers.Include(x => x.Address).FirstOrDefault(u => u.Id == seekerId);
             if (offer is null || offer.SeekerId != seekerId)
             {
                 throw new NotFoundExeption("Offer is not found");
