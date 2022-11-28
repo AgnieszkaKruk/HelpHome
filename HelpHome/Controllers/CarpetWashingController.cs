@@ -24,9 +24,9 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpGet("{offerId}")]
-        public ActionResult<CarpetWashingDto> GetById([FromRoute] int seekerId, [FromRoute] int id)
+        public ActionResult<CarpetWashingDto> GetById([FromRoute] int seekerId, [FromRoute] int offerId)
         {
-            var offer = _carpetServices.GetById(seekerId, id);
+            var offer = _carpetServices.GetById(seekerId, offerId);
             return Ok(offer);
         }
 

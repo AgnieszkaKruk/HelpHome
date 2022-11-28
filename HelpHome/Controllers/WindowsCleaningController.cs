@@ -23,9 +23,9 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpGet("{offerId}")]
-        public ActionResult<WindowsCleaningDto> GetById([FromRoute] int seekerId, [FromRoute] int id)
+        public ActionResult<WindowsCleaningDto> GetById([FromRoute] int seekerId, [FromRoute] int offerId)
         {
-            var offer = _windowsCleaningServices.GetById(seekerId, id);
+            var offer = _windowsCleaningServices.GetById(seekerId, offerId);
             return Ok(offer);
         }
 

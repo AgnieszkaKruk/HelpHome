@@ -29,8 +29,8 @@ namespace Domain.Services
             {
                 throw new NotFoundExeption("Seeker is not found");
             }
-            var offer = _context.CleaningOffers.Include(x=>x.Address).FirstOrDefault(x=>x.Id==seekerId);
-            if (offer is null || offer.SeekerId != seekerId)
+            var offer = _context.CleaningOffers.Include(x=>x.Address).FirstOrDefault(x=>x.SeekerId==seekerId && x.Id==offerId);
+            if (offer is null )
             {
                 throw new NotFoundExeption("Offer is not found");
             }
@@ -43,13 +43,13 @@ namespace Domain.Services
         {
            
             _logger.Info($"All CarpetWashing offers from Seeker with id: {seekerId} GET All action invoked");
-            var seeker = _context.Seekers.Include(x => x.CleaningOffers).FirstOrDefault(u => u.Id == seekerId);
+            var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
                 throw new NotFoundExeption("Seeker is not found");
             }
 
-            var allOffers = seeker.CleaningOffers;
+            var allOffers = _context.CleaningOffers.Include(x => x.Address).Where(x => x.SeekerId == seekerId);
 
             var allOffersDto = _mapper.Map<List<CleaningDto>>(allOffers);
             return allOffersDto;

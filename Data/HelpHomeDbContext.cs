@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Entities.OfferentPreferences;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
 using Microsoft.EntityFrameworkCore;
@@ -16,10 +17,12 @@ namespace Data
         public DbSet<Seeker> Seekers { get; set; }
         public DbSet<Offerent> Oferrents { get; set; }
         public DbSet<Address> Addresses { get; set; }
-
         public DbSet<Cleaning> CleaningOffers { get; set; }
+        public DbSet<CleaningPreference> CleaningPreferences { get; set; }
         public DbSet<CarpetWashing> CarpetWashingOffers { get; set; }
+        public DbSet<CarpetWashingPreference> CarpetWashingPreferences { get; set; }
         public DbSet<WindowsCleaning> WindowsCleaningOffers { get; set; }
+        public DbSet<WindowsCleaningPreference> windowsCleaningPreferences { get; set; }
 
 
         
@@ -63,6 +66,15 @@ namespace Data
                 eb.Property(d => d.SurfaceToClean).IsRequired();
                 eb.HasOne(d => d.Seeker).WithMany(o => o.CleaningOffers).HasForeignKey(d => d.SeekerId);
                 //eb.HasMany(d => d.Addresses).WithOne(o => o.Cleaning).HasForeignKey(s => s.CleaningId);
+
+            });
+            modelBuilder.Entity<CleaningPreference>(eb =>
+            {
+                eb.Property(o => o.Name).IsRequired();
+                eb.Property(o => o.Regularity).IsRequired();
+                eb.Property(o => o.CreatedDate).HasDefaultValueSql("getutcdate()");
+                eb.Property(o => o.UpdateDate).ValueGeneratedOnUpdate();
+              
 
             });
 
@@ -154,7 +166,16 @@ namespace Data
                    AddressId = 3
 
                });
-            
+            modelBuilder.Entity<WindowsCleaningPreference>()
+               .HasData(new WindowsCleaningPreference
+               {
+                   Id = 1,
+                   CreatedDate = DateTime.UtcNow,
+                   OfferentId = 1,
+                   PriceOffer = 300,
+
+               });
+
 
         }
     }

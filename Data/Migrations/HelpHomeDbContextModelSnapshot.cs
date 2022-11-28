@@ -70,6 +70,114 @@ namespace Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Domain.Entities.OfferentPreferences.CarpetWashingPreference", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CarpetSize")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("OfferentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PriceOffer")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OfferentId");
+
+                    b.ToTable("CarpetWashingPreferences");
+                });
+
+            modelBuilder.Entity("Domain.Entities.OfferentPreferences.CleaningPreference", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("getutcdate()");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OfferentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PriceOffer")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Regularity")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .ValueGeneratedOnUpdate()
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OfferentId");
+
+                    b.ToTable("CleaningPreferences");
+                });
+
+            modelBuilder.Entity("Domain.Entities.OfferentPreferences.WindowsCleaningPreference", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("OfferentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PriceOffer")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Regularity")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OfferentId");
+
+                    b.ToTable("windowsCleaningPreferences");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4456),
+                            OfferentId = 1,
+                            PriceOffer = 300,
+                            Regularity = 0,
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
             modelBuilder.Entity("HelpHome.Entities.Offerent", b =>
                 {
                     b.Property<int>("Id")
@@ -162,7 +270,7 @@ namespace Data.Migrations
                             Id = 1,
                             AddressId = 2,
                             CarpetCount = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 12, 4, 29, 963, DateTimeKind.Utc).AddTicks(3663),
+                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4409),
                             Name = "Pranie dywanów",
                             PriceOffer = 110,
                             Regularity = 0,
@@ -220,24 +328,12 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 12, 4, 29, 963, DateTimeKind.Utc).AddTicks(3633),
+                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4387),
                             Name = "Sprzątanie",
                             PriceOffer = 50,
                             Regularity = 0,
                             SeekerId = 1,
                             SurfaceToClean = 100,
-                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            AddressId = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 12, 4, 29, 963, DateTimeKind.Utc).AddTicks(3647),
-                            Name = "Sprzątanie",
-                            PriceOffer = 50,
-                            Regularity = 4,
-                            SeekerId = 1,
-                            SurfaceToClean = 10,
                             UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
@@ -291,7 +387,7 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 3,
-                            CreatedDate = new DateTime(2022, 11, 28, 12, 4, 29, 963, DateTimeKind.Utc).AddTicks(3681),
+                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4431),
                             Name = "Mycie okien",
                             PriceOffer = 50,
                             Regularity = 0,
@@ -346,6 +442,39 @@ namespace Data.Migrations
                             Name = "Alicja Olos",
                             PhoneNumber = "234123111"
                         });
+                });
+
+            modelBuilder.Entity("Domain.Entities.OfferentPreferences.CarpetWashingPreference", b =>
+                {
+                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                        .WithMany()
+                        .HasForeignKey("OfferentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Offerent");
+                });
+
+            modelBuilder.Entity("Domain.Entities.OfferentPreferences.CleaningPreference", b =>
+                {
+                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                        .WithMany()
+                        .HasForeignKey("OfferentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Offerent");
+                });
+
+            modelBuilder.Entity("Domain.Entities.OfferentPreferences.WindowsCleaningPreference", b =>
+                {
+                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                        .WithMany()
+                        .HasForeignKey("OfferentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Offerent");
                 });
 
             modelBuilder.Entity("HelpHome.Entities.OfferTypes.CarpetWashing", b =>

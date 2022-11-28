@@ -1,20 +1,21 @@
 ﻿using Domain.Entities.Utils;
+using HelpHome.Entities;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class CleaningDto
+    public class CleaningPreferenceDto
     {
-
-        [Required]
-        public int SurfaceToClean { get; set; }
+        public int Id { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdateDate { get; set; }
+        public Regularity Regularity { get; set; }
+        public List<AdditionalServices>? additionalServices = new List<AdditionalServices>();
         public int PriceOffer { get; set; }
+
     }
 }

@@ -13,9 +13,7 @@ namespace Domain.Models
         public int CarpetCount { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdateDate { get; set; }
-
         public int PriceOffer { get; set; }
-        // public Regularity Regularity { get; set; }
-        // public List<AdditionalServices>? additionalServices = new List<AdditionalServices>();
+
     }
 }
