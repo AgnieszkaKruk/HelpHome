@@ -15,17 +15,24 @@ namespace HelpHomeApi.Controllers
             _accountServices = accountServices;
 
         }
-        [HttpPost("register/seeker")]
+        [HttpPost("seeker/register")]
         public ActionResult RegisterSeeker([FromBody] RegisterSeekerDto dto)
         {
             _accountServices.RegisterSeeker(dto);
             return Ok();
         }
-        [HttpPost("register/offerent")]
+        [HttpPost("offerent/register")]
         public ActionResult RegisterOfferent([FromBody] RegisterOfferentDto dto)
         {
             _accountServices.RegisterOfferent(dto);
             return Ok();
+        }
+
+        [HttpPost("login")]
+        public ActionResult GenerateJwt(LoginDto dto)
+        {
+           var token = _accountServices.GenerateJwt(dto);
+            return Ok(token);
         }
 
     }

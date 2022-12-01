@@ -4,7 +4,7 @@ using Domain.Models;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
 using HelpHomeApi;
-using HelpHomeApi.Exeptions;
+using Data.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,12 +33,12 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
-                 throw new NotFoundExeption("Seeker is not found");
+                 throw new NotFoundException("Seeker is not found");
             }
             var offer = _context.CarpetWashingOffers.FirstOrDefault(u => u.Id == offerId);
             if (offer is null || offer.SeekerId != seekerId)
             {
-                throw new NotFoundExeption("Offer is not found");
+                throw new NotFoundException("Offer is not found");
             }
 
             var offerDto = _mapper.Map<CarpetWashingDto>(offer);
@@ -51,7 +51,7 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
 
             var allOffers = seeker.CarpetWaschingOffers;
@@ -70,7 +70,7 @@ namespace Domain.Services
             if (seeker is null)
             {
 
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
             var offer = _mapper.Map<CarpetWashing>(dto);
             offer.SeekerId = seekerId;

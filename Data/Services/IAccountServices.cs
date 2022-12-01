@@ -6,5 +6,6 @@ namespace Data.Services
     {
         void RegisterSeeker(RegisterSeekerDto dto);
         void RegisterOfferent(RegisterOfferentDto dto);
+        string GenerateJwt(LoginDto dto);
     }
 }

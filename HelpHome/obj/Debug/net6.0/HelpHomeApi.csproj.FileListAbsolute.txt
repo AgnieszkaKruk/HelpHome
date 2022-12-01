@@ -149,3 +149,7 @@ C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\Microsoft.OpenApi.
 C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

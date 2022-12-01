@@ -3,7 +3,7 @@ using Data;
 using Domain.Models;
 using HelpHome.Entities;
 using HelpHomeApi;
-using HelpHomeApi.Exeptions;
+using Data.Exceptions;
 
 namespace Domain.Services
 {
@@ -26,7 +26,7 @@ namespace Domain.Services
             var seekers = _context.Seekers.ToList();
             if (seekers is null)
             {
-                throw new NotFoundExeption("Seekers not found");
+                throw new NotFoundException("Seekers not found");
             }
             else
             {
@@ -41,7 +41,7 @@ namespace Domain.Services
             var seekers = _context.Seekers.ToList();
             if (seekers is null)
             {
-                throw new NotFoundExeption("Seekers not found");
+                throw new NotFoundException("Seekers not found");
             }
             else
             {
@@ -57,7 +57,7 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(s => s.Id == id);
             if (seeker is null)
             {
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
             else
             {
@@ -73,7 +73,7 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == id);
             if (seeker is null)
             {
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
             else
             {
@@ -89,7 +89,7 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == id);
             if (seeker is null)
             {
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
             else
             {
