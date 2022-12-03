@@ -36,6 +36,7 @@ namespace Data.Services
                 Name = dto.Name,
                 Email = dto.Email,
                 RoleId = dto.RoleId,
+
                 PhoneNumber = dto.PhoneNumber,
 
 
@@ -65,7 +66,8 @@ namespace Data.Services
 
         public string GenerateJwt(LoginDto dto)
         {
-            var seeker = _context.Seekers.Include(s => s.Role).FirstOrDefault(s => s.Email == dto.Email);
+            var seeker = _context.Seekers.Include("Role").FirstOrDefault(s => s.Email == dto.Email);
+
             var offerent = _context.Oferrents.Include(o => o.Role).FirstOrDefault(o => o.Email == dto.Email);
 
             if (seeker is null && offerent is null)
@@ -74,9 +76,9 @@ namespace Data.Services
             }
             else
             {
-                if (seeker != null)
-
+                if (seeker != null && offerent == null)
                 {
+                    var seekerRole = _context.Roles.FirstOrDefault(x => x.Id == seeker.RoleId);
                     var seekerResult = _passwordHasherSeeker.VerifyHashedPassword(seeker, seeker.PasswordHash, dto.Password);
                     if (seekerResult == PasswordVerificationResult.Failed)
                     {
@@ -84,31 +86,22 @@ namespace Data.Services
                     }
                     else
                     {
-                        var claimsSeeker = new List<Claim>();
-
-                        claimsSeeker.Add(new Claim(ClaimTypes.NameIdentifier, seeker.Id.ToString()));
-                        claimsSeeker.Add(new Claim(ClaimTypes.Name, seeker.Name));
-                      //  claimsSeeker.Add(new Claim(ClaimTypes.Role, seeker.Role.Name));
-                    
-
-                        var keySeeker = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSeetings.JwtKey));
-                        var cred = new SigningCredentials(keySeeker, SecurityAlgorithms.HmacSha256);
-                        var expires = DateTime.Now.AddDays(_authenticationSeetings.JwtExpireDays);
-
-                        var tokenSeeker = new JwtSecurityToken(_authenticationSeetings.JwtIssuer, _authenticationSeetings.JwtIssuer,
-                            claimsSeeker,
-                            expires: expires,
-                            signingCredentials: cred);
-
-                        var tokenHandler = new JwtSecurityTokenHandler();
-                        return tokenHandler.WriteToken(tokenSeeker);
+                        var claimsSeeker = new List<Claim>
+                        {
+                            new Claim(ClaimTypes.NameIdentifier, seeker.Id.ToString()),
+                            new Claim(ClaimTypes.Name, seeker.Name),
+                            new Claim(ClaimTypes.Role,$"{seekerRole.Name}")
+                        };
+                        return MakeToken(claimsSeeker);
                     }
-
+                    throw new BadRequestException("Invalid login or password");
                 }
-                throw new BadRequestException("Invalid login or password");
-                if (offerent != null)
+
+                if (offerent != null && seeker == null)
                 {
+                    var offerentRole = _context.Roles.FirstOrDefault(x => x.Id == offerent.RoleId);
                     var offerentResult = _passwordHasherOfferent.VerifyHashedPassword(offerent, offerent.PasswordHash, dto.Password);
+
                     if (offerentResult == PasswordVerificationResult.Failed)
                     {
                         throw new BadRequestException("Invalid login or password");
@@ -119,25 +112,31 @@ namespace Data.Services
                     {
                        new Claim(ClaimTypes.NameIdentifier,offerent.Id.ToString()),
                        new Claim(ClaimTypes.Name, offerent.Name),
-                       new Claim(ClaimTypes.Role, offerent.Role.Name),
+                       new Claim(ClaimTypes.Role, $"{offerentRole.Name}"),
                     };
-
-                        var keyOfferent = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSeetings.JwtKey));
-                        var cred = new SigningCredentials(keyOfferent, SecurityAlgorithms.HmacSha256);
-                        var expires = DateTime.Now.AddDays(_authenticationSeetings.JwtExpireDays);
-
-                        var tokenOfferent = new JwtSecurityToken(_authenticationSeetings.JwtIssuer, _authenticationSeetings.JwtIssuer,
-                            claimsOfferent,
-                            expires: expires,
-                            signingCredentials: cred
-                            );
-                        var tokenHandler = new JwtSecurityTokenHandler();
-                        return tokenHandler.WriteToken(tokenOfferent);
+                        return MakeToken(claimsOfferent);
                     }
                 }
                 throw new BadRequestException("Invalid login or password");
             }
         }
+        private string MakeToken(List<Claim> claims)
+        {
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSeetings.JwtKey));
+            var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expires = DateTime.Now.AddDays(_authenticationSeetings.JwtExpireDays);
+
+            var token = new JwtSecurityToken(_authenticationSeetings.JwtIssuer, _authenticationSeetings.JwtIssuer,
+                claims: claims,
+                expires: expires,
+                signingCredentials: cred
+                );
+            var tokenHandler = new JwtSecurityTokenHandler();
+            return tokenHandler.WriteToken(token);
+
+        }
+
     }
 }
 

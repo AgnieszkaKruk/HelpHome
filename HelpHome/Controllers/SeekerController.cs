@@ -3,6 +3,7 @@ using Data;
 using Domain.Models;
 using Domain.Services;
 using HelpHome.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -36,16 +37,17 @@ namespace HelpHomeApi.Controllers
             return Ok(seeker);
         }
 
-        [HttpPost]
+        //[HttpPost]
 
-        public ActionResult CreateSeeker([FromBody] CreateSeekerDto dto)
-        {
-            var seekerId = _seekerServices.CreateSeeker(dto);
-            return Created($"/api/Seekers/{seekerId}", null);
+        //public ActionResult CreateSeeker([FromBody] CreateSeekerDto dto)
+        //{
+        //    var seekerId = _seekerServices.CreateSeeker(dto);
+        //    return Created($"/api/Seekers/{seekerId}", null);
 
-        }
+        //}
 
         [HttpDelete("{id}")]
+        [Authorize]
         public ActionResult Delete([FromRoute] int id)
         {
             _seekerServices.Delete(id);
@@ -54,7 +56,7 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpPut("{id}")]
-
+        [Authorize]
         public ActionResult Update([FromBody] CreateSeekerDto dto, [FromRoute] int id)
         {
              _seekerServices.Update(dto, id);   

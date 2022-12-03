@@ -22,7 +22,7 @@ try
 
     var builder = WebApplication.CreateBuilder(args);
     var authenticationSettings = new AuthenticationSettings();
-    
+
     builder.Host.UseNLog();
     ConfigurationManager configuration = builder.Configuration;
     configuration.GetSection("Authentication").Bind(authenticationSettings);
@@ -61,7 +61,7 @@ try
     builder.Services.AddScoped<ErrorHandlingMiddleware>();
     builder.Services.AddScoped<IPasswordHasher<Seeker>, PasswordHasher<Seeker>>();
     builder.Services.AddScoped<IPasswordHasher<Offerent>, PasswordHasher<Offerent>>();
-    builder.Services.AddScoped<IValidator<RegisterSeekerDto>,RegisterSeekerDtoValidator>();
+    builder.Services.AddScoped<IValidator<RegisterSeekerDto>, RegisterSeekerDtoValidator>();
     builder.Services.AddScoped<IValidator<RegisterOfferentDto>, RegisterOfferentDtoValidator>();
     builder.Services.AddSwaggerGen();
 
@@ -78,20 +78,21 @@ try
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "HelpHome Api");
     });
 
-app.UseAuthorization();
+    app.UseAuthorization();
+    
 
-app.MapControllers();
+    app.MapControllers();
 
-app.Run();
+    app.Run();
 }
 catch (Exception exception)
 {
-    
+
     logger.Error(exception, "Stopped program because of exception");
     throw;
 }
 finally
 {
-    
+
     LogManager.Shutdown();
 }

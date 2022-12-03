@@ -554,3 +554,189 @@
 2022-12-01 11:18:04.2114 Info Adding target FileTarget(Name=otherFile-web)
 2022-12-01 11:18:04.2715 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
 2022-12-01 11:18:05.8653 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 11:47:32.5304 Info Message Template Auto Format enabled
+2022-12-01 11:47:32.5598 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 11:47:32.7210 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 11:47:32.7210 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 11:47:32.8045 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 11:47:34.9607 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 11:58:36.3465 Info Message Template Auto Format enabled
+2022-12-01 11:58:36.3748 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 11:58:36.5419 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 11:58:36.5419 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 11:58:36.6267 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 11:58:38.2863 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 12:01:36.8960 Info Message Template Auto Format enabled
+2022-12-01 12:01:36.9288 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 12:01:37.0909 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 12:01:37.0950 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 12:01:37.1974 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 12:01:39.1326 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 20:32:15.8009 Info Message Template Auto Format enabled
+2022-12-01 20:32:15.8214 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 20:32:15.9377 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 20:32:15.9377 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 20:32:15.9980 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 20:32:18.1633 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 20:33:22.6989 Info Message Template Auto Format enabled
+2022-12-01 20:33:22.7378 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 20:33:22.8580 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 20:33:22.8614 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 20:33:22.9375 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 20:33:25.1101 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 20:39:28.3453 Info Message Template Auto Format enabled
+2022-12-01 20:39:28.3733 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 20:39:28.4734 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 20:39:28.4734 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 20:39:28.5446 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 20:39:30.9208 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 20:45:40.7062 Info Message Template Auto Format enabled
+2022-12-01 20:45:40.7383 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 20:45:41.6942 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 20:45:41.7407 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 20:45:42.0205 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 20:45:45.3021 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 19:54:35.2487 Info Message Template Auto Format enabled
+2022-12-03 19:54:35.3125 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 19:54:35.4759 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 19:54:35.4805 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 19:54:35.5798 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 19:54:38.1561 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:01:00.5486 Info Message Template Auto Format enabled
+2022-12-03 20:01:00.5722 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:01:00.7173 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:01:00.7173 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:01:00.8046 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:01:02.7902 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:02:29.4965 Info Message Template Auto Format enabled
+2022-12-03 20:02:29.5348 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:02:29.6832 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:02:29.6832 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:02:29.7629 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:02:31.9622 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:04:16.5742 Info Message Template Auto Format enabled
+2022-12-03 20:04:16.5945 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:04:16.7325 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:04:16.7325 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:04:16.8048 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:04:18.2854 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:05:49.7692 Info Message Template Auto Format enabled
+2022-12-03 20:05:49.8070 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:05:50.1208 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:05:50.1208 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:05:50.2379 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:05:52.5808 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:09:39.6694 Info Message Template Auto Format enabled
+2022-12-03 20:09:39.6855 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:09:39.7811 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:09:39.7811 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:09:39.8232 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:09:41.7189 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:11:44.2424 Info Message Template Auto Format enabled
+2022-12-03 20:11:44.2727 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:11:44.4233 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:11:44.4233 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:11:44.5182 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:11:46.3677 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:12:13.2926 Info Message Template Auto Format enabled
+2022-12-03 20:12:13.3243 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:12:13.5039 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:12:13.5039 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:12:13.5955 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:12:15.9200 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:13:46.4614 Info Message Template Auto Format enabled
+2022-12-03 20:13:46.5236 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:13:46.7625 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:13:46.7625 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:13:46.8521 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:13:49.2971 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:14:47.1169 Info Message Template Auto Format enabled
+2022-12-03 20:14:47.1423 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:14:47.3122 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:14:47.3122 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:14:47.3749 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:14:49.2117 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:16:28.0559 Info Message Template Auto Format enabled
+2022-12-03 20:16:28.0828 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:16:28.2502 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:16:28.2502 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:16:28.3251 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:16:30.5807 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:19:17.2175 Info Message Template Auto Format enabled
+2022-12-03 20:19:17.2594 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:19:17.4298 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:19:17.4338 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:19:17.5281 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:19:19.8613 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:20:52.7648 Info Message Template Auto Format enabled
+2022-12-03 20:20:52.7963 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:20:52.9886 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:20:52.9886 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:20:53.0768 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:20:55.1233 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:23:41.6787 Info Message Template Auto Format enabled
+2022-12-03 20:23:41.7081 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:23:41.8560 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:23:41.8560 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:23:41.9292 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:23:43.5539 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:29:47.2615 Info Message Template Auto Format enabled
+2022-12-03 20:29:47.2900 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:29:47.4130 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:29:47.4155 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:29:47.4868 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:29:49.0300 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:49:39.7969 Info Message Template Auto Format enabled
+2022-12-03 20:49:39.8261 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 20:49:39.9675 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 20:49:39.9675 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 20:49:40.0367 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 20:49:41.6693 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:05:10.2638 Info Message Template Auto Format enabled
+2022-12-03 21:05:10.2840 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 21:05:10.3886 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 21:05:10.3886 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 21:05:10.4508 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:05:11.8910 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:15:55.5973 Info Message Template Auto Format enabled
+2022-12-03 21:15:55.6283 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 21:15:55.8381 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 21:15:55.8381 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 21:15:55.9306 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:15:57.3751 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:18:53.1133 Info Message Template Auto Format enabled
+2022-12-03 21:18:53.1427 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 21:18:53.3069 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 21:18:53.3069 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 21:18:53.3976 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:18:55.6293 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:21:36.6921 Info Message Template Auto Format enabled
+2022-12-03 21:21:36.7101 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 21:21:36.8068 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 21:21:36.8068 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 21:21:36.8470 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:21:38.3038 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:22:50.8236 Info Message Template Auto Format enabled
+2022-12-03 21:22:50.8529 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 21:22:51.0154 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 21:22:51.0154 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 21:22:51.0906 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:22:53.3473 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:28:30.2322 Info Message Template Auto Format enabled
+2022-12-03 21:28:30.2638 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 21:28:30.4077 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 21:28:30.4077 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 21:28:30.4725 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:28:32.5188 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:30:55.6061 Info Message Template Auto Format enabled
+2022-12-03 21:30:55.6305 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 21:30:55.7712 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 21:30:55.7712 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 21:30:55.8499 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:30:57.5591 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:40:02.5019 Info Message Template Auto Format enabled
+2022-12-03 21:40:02.5465 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-03 21:40:02.6501 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-03 21:40:02.6501 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-03 21:40:02.6993 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-03 21:40:04.1672 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config

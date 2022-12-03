@@ -1,5 +1,6 @@
 ﻿using Data.Services;
 using Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelpHomeApi.Controllers
@@ -29,6 +30,7 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpPost("login")]
+        
         public ActionResult GenerateJwt(LoginDto dto)
         {
            var token = _accountServices.GenerateJwt(dto);

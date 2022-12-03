@@ -1,10 +1,11 @@
 ﻿using Domain.Models;
 using Domain.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelpHomeApi.Controllers
 {
-    [Route ("api/carpetwahingoffers")]
+    [Route ("api/carpetwashingoffers")]
     [ApiController]
     public class CarpetWashingController : ControllerBase
     {
@@ -16,7 +17,8 @@ namespace HelpHomeApi.Controllers
 
         }
 
-        [HttpPost]
+        [HttpPost()]
+        [Authorize(Roles ="Seeker")]
         public ActionResult AddOffer ([FromRoute] int seekerId,[FromBody] CreateCarpetWashingDto dto)
         {
            var newOfferId =  _carpetServices.CreateOffer(dto, seekerId);
