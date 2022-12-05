@@ -1,4 +1,5 @@
-﻿using HelpHomeApi.Exeptions;
+﻿using Data.Exceptions;
+
 
 namespace HelpHomeApi.Middleware
 {
@@ -15,7 +16,12 @@ namespace HelpHomeApi.Middleware
             {
                 await next.Invoke(context);
             }
-            catch (NotFoundExeption notFoundExeption)
+            catch (BadRequestException badRequestException)
+            {
+                context.Response.StatusCode = 400;
+                await context.Response.WriteAsync(badRequestException.Message);
+            }
+            catch (NotFoundException notFoundExeption)
             {
                 context.Response.StatusCode = 404;
                 await context.Response.WriteAsync(notFoundExeption.Message);

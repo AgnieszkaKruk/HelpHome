@@ -3,14 +3,16 @@ using Data;
 using Domain.Models;
 using Domain.Services;
 using HelpHome.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace HelpHomeApi.Controllers
 {
-    [ApiController]
+   
     [Route("api/offerents")]
+    [ApiController]
     public class OferrentController : Controller
     {
         private readonly IOfferentServices _offerentServices;
@@ -35,21 +37,17 @@ namespace HelpHomeApi.Controllers
             return Ok(offerent);
         }
 
-        [HttpPost]
+        //[HttpPost]
 
-        public ActionResult CreateOfferent([FromBody] CreateOfferentDto dto)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            var offerent = _offerentServices.CreateOfferent(dto);
+        //public ActionResult CreateOfferent([FromBody] CreateOfferentDto dto)
+        //{
+        //    var offerent = _offerentServices.CreateOfferent(dto);
+        //    return Created($"/api/offerents/{offerent}", null);
 
-            return Created($"/api/offerents/{offerent}", null);
-
-        }
-
+        //}
+        
         [HttpDelete("{id}")]
+        [Authorize]
         public ActionResult Delete([FromRoute] int id)
         {
              _offerentServices.Delete(id); 
@@ -58,19 +56,12 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
 
         public ActionResult Update([FromBody] CreateOfferentDto dto,[FromRoute] int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
              _offerentServices.Update(dto, id);
              return Ok();
         }
-
-
-
-
     }
 }

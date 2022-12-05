@@ -126,6 +126,7 @@ C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\runtimes\win\lib\netco
 C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\NLog.dll
 C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\NLog.Extensions.Logging.dll
 C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
+<<<<<<< HEAD
 C:\Users\Ewa\source\Grande\HelpHome\Data\bin\Debug\net6.0\EntityFramework.SqlServer.dll
 C:\Users\Ewa\source\Grande\HelpHome\Data\bin\Debug\net6.0\EntityFramework.dll
 C:\Users\Ewa\source\Grande\HelpHome\Data\bin\Debug\net6.0\NLog.dll
@@ -138,3 +139,10 @@ C:\Users\Ewa\source\Grande\HelpHome\Data\bin\Debug\net6.0\runtimes\win-x64\nativ
 C:\Users\Ewa\source\Grande\HelpHome\Data\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 C:\Users\Ewa\source\Grande\HelpHome\Data\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Ewa\source\Grande\HelpHome\Data\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+=======
+C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Dell\source\repos\HelpHome\Data\obj\Debug\net6.0\Data.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dell\source\repos\HelpHome\Data\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+>>>>>>> Authentication

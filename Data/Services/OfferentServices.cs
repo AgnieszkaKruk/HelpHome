@@ -3,7 +3,7 @@ using Data;
 using Domain.Models;
 using HelpHome.Entities;
 using HelpHomeApi;
-using HelpHomeApi.Exeptions;
+using Data.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -30,7 +30,7 @@ namespace Domain.Services
             var offerents = _context.Oferrents.ToList();
             if (offerents is null)
             {
-                throw new NotFoundExeption("Offerents not found");
+                throw new NotFoundException("Offerents not found");
             }
             else
             {
@@ -45,7 +45,7 @@ namespace Domain.Services
             var offerents = _context.Oferrents.ToList();
             if (offerents is null)
             {
-                throw new NotFoundExeption("Offerents not found");
+                throw new NotFoundException("Offerents not found");
             }
             else
             {
@@ -60,7 +60,7 @@ namespace Domain.Services
             var offerent = _context.Oferrents.FirstOrDefault(u => u.Id == id);
             if (offerent is null)
             {
-                throw new NotFoundExeption("Offerent is not found");
+                throw new NotFoundException("Offerent is not found");
             }
             else
             {
@@ -76,7 +76,7 @@ namespace Domain.Services
             var offerent = _context.Oferrents.FirstOrDefault(u => u.Id == id);
             if (offerent is null)
             {
-                throw new NotFoundExeption("Offerent is not found");
+                throw new NotFoundException("Offerent is not found");
             }
             else
             {
@@ -92,7 +92,7 @@ namespace Domain.Services
             var offerent = _context.Oferrents.FirstOrDefault(u => u.Id == id);
             if (offerent is null)
             {
-                throw new NotFoundExeption("Offerent is not found");
+                throw new NotFoundException("Offerent is not found");
             }
             else
             {

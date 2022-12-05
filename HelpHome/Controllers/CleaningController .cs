@@ -1,5 +1,6 @@
 ﻿using Domain.Models;
 using Domain.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelpHomeApi.Controllers
@@ -17,6 +18,7 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Seeker")]
         public ActionResult AddOffer ([FromRoute] int seekerId,[FromBody] CreateCleaningDto dto)
         {
            var newOfferId = _cleaningServices.CreateOffer(dto, seekerId);

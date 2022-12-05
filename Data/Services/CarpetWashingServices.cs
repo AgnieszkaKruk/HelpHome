@@ -4,7 +4,7 @@ using Domain.Models;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
 using HelpHomeApi;
-using HelpHomeApi.Exeptions;
+using Data.Exceptions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -34,12 +34,12 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
-                 throw new NotFoundExeption("Seeker is not found");
+                 throw new NotFoundException("Seeker is not found");
             }
             var offer = _context.CarpetWashingOffers.Include(x => x.Address).FirstOrDefault(x => x.SeekerId == seekerId && x.Id == offerId);
             if (offer is null || offer.SeekerId != seekerId)
             {
-                throw new NotFoundExeption("Offer is not found");
+                throw new NotFoundException("Offer is not found");
             }
 
             var offerDto = _mapper.Map<CarpetWashingDto>(offer);
@@ -52,7 +52,7 @@ namespace Domain.Services
             var seeker = _context.Seekers.FirstOrDefault(u => u.Id == seekerId);
             if (seeker is null)
             {
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
 
             var allOffers = _context.CarpetWashingOffers.Include(x => x.Address).Where(x => x.SeekerId == seekerId);
@@ -68,7 +68,7 @@ namespace Domain.Services
             if (seeker is null)
             {
 
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
             var offer = _mapper.Map<CarpetWashing>(dto);
             offer.SeekerId = seekerId;
