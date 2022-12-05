@@ -38,6 +38,14 @@ namespace HelpHomeApi.Controllers
             var alloffers = _carpetServices.GetAll(seekerId);
             return Ok(alloffers);
         }
+
+        [HttpDelete("{offerId}")]
+        [Authorize]
+        public ActionResult Delete([FromRoute] int offerId)
+        {
+             _carpetServices.Delete(offerId);
+            return NoContent();
+        }
         
     }
 }

@@ -5,23 +5,21 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class InitDb : Migration
+    public partial class InitDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Addresses",
+                name: "Roles",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Addresses", x => x.Id);
+                    table.PrimaryKey("PK_Roles", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -32,11 +30,40 @@ namespace Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RoleId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Oferrents", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Oferrents_Roles_RoleId",
+                        column: x => x.RoleId,
+                        principalTable: "Roles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Addresses",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OfferentId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Addresses", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Addresses_Oferrents_OfferentId",
+                        column: x => x.OfferentId,
+                        principalTable: "Oferrents",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -95,6 +122,8 @@ namespace Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RoleId = table.Column<int>(type: "int", nullable: false),
                     OfferentId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -105,6 +134,12 @@ namespace Data.Migrations
                         column: x => x.OfferentId,
                         principalTable: "Oferrents",
                         principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Seekers_Roles_RoleId",
+                        column: x => x.RoleId,
+                        principalTable: "Roles",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -228,51 +263,66 @@ namespace Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Addresses",
-                columns: new[] { "Id", "City", "PostalCode", "Street" },
+                columns: new[] { "Id", "City", "OfferentId", "PostalCode", "Street" },
                 values: new object[,]
                 {
-                    { 1, "Orzesze", "43-190", "Dworcowa" },
-                    { 2, "Mikołów", "43-190", "Majowa" },
-                    { 3, "Katowice", "43-190", "Głogowa" }
+                    { 1, "Orzesze", null, "43-190", "Dworcowa" },
+                    { 2, "Mikołów", null, "43-190", "Majowa" },
+                    { 3, "Katowice", null, "43-190", "Głogowa" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Roles",
+                columns: new[] { "Id", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Seeker" },
+                    { 2, "Offerent" },
+                    { 3, "Administrator" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Oferrents",
-                columns: new[] { "Id", "Email", "Name", "PhoneNumber" },
+                columns: new[] { "Id", "Email", "Name", "PasswordHash", "PhoneNumber", "RoleId" },
                 values: new object[,]
                 {
-                    { 1, "jdsks@com", "Jan Kowalski", "123456" },
-                    { 2, "Ania@pl", "Ania Nowak", "234123111" }
+                    { 1, "jdsks@com", "Jan Kowalski", "#1234#", "123456", 2 },
+                    { 2, "agak@wp.pl", "Aga Kruk", "#$%%^^&&", "444555333", 3 }
                 });
 
             migrationBuilder.InsertData(
                 table: "Seekers",
-                columns: new[] { "Id", "Email", "Name", "OfferentId", "PhoneNumber" },
+                columns: new[] { "Id", "Email", "Name", "OfferentId", "PasswordHash", "PhoneNumber", "RoleId" },
                 values: new object[,]
                 {
-                    { 1, "jdsks@com", "Romuald Krawczyk", null, "123456" },
-                    { 2, "Ania@pl", "Alicja Olos", null, "234123111" }
+                    { 1, "jdsks@com", "Janian", null, "#1234#", "123456", 1 },
+                    { 2, "agak@wp.pl", "Zsoia", null, "#$%%^^&&", "444555333", 1 }
                 });
 
             migrationBuilder.InsertData(
                 table: "CarpetWashingOffers",
                 columns: new[] { "Id", "AddressId", "CarpetCount", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "UpdateDate" },
-                values: new object[] { 1, 2, 1, new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4409), "Pranie dywanów", 110, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                values: new object[] { 1, 2, 1, new DateTime(2022, 12, 5, 13, 18, 32, 967, DateTimeKind.Utc).AddTicks(9366), "Pranie dywanów", 110, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
 
             migrationBuilder.InsertData(
                 table: "CleaningOffers",
                 columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "SurfaceToClean", "UpdateDate" },
-                values: new object[] { 1, 1, new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4387), "Sprzątanie", 50, 0, 1, 100, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                values: new object[] { 1, 1, new DateTime(2022, 12, 5, 13, 18, 32, 967, DateTimeKind.Utc).AddTicks(9340), "Sprzątanie", 50, 0, 1, 100, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
 
             migrationBuilder.InsertData(
                 table: "WindowsCleaningOffers",
                 columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "UpdateDate", "WindowsCount" },
-                values: new object[] { 1, 3, new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4431), "Mycie okien", 50, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 15 });
+                values: new object[] { 1, 3, new DateTime(2022, 12, 5, 13, 18, 32, 967, DateTimeKind.Utc).AddTicks(9391), "Mycie okien", 50, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 15 });
 
             migrationBuilder.InsertData(
                 table: "windowsCleaningPreferences",
                 columns: new[] { "Id", "CreatedDate", "OfferentId", "PriceOffer", "Regularity", "UpdateDate" },
-                values: new object[] { 1, new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4456), 1, 300, 0, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                values: new object[] { 1, new DateTime(2022, 12, 5, 13, 18, 32, 967, DateTimeKind.Utc).AddTicks(9416), 1, 300, 0, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Addresses_OfferentId",
+                table: "Addresses",
+                column: "OfferentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CarpetWashingOffers_AddressId",
@@ -305,9 +355,19 @@ namespace Data.Migrations
                 column: "OfferentId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Oferrents_RoleId",
+                table: "Oferrents",
+                column: "RoleId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Seekers_OfferentId",
                 table: "Seekers",
                 column: "OfferentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Seekers_RoleId",
+                table: "Seekers",
+                column: "RoleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_WindowsCleaningOffers_AddressId",
@@ -353,6 +413,9 @@ namespace Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Oferrents");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
         }
     }
 }

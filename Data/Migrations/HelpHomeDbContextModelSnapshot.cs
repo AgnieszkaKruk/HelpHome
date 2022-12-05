@@ -34,6 +34,9 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("OfferentId")
+                        .HasColumnType("int");
+
                     b.Property<string>("PostalCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -43,6 +46,8 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OfferentId");
 
                     b.ToTable("Addresses");
 
@@ -98,40 +103,6 @@ namespace Data.Migrations
                     b.HasIndex("OfferentId");
 
                     b.ToTable("CarpetWashingPreferences");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Utils.Role", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Roles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Seeker"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Offerent"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Administrator"
-                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.OfferentPreferences.CleaningPreference", b =>
@@ -204,11 +175,45 @@ namespace Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4456),
+                            CreatedDate = new DateTime(2022, 12, 5, 13, 18, 32, 967, DateTimeKind.Utc).AddTicks(9416),
                             OfferentId = 1,
                             PriceOffer = 300,
                             Regularity = 0,
                             UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
+            modelBuilder.Entity("Domain.Entities.Utils.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Seeker"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Offerent"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Administrator"
                         });
                 });
 
@@ -317,7 +322,7 @@ namespace Data.Migrations
                             Id = 1,
                             AddressId = 2,
                             CarpetCount = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4409),
+                            CreatedDate = new DateTime(2022, 12, 5, 13, 18, 32, 967, DateTimeKind.Utc).AddTicks(9366),
                             Name = "Pranie dywanów",
                             PriceOffer = 110,
                             Regularity = 0,
@@ -375,7 +380,7 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4387),
+                            CreatedDate = new DateTime(2022, 12, 5, 13, 18, 32, 967, DateTimeKind.Utc).AddTicks(9340),
                             Name = "Sprzątanie",
                             PriceOffer = 50,
                             Regularity = 0,
@@ -434,7 +439,7 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 3,
-                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4431),
+                            CreatedDate = new DateTime(2022, 12, 5, 13, 18, 32, 967, DateTimeKind.Utc).AddTicks(9391),
                             Name = "Mycie okien",
                             PriceOffer = 50,
                             Regularity = 0,
@@ -488,11 +493,27 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             Email = "jdsks@com",
-                            Name = "Romuald Krawczyk",
-                            PasswordHash = "#4566#",
+                            Name = "Janian",
+                            PasswordHash = "#1234#",
                             PhoneNumber = "123456",
                             RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Email = "agak@wp.pl",
+                            Name = "Zsoia",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 1
                         });
+                });
+
+            modelBuilder.Entity("Domain.Entities.Address", b =>
+                {
+                    b.HasOne("HelpHome.Entities.Offerent", null)
+                        .WithMany("Addresses")
+                        .HasForeignKey("OfferentId");
                 });
 
             modelBuilder.Entity("Domain.Entities.OfferentPreferences.CarpetWashingPreference", b =>
@@ -613,6 +634,8 @@ namespace Data.Migrations
 
             modelBuilder.Entity("HelpHome.Entities.Offerent", b =>
                 {
+                    b.Navigation("Addresses");
+
                     b.Navigation("BlockedSeekers");
                 });
 

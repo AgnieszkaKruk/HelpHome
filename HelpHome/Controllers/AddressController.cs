@@ -23,7 +23,5 @@ namespace HelpHomeApi.Controllers
             return Ok(address);
         }
        
-
-
     }
 }

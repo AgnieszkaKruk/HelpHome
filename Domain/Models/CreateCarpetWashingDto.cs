@@ -21,5 +21,6 @@ namespace Domain.Models
         public int PriceOffer { get; set; }
        
         public int SeekerId { get; set; }
+        public int AddressId { get; set; }
     }
 }

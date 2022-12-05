@@ -77,6 +77,22 @@ namespace Domain.Services
             _context.SaveChanges();
             return offer.Id;
         }
+
+        public void Delete(int id)
+        {
+            _logger.Warn($"Offer with id: {id} DELETE action invoked");
+            var offer = _context.CarpetWashingOffers.FirstOrDefault(u => u.Id == id);
+            if (offer is null)
+            {
+                throw new NotFoundException("Offer is not found");
+            }
+            else
+            {
+                _context.CarpetWashingOffers.Remove(offer);
+                _context.SaveChanges();
+
+            }
+        }
     }
 }
 

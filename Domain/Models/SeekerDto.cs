@@ -16,9 +16,9 @@ namespace Domain.Models
         //public ContactBy contact { get; set; }
 
 
-        public List<Cleaning> CleaningOffers = new List<Cleaning>();
-        public List<CarpetWashing> CarpetWashingOffers = new List<CarpetWashing>();
-        public List<WindowsCleaning> WindowsCleaningOffers = new List<WindowsCleaning>();
+        public List<Cleaning> CleaningOffers { get; set; } = new List<Cleaning>();
+        public List<CarpetWashing> CarpetWashingOffers { get; set; } = new List<CarpetWashing>();
+        public List<WindowsCleaning> WindowsCleaningOffers { get; set; } = new List<WindowsCleaning>();
 
     }
 }

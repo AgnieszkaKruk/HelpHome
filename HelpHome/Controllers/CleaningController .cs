@@ -38,6 +38,14 @@ namespace HelpHomeApi.Controllers
             var alloffers = _cleaningServices.GetAll(seekerId);
             return Ok(alloffers);
         }
-        
+
+        [HttpDelete("{offerId}")]
+        [Authorize]
+        public ActionResult Delete([FromRoute] int offerId)
+        {
+            _cleaningServices.Delete(offerId);
+            return NoContent();
+        }
+
     }
 }

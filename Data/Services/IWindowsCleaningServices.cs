@@ -7,5 +7,6 @@ namespace Domain.Services
         int CreateOffer(CreateWindowsCleaningDto dto, int seekerId);
         List<WindowsCleaningDto> GetAll(int seekerId);
         WindowsCleaningDto GetById(int seekerId, int offerId);
+        void Delete(int id);
     }
 }

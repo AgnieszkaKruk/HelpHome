@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Models;
-using HelpHome.Entities.OfferTypes;
-using HelpHomeApi.Exeptions;
+using Data.Exceptions;
 using HelpHomeApi;
 using System.Data.Entity;
 
@@ -26,12 +25,12 @@ namespace Data.Services
             var offerent = _context.Oferrents.FirstOrDefault(u => u.Id == offerentId);
             if (offerent is null)
             {
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
             var preference = _context.CleaningPreferences.FirstOrDefault(x => x.Id == offerentId);
             if (preference is null || preference.OfferentId != offerentId)
             {
-                throw new NotFoundExeption("Offer is not found");
+                throw new NotFoundException("Offer is not found");
             }
 
             var preferenceDto = _mapper.Map<CleaningPreferenceDto>(preference);
@@ -45,7 +44,7 @@ namespace Data.Services
             var offerent = _context.Seekers.Include(x => x.CleaningOffers).FirstOrDefault(u => u.Id == offerentId);
             if (offerent is null)
             {
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundException("Seeker is not found");
             }
 
             var allPreferences = offerent.CleaningOffers;

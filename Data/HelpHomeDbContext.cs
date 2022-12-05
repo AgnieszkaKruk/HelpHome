@@ -132,20 +132,32 @@ namespace Data
                     RoleId = 3
                 }
                 );
-
             modelBuilder.Entity<Seeker>()
-                .HasData(new Seeker { Name = "Romuald Krawczyk", Id = 1, Email = "jdsks@com", PhoneNumber = "123456" }, new Seeker
+                .HasData(
+                new Seeker
                 {
-                    Name = "Alicja Olos",
+                    Name = "Janian",
+                    Id = 1,
+                    Email = "jdsks@com",
+                    PhoneNumber = "123456",
+                    PasswordHash = "#1234#",
+                    RoleId = 1
+                }, new Seeker
+                {
+                    Name = "Zsoia",
                     Id = 2,
-                    Email = "Ania@pl",
-                    PhoneNumber = "234123111"
-                });
+                    Email = "agak@wp.pl",
+                    PhoneNumber = "444555333",
+                    PasswordHash = "#$%%^^&&",
+                    RoleId = 1
+                }
+                );
+
+
             modelBuilder.Entity<Address>()
                 .HasData(new Address()
                 {
-                    Id = 1,
-                    
+                    Id = 1,            
                     City = "Orzesze",
                     Street = "Dworcowa",
                     PostalCode = "43-190"
@@ -153,8 +165,7 @@ namespace Data
             modelBuilder.Entity<Address>()
                .HasData(new Address()
                {
-                   Id = 2,
-                   
+                   Id = 2,             
                    City = "Mikołów",
                    Street = "Majowa",
                    PostalCode = "43-190"
@@ -162,8 +173,7 @@ namespace Data
             modelBuilder.Entity<Address>()
                .HasData(new Address()
                {
-                   Id = 3,
-                   
+                   Id = 3,       
                    City = "Katowice",
                    Street = "Głogowa",
                    PostalCode = "43-190"
@@ -177,21 +187,11 @@ namespace Data
                     SeekerId = 1,
                     PriceOffer = 50,
                     Regularity = Domain.Entities.Utils.Regularity.OnceAWeek,
-                    SurfaceToClean = 100
-                });
-            modelBuilder.Entity<Address>()
-                .HasData(new Address()
-                {
-                    Id = 1,
-                    OfferentId = 1,
-                    City = "Orzesze",
-                    Street = "Dworcowa",
-                    PostalCode = "43-190"
-                });
                     SurfaceToClean = 100,
                     AddressId = 1
                 });
- 
+           
+                    
             modelBuilder.Entity<CarpetWashing>()
                 .HasData(new CarpetWashing
                 {
