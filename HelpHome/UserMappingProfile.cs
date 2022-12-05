@@ -12,11 +12,14 @@ namespace HelpHomeApi
         {
             CreateMap<Seeker, SeekerDto>();
             CreateMap<Offerent, OfferentDto>();
-            CreateMap<CreateSeekerDto, Seeker>();           
+            //CreateMap<CreateSeekerDto, Seeker>();           
             CreateMap<CreateCarpetWashingDto, CarpetWashing> ();
             CreateMap<CarpetWashing, CarpetWashingDto>();
             CreateMap<Cleaning, CleaningDto>();
             CreateMap<WindowsCleaning, WindowsCleaningDto>();
+            CreateMap<CreateWindowsCleaningDto, WindowsCleaning>();
+            CreateMap<CreateCleaningDto, Cleaning>();
+
         }
     }
 }

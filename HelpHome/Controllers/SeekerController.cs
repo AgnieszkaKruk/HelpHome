@@ -1,16 +1,11 @@
-﻿using AutoMapper;
-using Data;
-using Domain.Models;
+﻿using Domain.Models;
 using Domain.Services;
-using HelpHome.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
 
 namespace HelpHomeApi.Controllers
 {
-    
+
     [Route("api/seekers")]
     [ApiController]
     public class SeekerController : Controller
@@ -23,7 +18,7 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<SeekerDto>> GetAll()
+        public ActionResult<IEnumerable<SeekerDto>> GetAllWithOffers()
         {
             var seekers = _seekerServices.GetAllWithOffers();
             return Ok(seekers);

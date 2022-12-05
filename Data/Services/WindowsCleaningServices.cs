@@ -3,8 +3,7 @@ using Data;
 using Domain.Models;
 using HelpHome.Entities.OfferTypes;
 using HelpHomeApi;
-
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 using Data.Exceptions;
 
 namespace Domain.Services
@@ -49,7 +48,7 @@ namespace Domain.Services
                 throw new NotFoundException("Seeker is not found");
             }
 
-            var allOffers = _context.WindowsCleaningOffers.Include(s => s.Address).Where(u => u.SeekerId == seekerId);
+            var allOffers = _context.WindowsCleaningOffers.Include(s => s.Address).Where(u => u.SeekerId == seekerId).ToList();
 
             var allOffersDto = _mapper.Map<List<WindowsCleaningDto>>(allOffers);
             return allOffersDto;

@@ -1,10 +1,5 @@
-﻿using Domain.Entities.Utils;
-using System;
-using System.Collections.Generic;
+﻿using Domain.Entities;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Models
 {
@@ -16,5 +11,7 @@ namespace Domain.Models
         public DateTime CreatedDate { get; set; }
         public DateTime UpdateDate { get; set; }
         public int PriceOffer { get; set; }
+        public Address Address { get; set; }
+
     }
 }

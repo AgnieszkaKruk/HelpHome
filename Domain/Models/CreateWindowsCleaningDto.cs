@@ -1,4 +1,5 @@
-﻿using Domain.Entities.Utils;
+﻿using Domain.Entities;
+using Domain.Entities.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -16,7 +17,10 @@ namespace Domain.Models
         public DateTime UpdateDate { get; set; }
         public int SeekerId { get; set; }
         public int PriceOffer { get; set; }
-        public int AddressId { get; set; }
+        public Address Address { get; set; }
+       
+
+
         //public List<WindowsType>? windowsType = new List<WindowsType>();
         // public Regularity Regularity { get; set; }
         //public List<AdditionalServices>? additionalServices = new List<AdditionalServices>();

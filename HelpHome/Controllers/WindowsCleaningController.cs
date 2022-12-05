@@ -17,7 +17,7 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+       // [Authorize]
         public ActionResult AddOffer ([FromRoute] int seekerId,[FromBody] CreateWindowsCleaningDto dto)
         {
            var newOfferId = _windowsCleaningServices.CreateOffer(dto, seekerId);

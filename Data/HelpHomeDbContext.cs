@@ -75,7 +75,7 @@ namespace Data
                 eb.Property(o => o.CreatedDate).HasDefaultValueSql("getutcdate()");
                 eb.Property(o => o.UpdateDate).ValueGeneratedOnUpdate();
                 eb.Property(d => d.CarpetCount).IsRequired();
-                eb.HasOne(d => d.Seeker).WithMany(o => o.CarpetWaschingOffers).HasForeignKey(d => d.SeekerId);
+                eb.HasOne(d => d.Seeker).WithMany(o => o.CarpetWashingOffers).HasForeignKey(d => d.SeekerId);
                 //eb.HasMany(d => d.Addresses).WithOne(o => o.CarpetWashing).HasForeignKey(s => s.CarpetWashingId);
             });
 

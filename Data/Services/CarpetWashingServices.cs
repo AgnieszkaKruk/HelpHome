@@ -1,16 +1,10 @@
 ﻿using AutoMapper;
 using Data;
+using Data.Exceptions;
 using Domain.Models;
-using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
 using HelpHomeApi;
-using Data.Exceptions;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Services
 {
@@ -73,7 +67,7 @@ namespace Domain.Services
             var offer = _mapper.Map<CarpetWashing>(dto);
             offer.SeekerId = seekerId;
             _context.CarpetWashingOffers.Add(offer);
-            seeker.CarpetWaschingOffers.Add(offer);
+            seeker.CarpetWashingOffers.Add(offer);
             _context.SaveChanges();
             return offer.Id;
         }

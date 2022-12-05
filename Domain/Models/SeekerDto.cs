@@ -1,11 +1,4 @@
-﻿using Domain.Entities.Utils;
-using HelpHome.Entities;
-using HelpHome.Entities.OfferTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HelpHome.Entities.OfferTypes;
 
 namespace Domain.Models
 {

@@ -17,7 +17,7 @@ namespace HelpHome.Entities
 
         public List<Offerent> favouriteOfferents = new List<Offerent>();
         public List<Cleaning> CleaningOffers = new List<Cleaning>();
-        public List<CarpetWashing> CarpetWaschingOffers = new List<CarpetWashing>();
+        public List<CarpetWashing> CarpetWashingOffers  = new List<CarpetWashing>();
         public List<WindowsCleaning> WindowsCleaningOffers = new List<WindowsCleaning>();
 
     }

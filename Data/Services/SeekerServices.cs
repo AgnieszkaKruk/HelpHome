@@ -5,7 +5,7 @@ using HelpHome.Entities;
 using HelpHomeApi;
 using Data.Exceptions;
 
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Domain.Services
 {
@@ -25,7 +25,8 @@ namespace Domain.Services
         public IEnumerable<SeekerDto> GetAllWithOffers()
         {
             _logger.Info($"Seekers GET AllWithOffers action invoked");
-            var seekers = _context.Seekers.Include(x=>x.CleaningOffers).Include(x=>x.WindowsCleaningOffers).Include(x=>x.CarpetWaschingOffers);
+            var seekers = _context.Seekers.Include(x=>x.CleaningOffers).Include(x=>x.WindowsCleaningOffers).Include(x=>x.CarpetWashingOffers);
+            
             if (seekers is null)
             {
                 throw new NotFoundException("Seekers not found");
@@ -40,7 +41,7 @@ namespace Domain.Services
         public IEnumerable<SeekerDto> GetAll()
         {
             _logger.Info($"Seekers GET All action invoked");
-            var seekers = _context.Seekers.Include(x => x.CleaningOffers).Include(x => x.WindowsCleaningOffers).Include(x => x.CarpetWaschingOffers).ToList();
+            var seekers = _context.Seekers.ToList();
             if (seekers is null)
             {
                 throw new NotFoundException("Seekers not found");
@@ -56,7 +57,8 @@ namespace Domain.Services
         public SeekerDto GetById(int id)
         {
             _logger.Info($"Seeker with id: {id} GET action invoked");
-            var seeker = _context.Seekers.Include(x => x.CleaningOffers).Include(x => x.WindowsCleaningOffers).Include(x => x.CarpetWaschingOffers).FirstOrDefault(s => s.Id == id);
+            var seeker = _context.Seekers.Include(x => x.CleaningOffers).Include(x => x.WindowsCleaningOffers).Include(x => x.CarpetWashingOffers).FirstOrDefault(s => s.Id == id);
+          
             if (seeker is null)
             {
                 throw new NotFoundException("Seeker is not found");

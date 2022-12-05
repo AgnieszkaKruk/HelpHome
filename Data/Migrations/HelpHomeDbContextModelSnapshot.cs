@@ -569,7 +569,7 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.HasOne("HelpHome.Entities.Seeker", "Seeker")
-                        .WithMany("CarpetWaschingOffers")
+                        .WithMany("CarpetWashingOffers")
                         .HasForeignKey("SeekerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -641,7 +641,7 @@ namespace Data.Migrations
 
             modelBuilder.Entity("HelpHome.Entities.Seeker", b =>
                 {
-                    b.Navigation("CarpetWaschingOffers");
+                    b.Navigation("CarpetWashingOffers");
 
                     b.Navigation("CleaningOffers");
 

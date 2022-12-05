@@ -18,7 +18,7 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Seeker")]
+       // [Authorize(Roles = "Seeker")]
         public ActionResult AddOffer ([FromRoute] int seekerId,[FromBody] CreateCleaningDto dto)
         {
            var newOfferId = _cleaningServices.CreateOffer(dto, seekerId);

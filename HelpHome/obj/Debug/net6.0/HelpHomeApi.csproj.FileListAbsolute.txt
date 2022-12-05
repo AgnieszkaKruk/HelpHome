@@ -75,7 +75,6 @@ C:\Users\Dell\source\repos\HelpHome\HelpHome\obj\Debug\net6.0\HelpHomeApi.Genera
 C:\Users\Dell\source\repos\HelpHome\HelpHome\obj\Debug\net6.0\HelpHomeApi.AssemblyInfoInputs.cache
 C:\Users\Dell\source\repos\HelpHome\HelpHome\obj\Debug\net6.0\HelpHomeApi.AssemblyInfo.cs
 C:\Users\Dell\source\repos\HelpHome\HelpHome\obj\Debug\net6.0\HelpHomeApi.csproj.CoreCompileInputs.cache
-C:\Users\Dell\source\repos\HelpHome\HelpHome\obj\Debug\net6.0\HelpHomeApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Dell\source\repos\HelpHome\HelpHome\obj\Debug\net6.0\HelpHomeApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Dell\source\repos\HelpHome\HelpHome\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Dell\source\repos\HelpHome\HelpHome\obj\Debug\net6.0\staticwebassets.development.json

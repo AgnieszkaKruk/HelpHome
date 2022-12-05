@@ -16,12 +16,14 @@ namespace HelpHomeApi.Controllers
             _addressServices = addressServices;
 
         }
-        [HttpGet]
+        [HttpGet] 
         public ActionResult<Address> GetById([FromRoute] int offerId, string offertype)
         {
             var address = _addressServices.GetById(offerId,offertype);
             return Ok(address);
         }
+        
+        
        
     }
 }
