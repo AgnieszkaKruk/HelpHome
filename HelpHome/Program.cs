@@ -65,7 +65,12 @@ try
     builder.Services.AddScoped<IValidator<RegisterSeekerDto>, RegisterSeekerDtoValidator>();
     builder.Services.AddScoped<IValidator<RegisterOfferentDto>, RegisterOfferentDtoValidator>();
     builder.Services.AddSwaggerGen();
-
+    builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy
+    .WithOrigins("http://localhost:3000")
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .AllowCredentials()
+    ));
 
     var app = builder.Build();
 
@@ -83,7 +88,7 @@ try
     
 
     app.MapControllers();
-
+    app.UseCors();
     app.Run();
 }
 catch (Exception exception)
