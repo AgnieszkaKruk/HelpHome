@@ -70,6 +70,47 @@ namespace Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Domain.Entities.Location", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("District")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Locations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            City = "Katowice",
+                            District = "Bogucice"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            City = "Bytom",
+                            District = "Szombierki"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            City = "Katowice",
+                            District = "Ligota"
+                        });
+                });
+
             modelBuilder.Entity("Domain.Entities.OfferentPreferences.CarpetWashingPreference", b =>
                 {
                     b.Property<int>("Id")
@@ -82,7 +123,16 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("getutcdate()");
+
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("OfferentId")
                         .HasColumnType("int");
@@ -91,13 +141,29 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateDate")
+                        .ValueGeneratedOnUpdate()
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("LocationId");
+
                     b.HasIndex("OfferentId");
 
                     b.ToTable("CarpetWashingPreferences");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CarpetSize = 0,
+                            CreatedDate = new DateTime(2022, 12, 2, 14, 41, 15, 62, DateTimeKind.Utc).AddTicks(5166),
+                            LocationId = 2,
+                            Name = "Pranie dywanów",
+                            OfferentId = 2,
+                            PriceOffer = 200,
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.OfferentPreferences.CleaningPreference", b =>
@@ -112,6 +178,9 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("getutcdate()");
+
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -132,9 +201,24 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("LocationId");
+
                     b.HasIndex("OfferentId");
 
                     b.ToTable("CleaningPreferences");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2022, 12, 2, 14, 41, 15, 62, DateTimeKind.Utc).AddTicks(5155),
+                            LocationId = 1,
+                            Name = "Sprzątanie",
+                            OfferentId = 1,
+                            PriceOffer = 800,
+                            Regularity = 0,
+                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.OfferentPreferences.WindowsCleaningPreference", b =>
@@ -147,6 +231,9 @@ namespace Data.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("LocationId")
+                        .HasColumnType("int");
 
                     b.Property<int>("OfferentId")
                         .HasColumnType("int");
@@ -162,17 +249,20 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("LocationId");
+
                     b.HasIndex("OfferentId");
 
-                    b.ToTable("windowsCleaningPreferences");
+                    b.ToTable("WindowsCleaningPreferences");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4456),
-                            OfferentId = 1,
-                            PriceOffer = 300,
+                            CreatedDate = new DateTime(2022, 12, 2, 14, 41, 15, 62, DateTimeKind.Utc).AddTicks(5186),
+                            LocationId = 3,
+                            OfferentId = 2,
+                            PriceOffer = 2000,
                             Regularity = 0,
                             UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
@@ -243,9 +333,6 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PriceOffer")
-                        .HasColumnType("int");
-
                     b.Property<int>("Regularity")
                         .HasColumnType("int");
 
@@ -270,9 +357,8 @@ namespace Data.Migrations
                             Id = 1,
                             AddressId = 2,
                             CarpetCount = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4409),
+                            CreatedDate = new DateTime(2022, 12, 2, 14, 41, 15, 62, DateTimeKind.Utc).AddTicks(5124),
                             Name = "Pranie dywanów",
-                            PriceOffer = 110,
                             Regularity = 0,
                             SeekerId = 1,
                             UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -298,9 +384,6 @@ namespace Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PriceOffer")
-                        .HasColumnType("int");
 
                     b.Property<int>("Regularity")
                         .HasColumnType("int");
@@ -328,9 +411,8 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 1,
-                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4387),
+                            CreatedDate = new DateTime(2022, 12, 2, 14, 41, 15, 62, DateTimeKind.Utc).AddTicks(5061),
                             Name = "Sprzątanie",
-                            PriceOffer = 50,
                             Regularity = 0,
                             SeekerId = 1,
                             SurfaceToClean = 100,
@@ -358,9 +440,6 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PriceOffer")
-                        .HasColumnType("int");
-
                     b.Property<int>("Regularity")
                         .HasColumnType("int");
 
@@ -387,9 +466,8 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 3,
-                            CreatedDate = new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4431),
+                            CreatedDate = new DateTime(2022, 12, 2, 14, 41, 15, 62, DateTimeKind.Utc).AddTicks(5142),
                             Name = "Mycie okien",
-                            PriceOffer = 50,
                             Regularity = 0,
                             SeekerId = 1,
                             UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -446,33 +524,57 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Domain.Entities.OfferentPreferences.CarpetWashingPreference", b =>
                 {
-                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                    b.HasOne("Domain.Entities.Location", "Location")
                         .WithMany()
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                        .WithMany("CarpetWashingPreferences")
                         .HasForeignKey("OfferentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Location");
 
                     b.Navigation("Offerent");
                 });
 
             modelBuilder.Entity("Domain.Entities.OfferentPreferences.CleaningPreference", b =>
                 {
-                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                    b.HasOne("Domain.Entities.Location", "Location")
                         .WithMany()
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                        .WithMany("CleaningPreferences")
                         .HasForeignKey("OfferentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Location");
 
                     b.Navigation("Offerent");
                 });
 
             modelBuilder.Entity("Domain.Entities.OfferentPreferences.WindowsCleaningPreference", b =>
                 {
-                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                    b.HasOne("Domain.Entities.Location", "Location")
                         .WithMany()
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HelpHome.Entities.Offerent", "Offerent")
+                        .WithMany("WindowsCleaningPreferences")
                         .HasForeignKey("OfferentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Location");
 
                     b.Navigation("Offerent");
                 });
@@ -544,6 +646,12 @@ namespace Data.Migrations
             modelBuilder.Entity("HelpHome.Entities.Offerent", b =>
                 {
                     b.Navigation("BlockedSeekers");
+
+                    b.Navigation("CarpetWashingPreferences");
+
+                    b.Navigation("CleaningPreferences");
+
+                    b.Navigation("WindowsCleaningPreferences");
                 });
 
             modelBuilder.Entity("HelpHome.Entities.Seeker", b =>

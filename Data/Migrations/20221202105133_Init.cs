@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class InitDb : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -22,6 +22,20 @@ namespace Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Addresses", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Locations",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    District = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Locations", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -49,11 +63,18 @@ namespace Data.Migrations
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     PriceOffer = table.Column<int>(type: "int", nullable: false),
-                    OfferentId = table.Column<int>(type: "int", nullable: false)
+                    OfferentId = table.Column<int>(type: "int", nullable: false),
+                    LocationId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CarpetWashingPreferences", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CarpetWashingPreferences_Locations_LocationId",
+                        column: x => x.LocationId,
+                        principalTable: "Locations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CarpetWashingPreferences_Oferrents_OfferentId",
                         column: x => x.OfferentId,
@@ -73,11 +94,18 @@ namespace Data.Migrations
                     Regularity = table.Column<int>(type: "int", nullable: false),
                     PriceOffer = table.Column<int>(type: "int", nullable: false),
                     OfferentId = table.Column<int>(type: "int", nullable: false),
+                    LocationId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CleaningPreferences", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CleaningPreferences_Locations_LocationId",
+                        column: x => x.LocationId,
+                        principalTable: "Locations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CleaningPreferences_Oferrents_OfferentId",
                         column: x => x.OfferentId,
@@ -117,11 +145,18 @@ namespace Data.Migrations
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Regularity = table.Column<int>(type: "int", nullable: false),
                     PriceOffer = table.Column<int>(type: "int", nullable: false),
-                    OfferentId = table.Column<int>(type: "int", nullable: false)
+                    OfferentId = table.Column<int>(type: "int", nullable: false),
+                    LocationId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_windowsCleaningPreferences", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_windowsCleaningPreferences_Locations_LocationId",
+                        column: x => x.LocationId,
+                        principalTable: "Locations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_windowsCleaningPreferences_Oferrents_OfferentId",
                         column: x => x.OfferentId,
@@ -140,7 +175,6 @@ namespace Data.Migrations
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "getutcdate()"),
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Regularity = table.Column<int>(type: "int", nullable: false),
-                    PriceOffer = table.Column<int>(type: "int", nullable: false),
                     SeekerId = table.Column<int>(type: "int", nullable: false),
                     AddressId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
@@ -172,7 +206,6 @@ namespace Data.Migrations
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Regularity = table.Column<int>(type: "int", nullable: false),
                     SurfaceToClean = table.Column<int>(type: "int", nullable: false),
-                    PriceOffer = table.Column<int>(type: "int", nullable: false),
                     SeekerId = table.Column<int>(type: "int", nullable: false),
                     AddressId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
@@ -204,7 +237,6 @@ namespace Data.Migrations
                     UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Regularity = table.Column<int>(type: "int", nullable: false),
                     WindowsCount = table.Column<int>(type: "int", nullable: false),
-                    PriceOffer = table.Column<int>(type: "int", nullable: false),
                     SeekerId = table.Column<int>(type: "int", nullable: false),
                     AddressId = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
@@ -237,6 +269,11 @@ namespace Data.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Locations",
+                columns: new[] { "Id", "City", "District" },
+                values: new object[] { 1, "Katowice", "Bogucice" });
+
+            migrationBuilder.InsertData(
                 table: "Oferrents",
                 columns: new[] { "Id", "Email", "Name", "PhoneNumber" },
                 values: new object[,]
@@ -256,23 +293,23 @@ namespace Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "CarpetWashingOffers",
-                columns: new[] { "Id", "AddressId", "CarpetCount", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "UpdateDate" },
-                values: new object[] { 1, 2, 1, new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4409), "Pranie dywanów", 110, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                columns: new[] { "Id", "AddressId", "CarpetCount", "CreatedDate", "Name", "Regularity", "SeekerId", "UpdateDate" },
+                values: new object[] { 1, 2, 1, new DateTime(2022, 12, 2, 10, 51, 33, 148, DateTimeKind.Utc).AddTicks(9984), "Pranie dywanów", 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
 
             migrationBuilder.InsertData(
                 table: "CleaningOffers",
-                columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "SurfaceToClean", "UpdateDate" },
-                values: new object[] { 1, 1, new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4387), "Sprzątanie", 50, 0, 1, 100, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "Regularity", "SeekerId", "SurfaceToClean", "UpdateDate" },
+                values: new object[] { 1, 1, new DateTime(2022, 12, 2, 10, 51, 33, 148, DateTimeKind.Utc).AddTicks(9964), "Sprzątanie", 0, 1, 100, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+
+            migrationBuilder.InsertData(
+                table: "CleaningPreferences",
+                columns: new[] { "Id", "CreatedDate", "LocationId", "Name", "OfferentId", "PriceOffer", "Regularity", "UpdateDate" },
+                values: new object[] { 1, new DateTime(2022, 12, 2, 10, 51, 33, 149, DateTimeKind.Utc).AddTicks(17), 1, "Sprzątanie", 1, 800, 0, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
 
             migrationBuilder.InsertData(
                 table: "WindowsCleaningOffers",
-                columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "PriceOffer", "Regularity", "SeekerId", "UpdateDate", "WindowsCount" },
-                values: new object[] { 1, 3, new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4431), "Mycie okien", 50, 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 15 });
-
-            migrationBuilder.InsertData(
-                table: "windowsCleaningPreferences",
-                columns: new[] { "Id", "CreatedDate", "OfferentId", "PriceOffer", "Regularity", "UpdateDate" },
-                values: new object[] { 1, new DateTime(2022, 11, 28, 17, 17, 36, 639, DateTimeKind.Utc).AddTicks(4456), 1, 300, 0, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
+                columns: new[] { "Id", "AddressId", "CreatedDate", "Name", "Regularity", "SeekerId", "UpdateDate", "WindowsCount" },
+                values: new object[] { 1, 3, new DateTime(2022, 12, 2, 10, 51, 33, 149, DateTimeKind.Utc).AddTicks(1), "Mycie okien", 0, 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 15 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_CarpetWashingOffers_AddressId",
@@ -283,6 +320,11 @@ namespace Data.Migrations
                 name: "IX_CarpetWashingOffers_SeekerId",
                 table: "CarpetWashingOffers",
                 column: "SeekerId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CarpetWashingPreferences_LocationId",
+                table: "CarpetWashingPreferences",
+                column: "LocationId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CarpetWashingPreferences_OfferentId",
@@ -298,6 +340,11 @@ namespace Data.Migrations
                 name: "IX_CleaningOffers_SeekerId",
                 table: "CleaningOffers",
                 column: "SeekerId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CleaningPreferences_LocationId",
+                table: "CleaningPreferences",
+                column: "LocationId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CleaningPreferences_OfferentId",
@@ -318,6 +365,11 @@ namespace Data.Migrations
                 name: "IX_WindowsCleaningOffers_SeekerId",
                 table: "WindowsCleaningOffers",
                 column: "SeekerId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_windowsCleaningPreferences_LocationId",
+                table: "windowsCleaningPreferences",
+                column: "LocationId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_windowsCleaningPreferences_OfferentId",
@@ -350,6 +402,9 @@ namespace Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Seekers");
+
+            migrationBuilder.DropTable(
+                name: "Locations");
 
             migrationBuilder.DropTable(
                 name: "Oferrents");

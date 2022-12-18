@@ -1,0 +1,763 @@
+
+-------------- Error (2022-12-02 09:49:05.6898) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 09:53:17.2595) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 09:53:23.1248) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 10:02:40.6482) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 10:02:58.8067) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 10:03:14.2372) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+->(2022-12-02 10:10:24.1810) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:11:14.0991) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:12:19.3183) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:14:04.8987) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:16:47.2356) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:19:44.8393) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:19:57.3666) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:19:59.8815) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:21:22.4343) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:21:25.3996) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:21:25.4658) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:22:55.1275) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:22:58.9962) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:22:59.0956) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:38:09.6931) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:38:11.8250) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:38:11.8791) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:38:44.4565) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:38:46.5352) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:38:46.5865) : Info : All CarpetWashing offers GET All action invoked
+
+-------------- Error (2022-12-02 10:46:52.3143) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 10:47:51.3602) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 10:48:03.3765) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 10:48:11.6827) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+->(2022-12-02 10:50:18.8583) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:50:20.9530) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 10:50:21.0073) : Info : All CarpetWashing offers GET All action invoked
+
+-------------- Error (2022-12-02 11:10:33.9065) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:14:43.1379) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:19:17.7625) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:19:28.0121) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 34
+  Additional Info: Stopped program because of exception
+
+->(2022-12-02 11:35:25.6436) : Info : Offerent with id: 1 GET action invoked
+->(2022-12-02 11:38:37.2639) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 11:38:49.0497) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 11:39:21.2217) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 11:39:51.6132) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 11:39:55.2819) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 11:40:48.8060) : Info : Cleaning offer with id: 1 GET action invoked
+
+-------------- Error (2022-12-02 11:42:29.3019) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:42:41.3762) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+->(2022-12-02 11:43:00.4669) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 11:46:45.1600) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 11:47:27.9834) : Info : Offerent with id: 1 GET action invoked
+
+-------------- Error (2022-12-02 11:49:04.7816) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:49:16.7656) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:51:13.1084) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:51:17.2822) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:51:32.1379) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 11:51:41.5013) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+->(2022-12-02 11:54:53.0844) : Info : Offerent with id: 1 GET action invoked
+->(2022-12-02 11:55:04.7806) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 11:55:07.5967) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 11:55:45.2728) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 11:56:04.0982) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 11:59:13.0171) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 12:00:17.8433) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 12:01:27.7522) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 12:03:37.1482) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 12:04:12.1228) : Info : Seekers GET AllWithOffers action invoked
+->(2022-12-02 12:04:14.6200) : Info : Seeker with id: 1 GET action invoked
+->(2022-12-02 12:04:29.4278) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 12:04:36.7282) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 12:04:40.5852) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 12:05:30.2280) : Info : Offerent with id: 1 GET action invoked
+->(2022-12-02 12:05:44.8756) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 12:05:58.7462) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 12:11:07.6276) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 12:58:34.0394) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 12:58:39.6217) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 12:58:50.3743) : Info : Seekers GET AllWithOffers action invoked
+->(2022-12-02 12:58:57.9978) : Info : Seekers GET AllWithOffers action invoked
+->(2022-12-02 12:59:00.8908) : Info : Seeker with id: 1 GET action invoked
+->(2022-12-02 12:59:18.9102) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 12:59:24.1750) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 12:59:33.4964) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 13:01:05.2900) : Info : Offerent with id: 1 GET action invoked
+->(2022-12-02 13:01:16.4856) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+
+-------------- Error (2022-12-02 13:02:14.5061) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 13:02:25.5872) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 35
+  Additional Info: Stopped program because of exception
+
+->(2022-12-02 13:07:04.0408) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 13:09:51.0697) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 13:13:36.5602) : Info : All CWindowsCleaning offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 14:48:32.0221) : Info : All CWindowsCleaning offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 14:48:59.9480) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 14:49:11.8018) : Info : Offerent with id: 1 GET action invoked
+->(2022-12-02 14:49:29.3727) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 14:52:55.6161) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 14:53:24.9505) : Info : Cleaning offer with id: 1 GET action invoked
+
+-------------- Error (2022-12-02 14:56:51.4996) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 36
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 14:57:02.7158) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 36
+  Additional Info: Stopped program because of exception
+
+->(2022-12-02 14:58:09.2175) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 14:59:59.9710) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 15:00:06.8948) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 15:09:34.2518) : Info : Offerent with id: 1 GET action invoked
+->(2022-12-02 15:09:42.1970) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 15:09:47.9614) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 15:10:04.6669) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 15:10:09.7129) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 15:11:18.7279) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 15:11:40.2358) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 15:11:52.6299) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 15:13:17.1378) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 15:13:32.7899) : Info : All CarpetWashing offers from Seeker with id: 2 GET All action invoked
+->(2022-12-02 15:14:26.3488) : Info : All CarpetWashing offers from Seeker with id: 2 GET All action invoked
+->(2022-12-02 15:15:17.9042) : Info : All CarpetWashing offers from Seeker with id: 2 GET All action invoked
+->(2022-12-02 15:17:40.9806) : Info : All CarpetWashing offers from Seeker with id: 2 GET All action invoked
+->(2022-12-02 15:17:48.6977) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 15:24:38.8746) : Info : All CarpetWashing offers from Seeker with id: 2 GET All action invoked
+->(2022-12-02 15:24:46.0889) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 15:27:43.1715) : Info : Cleaning offer with id: 1 GET action invoked
+
+-------------- Error (2022-12-02 15:41:14.1705) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 36
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2022-12-02 15:41:24.1725) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 36
+  Additional Info: Stopped program because of exception
+
+->(2022-12-02 15:48:14.1868) : Info : Cleaning offer with id: 1 GET action invoked
+->(2022-12-02 15:49:41.5588) : Info : All CarpetWashing offers from Seeker with id: 2 GET All action invoked
+->(2022-12-02 15:49:46.1225) : Info : Offerent with id: 2 GET action invoked
+->(2022-12-02 15:49:57.6414) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 15:49:57.7539) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-02 15:49:57.7724) : Info : All CarpetWashing offers GET All action invoked
+
+-------------- Error (2022-12-02 15:59:42.9182) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 15:59:42.9851) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:00:06.5909) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:00:06.5909) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:00:49.9647) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:00:50.0298) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:02:31.2392) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:02:31.3047) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:03:24.1471) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:03:24.2091) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:04:01.8594) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+
+-------------- Error (2022-12-02 16:04:01.9232) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.AllPreferencesController'.
+
+->(2022-12-02 16:09:28.8158) : Info : Offerent with id: 2 GET action invoked
+
+-------------- Error (2022-12-02 16:11:05.8591) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+
+
+-------------- Error (2022-12-02 16:11:05.9197) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+
+
+-------------- Error (2022-12-02 16:11:34.8562) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+
+
+-------------- Error (2022-12-02 16:11:34.9281) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+
+
+-------------- Error (2022-12-02 16:11:52.9028) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+
+
+-------------- Error (2022-12-02 16:11:52.9662) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+
+
+-------------- Error (2022-12-02 16:12:04.1005) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method4(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+
+
+-------------- Error (2022-12-02 16:12:04.1005) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IWindowsCleaningPreferenceServices' while attempting to activate 'HelpHomeApi.Controllers.WindowsCleaningPreferenceController'.
+
+->(2022-12-02 16:14:32.6388) : Info : All CarpetWashing offers from Seeker with id: 1 GET All action invoked
+->(2022-12-02 16:14:37.6839) : Info : Cleaning offer with id: 1 GET action invoked

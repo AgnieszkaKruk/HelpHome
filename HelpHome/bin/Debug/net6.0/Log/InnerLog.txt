@@ -520,3 +520,1326 @@
 2022-11-28 19:13:56.3422 Info Adding target FileTarget(Name=otherFile-web)
 2022-11-28 19:13:56.4008 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
 2022-11-28 19:13:58.8908 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 13:08:45.3879 Info Message Template Auto Format enabled
+2022-12-01 13:08:45.4020 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 13:08:45.4998 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 13:08:45.4998 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 13:08:45.5352 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 13:08:46.5698 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:10:59.8762 Info Message Template Auto Format enabled
+2022-12-01 15:10:59.8903 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:10:59.9873 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:10:59.9873 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:11:00.0503 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:11:01.8674 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:12:52.7815 Info Message Template Auto Format enabled
+2022-12-01 15:12:52.8097 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:12:53.0630 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:12:53.1146 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:12:53.1540 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:12:54.0861 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:21:41.5745 Info Message Template Auto Format enabled
+2022-12-01 15:21:41.5915 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:21:41.6789 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:21:41.6821 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:21:41.7255 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:21:43.1540 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:23:56.9678 Info Message Template Auto Format enabled
+2022-12-01 15:23:57.0111 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:23:57.1781 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:23:57.1923 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:23:57.2562 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:23:58.8657 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:45:01.5645 Info Message Template Auto Format enabled
+2022-12-01 15:45:01.5793 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:45:01.6719 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:45:01.6719 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:45:01.7478 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:45:03.7083 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:45:10.5792 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:45:10.5792 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:46:15.8174 Info Message Template Auto Format enabled
+2022-12-01 15:46:15.8315 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:46:15.9226 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:46:15.9226 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:46:15.9651 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:46:17.7913 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:46:26.6031 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:46:26.6031 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:46:53.2061 Info Message Template Auto Format enabled
+2022-12-01 15:46:53.2253 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:46:53.3585 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:46:53.3585 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:46:53.3946 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:46:55.3951 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:47:30.2654 Info Message Template Auto Format enabled
+2022-12-01 15:47:30.2769 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:47:30.3712 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:47:30.3712 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:47:30.4084 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:47:32.4796 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:48:06.5201 Info Message Template Auto Format enabled
+2022-12-01 15:48:06.5355 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:48:06.6112 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:48:06.6112 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:48:06.6454 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:48:07.7149 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:48:14.1561 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:48:14.1561 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:48:45.9473 Info Message Template Auto Format enabled
+2022-12-01 15:48:45.9628 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:48:46.0583 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:48:46.0583 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:48:46.0982 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:48:48.1248 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:48:56.0475 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:48:56.0475 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:49:42.9236 Info Message Template Auto Format enabled
+2022-12-01 15:49:42.9410 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:49:43.0675 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:49:43.1564 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:49:43.3465 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:49:45.2146 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:49:52.5917 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:49:52.5917 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:50:44.9884 Info Message Template Auto Format enabled
+2022-12-01 15:50:45.0012 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:50:45.0959 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:50:45.0959 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:50:45.1321 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:50:47.4689 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:51:37.2607 Info Message Template Auto Format enabled
+2022-12-01 15:51:37.2768 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:51:37.3883 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:51:37.3883 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:51:37.4289 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:51:39.7692 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:54:06.5597 Info Message Template Auto Format enabled
+2022-12-01 15:54:06.6977 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:54:07.1181 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:54:07.1414 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:54:07.2159 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:54:08.8802 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:54:15.9487 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:54:15.9487 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:55:04.5772 Info Message Template Auto Format enabled
+2022-12-01 15:55:04.5904 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:55:04.6532 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:55:04.6532 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:55:04.6880 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:55:06.2524 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:55:14.1493 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:55:14.1547 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 15:56:53.5509 Info Message Template Auto Format enabled
+2022-12-01 15:56:53.5706 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 15:56:53.6539 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 15:56:53.6539 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 15:56:53.7143 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 15:56:55.6342 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:33:12.2033 Info Message Template Auto Format enabled
+2022-12-01 16:33:12.2171 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:33:12.3016 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:33:12.3016 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:33:12.3412 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:33:13.8954 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:34:10.6913 Info Message Template Auto Format enabled
+2022-12-01 16:34:10.7032 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:34:10.7806 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:34:10.7806 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:34:10.8093 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:34:12.3440 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:38:56.8674 Info Message Template Auto Format enabled
+2022-12-01 16:38:56.8775 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:38:56.9486 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:38:56.9486 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:38:56.9830 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:38:58.3624 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:39:08.3676 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:39:08.3706 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:39:16.8701 Info Message Template Auto Format enabled
+2022-12-01 16:39:16.8701 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:39:16.9398 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:39:16.9398 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:39:16.9755 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:39:18.5303 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:39:25.4652 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:39:25.4652 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:40:59.3781 Info Message Template Auto Format enabled
+2022-12-01 16:40:59.3890 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:40:59.4640 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:40:59.4640 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:40:59.4921 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:41:01.3201 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:41:07.3660 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:41:07.3694 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:41:17.8771 Info Message Template Auto Format enabled
+2022-12-01 16:41:17.8885 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:41:17.9592 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:41:17.9639 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:41:18.0091 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:41:20.0963 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:41:27.3472 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:41:27.3472 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:41:44.8728 Info Message Template Auto Format enabled
+2022-12-01 16:41:44.8905 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:41:44.9597 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:41:44.9635 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:41:44.9951 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:41:47.1964 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:41:53.7191 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:41:53.7191 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-01 16:42:09.6652 Info Message Template Auto Format enabled
+2022-12-01 16:42:09.6842 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:42:09.7655 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:42:09.7655 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:42:09.8476 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:42:11.0816 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:44:28.9090 Info Message Template Auto Format enabled
+2022-12-01 16:44:28.9194 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:44:28.9862 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:44:28.9862 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:44:29.0278 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:44:30.4529 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:45:26.2153 Info Message Template Auto Format enabled
+2022-12-01 16:45:26.2153 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:45:26.2882 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:45:26.2898 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:45:26.3309 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:45:28.2121 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:45:53.7714 Info Message Template Auto Format enabled
+2022-12-01 16:45:53.7861 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:45:53.8695 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:45:53.8695 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:45:53.9211 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:45:55.3459 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:49:39.1828 Info Message Template Auto Format enabled
+2022-12-01 16:49:39.1828 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 16:49:39.2561 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 16:49:39.2561 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 16:49:39.2855 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 16:49:40.8946 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 17:21:36.4778 Info Message Template Auto Format enabled
+2022-12-01 17:21:36.5234 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 17:21:37.1006 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 17:21:37.1212 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 17:21:37.1787 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 17:21:38.6726 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 17:44:57.1653 Info Message Template Auto Format enabled
+2022-12-01 17:44:57.1653 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 17:44:57.2937 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 17:44:57.2937 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 17:44:57.3680 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 17:44:59.1284 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 17:59:46.0401 Info Message Template Auto Format enabled
+2022-12-01 17:59:46.0401 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 17:59:46.1275 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 17:59:46.1275 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 17:59:46.1746 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 17:59:48.0732 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 19:16:38.9118 Info Message Template Auto Format enabled
+2022-12-01 19:16:38.9258 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-01 19:16:38.9972 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-01 19:16:39.0133 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-01 19:16:39.0474 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-01 19:16:40.3448 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 09:49:04.4856 Info Message Template Auto Format enabled
+2022-12-02 09:49:04.5299 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 09:49:04.6356 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 09:49:04.6356 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 09:49:04.6993 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 09:49:05.6687 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 09:49:05.8770 Info Shutdown() called. Logger closing...
+2022-12-02 09:49:05.8770 Info Closing old configuration.
+2022-12-02 09:49:05.9187 Info Logger has been closed down.
+2022-12-02 09:53:16.2020 Info Message Template Auto Format enabled
+2022-12-02 09:53:16.2225 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 09:53:16.3113 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 09:53:16.3113 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 09:53:16.3682 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 09:53:17.2595 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 09:53:17.3714 Info Shutdown() called. Logger closing...
+2022-12-02 09:53:17.3714 Info Closing old configuration.
+2022-12-02 09:53:17.4032 Info Logger has been closed down.
+2022-12-02 09:53:22.1559 Info Message Template Auto Format enabled
+2022-12-02 09:53:22.1741 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 09:53:22.2611 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 09:53:22.2611 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 09:53:22.3161 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 09:53:23.1098 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 09:53:23.2009 Info Shutdown() called. Logger closing...
+2022-12-02 09:53:23.2009 Info Closing old configuration.
+2022-12-02 09:53:23.2508 Info Logger has been closed down.
+2022-12-02 10:02:39.4608 Info Message Template Auto Format enabled
+2022-12-02 10:02:39.5185 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:02:39.7107 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:02:39.7167 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:02:39.7719 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:02:40.6049 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:02:40.7604 Info Shutdown() called. Logger closing...
+2022-12-02 10:02:40.7604 Info Closing old configuration.
+2022-12-02 10:02:40.8182 Info Logger has been closed down.
+2022-12-02 10:02:57.9489 Info Message Template Auto Format enabled
+2022-12-02 10:02:57.9681 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:02:58.0648 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:02:58.0648 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:02:58.1200 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:02:58.7967 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:02:58.8647 Info Shutdown() called. Logger closing...
+2022-12-02 10:02:58.8647 Info Closing old configuration.
+2022-12-02 10:02:58.8881 Info Logger has been closed down.
+2022-12-02 10:03:13.1790 Info Message Template Auto Format enabled
+2022-12-02 10:03:13.1932 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:03:13.2609 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:03:13.2609 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:03:13.3017 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:03:14.2223 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:03:14.3119 Info Shutdown() called. Logger closing...
+2022-12-02 10:03:14.3119 Info Closing old configuration.
+2022-12-02 10:03:14.3454 Info Logger has been closed down.
+2022-12-02 10:10:13.4506 Info Message Template Auto Format enabled
+2022-12-02 10:10:13.4655 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:10:13.5609 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:10:13.5609 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:10:13.5988 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:10:14.7590 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:10:28.7578 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 10:10:28.7624 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 10:11:03.2540 Info Message Template Auto Format enabled
+2022-12-02 10:11:03.3322 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:11:03.5540 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:11:03.5540 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:11:03.7406 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:11:05.3493 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:11:17.9453 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 10:11:17.9495 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 10:12:10.1195 Info Message Template Auto Format enabled
+2022-12-02 10:12:10.1422 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:12:10.2957 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:12:10.3508 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:12:10.5435 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:12:13.0270 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:12:23.2509 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 10:12:23.2509 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 10:13:36.5539 Info Message Template Auto Format enabled
+2022-12-02 10:13:36.5733 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:13:36.6749 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:13:36.6749 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:13:36.7184 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:13:39.1257 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:16:34.7308 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 10:16:34.7308 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 10:19:24.0781 Info Message Template Auto Format enabled
+2022-12-02 10:19:24.1067 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:19:24.2242 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:19:24.2242 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:19:24.2847 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:19:26.5054 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:21:07.4375 Info Message Template Auto Format enabled
+2022-12-02 10:21:07.4538 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:21:07.5974 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:21:07.5974 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:21:07.6630 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:21:08.8213 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:22:44.3273 Info Message Template Auto Format enabled
+2022-12-02 10:22:44.4227 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:22:44.9937 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:22:45.0242 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:22:45.1838 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:22:47.1397 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:37:53.6618 Info Message Template Auto Format enabled
+2022-12-02 10:37:53.6724 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:37:53.7532 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:37:53.7532 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:37:53.8107 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:37:55.5828 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:38:37.1086 Info Message Template Auto Format enabled
+2022-12-02 10:38:37.1206 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:38:37.2039 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:38:37.2039 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:38:37.2469 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:38:38.9330 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:46:51.8617 Info Message Template Auto Format enabled
+2022-12-02 10:46:51.8617 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:46:51.9062 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:46:51.9062 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:46:51.9286 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:46:52.3065 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:46:52.3489 Info Shutdown() called. Logger closing...
+2022-12-02 10:46:52.3489 Info Closing old configuration.
+2022-12-02 10:46:52.3615 Info Logger has been closed down.
+2022-12-02 10:47:50.9212 Info Message Template Auto Format enabled
+2022-12-02 10:47:50.9212 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:47:50.9650 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:47:50.9650 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:47:50.9867 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:47:51.3517 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:47:51.3958 Info Shutdown() called. Logger closing...
+2022-12-02 10:47:51.3958 Info Closing old configuration.
+2022-12-02 10:47:51.4098 Info Logger has been closed down.
+2022-12-02 10:48:02.9285 Info Message Template Auto Format enabled
+2022-12-02 10:48:02.9368 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:48:02.9722 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:48:02.9722 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:48:02.9949 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:48:03.3659 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:48:03.4074 Info Shutdown() called. Logger closing...
+2022-12-02 10:48:03.4074 Info Closing old configuration.
+2022-12-02 10:48:03.4214 Info Logger has been closed down.
+2022-12-02 10:48:11.2368 Info Message Template Auto Format enabled
+2022-12-02 10:48:11.2368 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:48:11.2819 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:48:11.2819 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:48:11.3052 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:48:11.6752 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:48:11.7141 Info Shutdown() called. Logger closing...
+2022-12-02 10:48:11.7144 Info Closing old configuration.
+2022-12-02 10:48:11.7144 Info Logger has been closed down.
+2022-12-02 10:50:12.7107 Info Message Template Auto Format enabled
+2022-12-02 10:50:12.7221 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 10:50:12.8092 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 10:50:12.8092 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 10:50:12.8399 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 10:50:14.3432 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:10:33.4941 Info Message Template Auto Format enabled
+2022-12-02 11:10:33.5027 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:10:33.5276 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:10:33.5276 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:10:33.5605 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:10:33.8999 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:10:33.9376 Info Shutdown() called. Logger closing...
+2022-12-02 11:10:33.9376 Info Closing old configuration.
+2022-12-02 11:10:33.9501 Info Logger has been closed down.
+2022-12-02 11:14:42.7249 Info Message Template Auto Format enabled
+2022-12-02 11:14:42.7336 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:14:42.7692 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:14:42.7692 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:14:42.7926 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:14:43.1379 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:14:43.1820 Info Shutdown() called. Logger closing...
+2022-12-02 11:14:43.1820 Info Closing old configuration.
+2022-12-02 11:14:43.2103 Info Logger has been closed down.
+2022-12-02 11:19:17.3248 Info Message Template Auto Format enabled
+2022-12-02 11:19:17.3248 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:19:17.3735 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:19:17.3735 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:19:17.3982 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:19:17.7541 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:19:17.7994 Info Shutdown() called. Logger closing...
+2022-12-02 11:19:17.7994 Info Closing old configuration.
+2022-12-02 11:19:17.8142 Info Logger has been closed down.
+2022-12-02 11:19:27.6084 Info Message Template Auto Format enabled
+2022-12-02 11:19:27.6084 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:19:27.6374 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:19:27.6374 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:19:27.6716 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:19:28.0121 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:19:28.0502 Info Shutdown() called. Logger closing...
+2022-12-02 11:19:28.0502 Info Closing old configuration.
+2022-12-02 11:19:28.0626 Info Logger has been closed down.
+2022-12-02 11:34:43.2645 Info Message Template Auto Format enabled
+2022-12-02 11:34:43.2784 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:34:43.3466 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:34:43.3466 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:34:43.3886 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:34:45.4587 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:35:10.6893 Info Message Template Auto Format enabled
+2022-12-02 11:35:10.6999 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:35:10.7814 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:35:10.7814 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:35:10.8346 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:35:12.1945 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:35:37.4657 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:35:37.4657 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:38:28.7319 Info Message Template Auto Format enabled
+2022-12-02 11:38:28.7628 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:38:28.9183 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:38:28.9183 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:38:29.1287 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:38:31.2633 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:39:12.1845 Info Message Template Auto Format enabled
+2022-12-02 11:39:12.2130 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:39:12.3447 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:39:12.3447 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:39:12.4022 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:39:15.2221 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:40:39.5090 Info Message Template Auto Format enabled
+2022-12-02 11:40:39.5398 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:40:39.7430 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:40:39.7477 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:40:39.8333 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:40:42.8587 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:42:28.5438 Info Message Template Auto Format enabled
+2022-12-02 11:42:28.5438 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:42:28.6057 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:42:28.6057 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:42:28.6494 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:42:29.2914 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:42:29.3524 Info Shutdown() called. Logger closing...
+2022-12-02 11:42:29.3524 Info Closing old configuration.
+2022-12-02 11:42:29.3752 Info Logger has been closed down.
+2022-12-02 11:42:40.8558 Info Message Template Auto Format enabled
+2022-12-02 11:42:40.8558 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:42:40.9103 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:42:40.9103 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:42:40.9345 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:42:41.3691 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:42:41.4143 Info Shutdown() called. Logger closing...
+2022-12-02 11:42:41.4143 Info Closing old configuration.
+2022-12-02 11:42:41.4328 Info Logger has been closed down.
+2022-12-02 11:42:50.3057 Info Message Template Auto Format enabled
+2022-12-02 11:42:50.3299 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:42:50.4962 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:42:50.5348 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:42:50.8347 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:42:52.9245 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:43:30.2536 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:43:30.2622 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:46:37.4815 Info Message Template Auto Format enabled
+2022-12-02 11:46:37.4815 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:46:37.5521 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:46:37.5521 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:46:37.5842 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:46:39.2011 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:46:47.4535 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:46:47.4535 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:49:04.1801 Info Message Template Auto Format enabled
+2022-12-02 11:49:04.1907 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:49:04.2304 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:49:04.2304 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:49:04.2526 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:49:04.7816 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:49:04.8375 Info Shutdown() called. Logger closing...
+2022-12-02 11:49:04.8375 Info Closing old configuration.
+2022-12-02 11:49:04.8571 Info Logger has been closed down.
+2022-12-02 11:49:15.7853 Info Message Template Auto Format enabled
+2022-12-02 11:49:15.7993 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:49:15.8567 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:49:15.8567 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:49:15.8956 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:49:16.7511 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:49:16.8476 Info Shutdown() called. Logger closing...
+2022-12-02 11:49:16.8476 Info Closing old configuration.
+2022-12-02 11:49:16.9061 Info Logger has been closed down.
+2022-12-02 11:51:12.6077 Info Message Template Auto Format enabled
+2022-12-02 11:51:12.6077 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:51:12.6594 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:51:12.6594 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:51:12.6898 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:51:13.1084 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:51:13.1519 Info Shutdown() called. Logger closing...
+2022-12-02 11:51:13.1519 Info Closing old configuration.
+2022-12-02 11:51:13.1673 Info Logger has been closed down.
+2022-12-02 11:51:16.6373 Info Message Template Auto Format enabled
+2022-12-02 11:51:16.6373 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:51:16.7079 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:51:16.7079 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:51:16.7399 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:51:17.2707 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:51:17.3285 Info Shutdown() called. Logger closing...
+2022-12-02 11:51:17.3285 Info Closing old configuration.
+2022-12-02 11:51:17.3478 Info Logger has been closed down.
+2022-12-02 11:51:31.6238 Info Message Template Auto Format enabled
+2022-12-02 11:51:31.6238 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:51:31.6756 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:51:31.6756 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:51:31.7041 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:51:32.1379 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:51:32.1792 Info Shutdown() called. Logger closing...
+2022-12-02 11:51:32.1792 Info Closing old configuration.
+2022-12-02 11:51:32.1927 Info Logger has been closed down.
+2022-12-02 11:51:40.8968 Info Message Template Auto Format enabled
+2022-12-02 11:51:40.9077 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:51:40.9626 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:51:40.9642 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:51:40.9955 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:51:41.4905 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:51:41.5512 Info Shutdown() called. Logger closing...
+2022-12-02 11:51:41.5512 Info Closing old configuration.
+2022-12-02 11:51:41.5904 Info Logger has been closed down.
+2022-12-02 11:54:45.6526 Info Message Template Auto Format enabled
+2022-12-02 11:54:45.6526 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:54:45.7230 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:54:45.7230 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:54:45.7603 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:54:47.2253 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:55:07.8501 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:55:07.8550 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:55:34.4102 Info Message Template Auto Format enabled
+2022-12-02 11:55:34.4205 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:55:34.4891 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:55:34.4891 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:55:34.5265 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:55:36.7382 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:55:47.9048 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:55:47.9048 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 11:55:58.0680 Info Message Template Auto Format enabled
+2022-12-02 11:55:58.0821 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:55:58.1758 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:55:58.1758 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:55:58.2209 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:55:59.1962 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:59:05.5730 Info Message Template Auto Format enabled
+2022-12-02 11:59:05.5974 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 11:59:05.7400 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 11:59:05.7400 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 11:59:05.8117 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 11:59:07.6008 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:01:19.8172 Info Message Template Auto Format enabled
+2022-12-02 12:01:19.8390 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 12:01:19.9815 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 12:01:19.9815 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 12:01:20.0459 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:01:23.2072 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:03:28.1117 Info Message Template Auto Format enabled
+2022-12-02 12:03:28.1379 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 12:03:28.3978 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 12:03:28.4115 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 12:03:28.4703 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:03:31.8918 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:05:09.1370 Info Message Template Auto Format enabled
+2022-12-02 12:05:09.1678 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 12:05:09.3970 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 12:05:09.4140 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 12:05:09.4850 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:05:12.7400 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:10:59.3938 Info Message Template Auto Format enabled
+2022-12-02 12:10:59.4098 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 12:10:59.5056 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 12:10:59.5056 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 12:10:59.5903 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:11:01.7099 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:58:26.3207 Info Message Template Auto Format enabled
+2022-12-02 12:58:26.3364 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 12:58:26.4035 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 12:58:26.4035 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 12:58:26.4592 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 12:58:28.1959 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:02:13.7271 Info Message Template Auto Format enabled
+2022-12-02 13:02:13.7405 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 13:02:13.8119 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 13:02:13.8119 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 13:02:13.8535 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:02:14.4943 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:02:14.5685 Info Shutdown() called. Logger closing...
+2022-12-02 13:02:14.5685 Info Closing old configuration.
+2022-12-02 13:02:14.5981 Info Logger has been closed down.
+2022-12-02 13:02:24.8341 Info Message Template Auto Format enabled
+2022-12-02 13:02:24.8468 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 13:02:24.8981 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 13:02:24.8981 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 13:02:24.9284 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:02:25.5725 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:02:25.6833 Info Shutdown() called. Logger closing...
+2022-12-02 13:02:25.6833 Info Closing old configuration.
+2022-12-02 13:02:25.7098 Info Logger has been closed down.
+2022-12-02 13:06:55.6906 Info Message Template Auto Format enabled
+2022-12-02 13:06:55.7317 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 13:06:56.0668 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 13:06:56.0775 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 13:06:56.1520 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:06:59.9351 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:09:44.8868 Info Message Template Auto Format enabled
+2022-12-02 13:09:44.8868 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 13:09:44.9574 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 13:09:44.9574 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 13:09:44.9908 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:09:45.8110 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:13:30.8180 Info Message Template Auto Format enabled
+2022-12-02 13:13:30.8304 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 13:13:30.8896 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 13:13:30.8896 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 13:13:30.9240 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 13:13:31.6952 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:48:16.9056 Info Message Template Auto Format enabled
+2022-12-02 14:48:16.9175 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 14:48:16.9741 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 14:48:16.9741 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 14:48:17.0027 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:48:17.7883 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:49:20.7262 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 14:49:20.7304 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 14:49:49.6296 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 14:49:49.6354 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 14:50:12.2457 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 14:50:12.2457 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 14:50:19.8949 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 14:50:19.8949 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 14:50:53.6272 Info Message Template Auto Format enabled
+2022-12-02 14:50:53.6395 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 14:50:53.7020 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 14:50:53.7020 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 14:50:53.7372 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:50:55.3225 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:52:49.2761 Info Message Template Auto Format enabled
+2022-12-02 14:52:49.3119 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 14:52:49.4202 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 14:52:49.4383 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 14:52:49.5055 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:52:50.8373 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:53:17.2997 Info Message Template Auto Format enabled
+2022-12-02 14:53:17.3170 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 14:53:17.3950 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 14:53:17.3950 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 14:53:17.4309 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:53:19.8443 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:56:51.0849 Info Message Template Auto Format enabled
+2022-12-02 14:56:51.0934 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 14:56:51.1272 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 14:56:51.1272 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 14:56:51.1483 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:56:51.4928 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:56:51.5308 Info Shutdown() called. Logger closing...
+2022-12-02 14:56:51.5308 Info Closing old configuration.
+2022-12-02 14:56:51.5428 Info Logger has been closed down.
+2022-12-02 14:57:02.2612 Info Message Template Auto Format enabled
+2022-12-02 14:57:02.2612 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 14:57:02.2922 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 14:57:02.2922 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 14:57:02.3274 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:57:02.7158 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:57:02.7575 Info Shutdown() called. Logger closing...
+2022-12-02 14:57:02.7575 Info Closing old configuration.
+2022-12-02 14:57:02.7719 Info Logger has been closed down.
+2022-12-02 14:57:59.6612 Info Message Template Auto Format enabled
+2022-12-02 14:57:59.6788 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 14:57:59.7602 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 14:57:59.7618 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 14:57:59.7911 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:58:01.2794 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:59:45.7858 Info Message Template Auto Format enabled
+2022-12-02 14:59:45.8003 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 14:59:45.8620 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 14:59:45.8620 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 14:59:45.8923 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 14:59:47.6359 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:09:18.4882 Info Message Template Auto Format enabled
+2022-12-02 15:09:18.5013 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:09:18.5653 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:09:18.5653 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:09:18.6015 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:09:19.6394 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:10:09.8282 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 15:10:09.8282 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 15:11:08.5453 Info Message Template Auto Format enabled
+2022-12-02 15:11:08.5453 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:11:08.6281 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:11:08.6281 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:11:08.6577 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:11:10.2509 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:11:20.9261 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 15:11:20.9261 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 15:11:35.2546 Info Message Template Auto Format enabled
+2022-12-02 15:11:35.2670 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:11:35.3259 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:11:35.3259 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:11:35.3583 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:11:36.8595 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:11:42.4940 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 15:11:42.4966 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 15:14:20.5745 Info Message Template Auto Format enabled
+2022-12-02 15:14:20.5745 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:14:20.6422 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:14:20.6422 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:14:20.6703 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:14:22.1339 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:15:11.5768 Info Message Template Auto Format enabled
+2022-12-02 15:15:11.5920 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:15:11.6518 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:15:11.6518 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:15:11.6820 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:15:13.0712 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:17:34.7974 Info Message Template Auto Format enabled
+2022-12-02 15:17:34.8075 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:17:34.8777 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:17:34.8777 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:17:34.9215 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:17:36.7733 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:24:32.4498 Info Message Template Auto Format enabled
+2022-12-02 15:24:32.4636 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:24:32.5407 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:24:32.5430 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:24:32.5970 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:24:33.5235 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:27:35.9768 Info Message Template Auto Format enabled
+2022-12-02 15:27:35.9970 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:27:36.0630 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:27:36.0630 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:27:36.1077 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:27:37.7187 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:41:13.7358 Info Message Template Auto Format enabled
+2022-12-02 15:41:13.7452 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:41:13.7802 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:41:13.7802 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:41:13.8028 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:41:14.1705 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:41:14.2273 Info Shutdown() called. Logger closing...
+2022-12-02 15:41:14.2273 Info Closing old configuration.
+2022-12-02 15:41:14.2426 Info Logger has been closed down.
+2022-12-02 15:41:23.7248 Info Message Template Auto Format enabled
+2022-12-02 15:41:23.7328 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:41:23.7710 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:41:23.7710 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:41:23.7973 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:41:24.1725 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:41:24.2142 Info Shutdown() called. Logger closing...
+2022-12-02 15:41:24.2142 Info Closing old configuration.
+2022-12-02 15:41:24.2142 Info Logger has been closed down.
+2022-12-02 15:48:07.6897 Info Message Template Auto Format enabled
+2022-12-02 15:48:07.7009 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:48:07.7613 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:48:07.7613 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:48:07.8076 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:48:09.4498 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:59:27.2895 Info Message Template Auto Format enabled
+2022-12-02 15:59:27.3111 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 15:59:27.3966 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 15:59:27.4086 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 15:59:27.5421 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 15:59:29.1816 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:00:43.3202 Info Message Template Auto Format enabled
+2022-12-02 16:00:43.3538 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:00:43.8403 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:00:43.8403 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:00:43.9183 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:00:45.3628 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:02:25.5674 Info Message Template Auto Format enabled
+2022-12-02 16:02:25.5948 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:02:25.6710 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:02:25.6710 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:02:25.7005 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:02:27.7051 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:03:17.3521 Info Message Template Auto Format enabled
+2022-12-02 16:03:17.3666 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:03:17.4242 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:03:17.4242 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:03:17.4560 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:03:18.9922 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:03:57.5633 Info Message Template Auto Format enabled
+2022-12-02 16:03:57.5749 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:03:57.6369 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:03:57.6369 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:03:57.6756 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:03:59.1580 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:09:09.5157 Info Message Template Auto Format enabled
+2022-12-02 16:09:09.5279 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:09:09.5893 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:09:09.5893 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:09:09.6238 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:09:10.9824 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:09:57.9096 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 16:09:57.9096 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 16:11:00.4048 Info Message Template Auto Format enabled
+2022-12-02 16:11:00.4048 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:11:00.4852 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:11:00.4852 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:11:00.5191 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:11:01.8665 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:11:26.2970 Info Message Template Auto Format enabled
+2022-12-02 16:11:26.3080 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:11:26.3662 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:11:26.3662 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:11:26.3999 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:11:27.6958 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:11:46.7773 Info Message Template Auto Format enabled
+2022-12-02 16:11:46.7924 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:11:46.8529 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:11:46.8549 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:11:46.8927 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:11:48.4321 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:12:18.7028 Warn FileTarget(Name=otherFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 16:12:26.0768 Warn FileTarget(Name=otherFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 16:12:33.4695 Warn FileTarget(Name=otherFile-web): Failed to create file appender: C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\log\2022-12-02.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2022-12-02 16:14:26.3904 Info Message Template Auto Format enabled
+2022-12-02 16:14:26.4556 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-02 16:14:26.7313 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-02 16:14:26.7313 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-02 16:14:26.7804 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-02 16:14:28.2423 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config

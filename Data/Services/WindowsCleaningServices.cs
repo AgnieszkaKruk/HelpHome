@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Data;
+using Domain.Entities;
 using Domain.Models;
 using HelpHome.Entities.OfferTypes;
 using HelpHomeApi;
@@ -51,6 +52,16 @@ namespace Domain.Services
             var allOffers = _context.WindowsCleaningOffers.Include(s => s.Address).Where(u => u.SeekerId == seekerId);
 
             var allOffersDto = _mapper.Map<List<WindowsCleaningDto>>(allOffers);
+            return allOffersDto;
+        }
+        public List<OfferDto> GetAllOffers()
+        {
+            _logger.Info($"All CarpetWashing offers GET All action invoked");
+
+            
+            var allOffers = _context.WindowsCleaningOffers.Include(x => x.Address.City);
+
+            var allOffersDto = _mapper.Map<List<OfferDto>>(allOffers);
             return allOffersDto;
         }
 

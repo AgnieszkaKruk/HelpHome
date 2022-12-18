@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Domain.Entities.OfferentPreferences;
 using Domain.Models;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
@@ -17,6 +18,14 @@ namespace HelpHomeApi
             CreateMap<CarpetWashing, CarpetWashingDto>();
             CreateMap<Cleaning, CleaningDto>();
             CreateMap<WindowsCleaning, WindowsCleaningDto>();
+            CreateMap<WindowsCleaning,OfferDto >();
+            CreateMap<CarpetWashing, OfferDto>();
+            CreateMap<Cleaning, OfferDto>();
+            CreateMap<CleaningPreference, OfferDto>();
+
+            CreateMap<CleaningPreference, CleaningPreferenceDto>();
+            CreateMap<CarpetWashingPreference, CarpetWashingPreferenceDto>();
+            CreateMap<WindowsCleaningPreference, WindowsCleaningPreferenceDto>();
         }
     }
 }

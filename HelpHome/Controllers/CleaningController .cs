@@ -16,12 +16,12 @@ namespace HelpHomeApi.Controllers
 
         }
 
-        [HttpPost]
-        public ActionResult AddOffer ([FromRoute] int seekerId,[FromBody] CreateCleaningDto dto)
-        {
-           var newOfferId = _cleaningServices.CreateOffer(dto, seekerId);
-            return Created($"api/seeker/{seekerId}/offers/{newOfferId}", null);
-        }
+        //[HttpPost]
+        //public ActionResult AddOffer ([FromRoute] int seekerId,[FromBody] CreateCleaningDto dto)
+        //{
+        //   var newOfferId = _cleaningServices.CreateOffer(dto, seekerId);
+        //    return Created($"api/seeker/{seekerId}/offers/{newOfferId}", null);
+        //}
 
         [HttpGet("{offerId}")]
         public ActionResult<CleaningDto> GetById([FromRoute] int seekerId, [FromRoute] int offerId)

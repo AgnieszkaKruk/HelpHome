@@ -4,6 +4,8 @@ using HelpHome.Entities.OfferTypes;
 using HelpHomeApi.Exeptions;
 using HelpHomeApi;
 using System.Data.Entity;
+using Domain.Entities.OfferTypes;
+using HelpHome.Entities;
 
 namespace Data.Services
 {
@@ -26,9 +28,9 @@ namespace Data.Services
             var offerent = _context.Oferrents.FirstOrDefault(u => u.Id == offerentId);
             if (offerent is null)
             {
-                throw new NotFoundExeption("Seeker is not found");
+                throw new NotFoundExeption("Offerent is not found");
             }
-            var preference = _context.CleaningPreferences.FirstOrDefault(x => x.Id == offerentId);
+            var preference = _context.CleaningPreferences.Include(x => x.Location).FirstOrDefault(x => x.OfferentId == offerentId && x.Id == preferenceId);
             if (preference is null || preference.OfferentId != offerentId)
             {
                 throw new NotFoundExeption("Offer is not found");
@@ -42,20 +44,29 @@ namespace Data.Services
         {
 
             _logger.Info($"All CarpetWashing offers from Seeker with id: {offerentId} GET All action invoked");
-            var offerent = _context.Seekers.Include(x => x.CleaningOffers).FirstOrDefault(u => u.Id == offerentId);
+            var offerent = _context.Oferrents.Include(x => x.CleaningPreferences).FirstOrDefault(u => u.Id == offerentId);
             if (offerent is null)
             {
                 throw new NotFoundExeption("Seeker is not found");
             }
 
-            var allPreferences = offerent.CleaningOffers;
+            var allPreferences = _context.CleaningPreferences.Include(x => x.Location).Where(x => x.OfferentId == offerentId);
 
             var allPreferencesDto = _mapper.Map<List<CleaningPreferenceDto>>(allPreferences);
             return allPreferencesDto;
         }
 
-        
 
+        public List<OfferDto> GetAllOffers()
+        {
+            _logger.Info($"All CarpetWashing offers GET All action invoked");
+
+
+            var allOffers = _context.CleaningPreferences.Include(x => x.Location.City);
+
+            var allOffersDto = _mapper.Map<List<OfferDto>>(allOffers);
+            return allOffersDto;
+        }
 
 
         //public int CreateOffer(CreateCleaningDto dto, int seekerId)

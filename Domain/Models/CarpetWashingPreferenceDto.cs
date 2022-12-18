@@ -11,5 +11,7 @@ namespace Domain.Models
     {
         public CarpetSize CarpetSize { get; set; }
         public int PriceOffer { get; set; }
+        public string City { get; set; }
+        public string District { get; set; }
     }
 }

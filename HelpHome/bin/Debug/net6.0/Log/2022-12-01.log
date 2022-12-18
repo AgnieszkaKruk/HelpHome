@@ -1,0 +1,89 @@
+->(2022-12-01 13:08:52.1212) : Info : WindowsCleaning offer with id: 1 GET action invoked
+->(2022-12-01 13:08:59.8868) : Info : All CWindowsCleaning offers from Seeker with id: 1 GET All action invoked
+->(2022-12-01 15:11:15.1971) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:12:58.1560) : Info : All CarpetWashing offers GET All action invoked
+
+-------------- Error (2022-12-01 15:21:52.3041) --------------
+
+  Call Site: Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+  Exception Type: Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException
+  Exception Message: The request matched multiple endpoints. Matches: 
+
+HelpHomeApi.Controllers.AllOffersController.GetAll (HelpHomeApi)
+HelpHomeApi.Controllers.AllOffersController.GetAllWindows (HelpHomeApi)
+  Stack Trace:    at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Additional Info: An unhandled exception has occurred while executing the request.
+
+->(2022-12-01 15:24:04.3441) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:45:08.1877) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:45:10.3631) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:46:24.2752) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:46:26.3949) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:46:59.0361) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:47:36.3222) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:48:11.6197) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:48:13.9418) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:48:53.9376) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:49:50.0341) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:50:50.6532) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:51:45.2650) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:51:47.7399) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:54:13.2474) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:54:15.6926) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:54:15.7646) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:55:11.8829) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:55:13.9413) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:55:13.9939) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:56:59.8311) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 15:57:02.5667) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:33:19.1239) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:33:21.2758) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:34:17.1382) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:36:07.6458) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:39:03.6069) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:39:08.1893) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:39:08.2495) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:39:23.1557) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:39:25.2327) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:39:25.2882) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:05.0873) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:07.1794) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:07.2332) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:25.1134) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:27.1415) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:27.1958) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:51.5005) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:53.5102) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:41:53.5633) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:42:15.4054) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:42:17.7329) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:44:36.1640) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:44:38.2743) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:44:38.3294) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:45:33.2080) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:45:35.2171) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:45:35.2706) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:46:01.4375) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:46:04.2452) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:46:04.3023) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 16:49:52.7396) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:21:43.3462) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:21:48.4551) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:21:48.5163) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:43:45.2701) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:43:45.2971) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:43:45.2971) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:45:03.2685) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:45:05.3948) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:45:05.4531) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:59:51.7161) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:59:53.8574) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 17:59:53.9137) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 19:16:44.4303) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 19:16:46.4335) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-01 19:16:46.5083) : Info : All CarpetWashing offers GET All action invoked

@@ -13,6 +13,8 @@ namespace Domain.Models
 
         public List<WindowsType>? windowsType = new List<WindowsType>(); // kazdy typ okna ma swoja cene => jako słownik?
         public int PriceOffer { get; set; }
-       
+        public string City { get; set; }
+        public string District { get; set; }
+
     }
 }

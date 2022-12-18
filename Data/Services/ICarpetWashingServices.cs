@@ -6,6 +6,8 @@ namespace Domain.Services
     {
         int CreateOffer(CreateCarpetWashingDto dto, int seekerId);
         List<CarpetWashingDto> GetAll(int seekerId);
+
+        List<OfferDto> GetAllOffers();
         CarpetWashingDto GetById(int seekerId, int offerId);
     }
 }

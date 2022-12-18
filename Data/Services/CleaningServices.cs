@@ -55,7 +55,16 @@ namespace Domain.Services
             return allOffersDto;
         }
 
+        public List<OfferDto> GetAllOffers()
+        {
+            _logger.Info($"All CarpetWashing offers GET All action invoked");
 
+
+            var allOffers = _context.CleaningOffers.Include(x => x.Address);
+
+            var allOffersDto = _mapper.Map<List<OfferDto>>(allOffers);
+            return allOffersDto;
+        }
 
 
         public int CreateOffer(CreateCleaningDto dto, int seekerId)
@@ -74,6 +83,8 @@ namespace Domain.Services
             _context.SaveChanges();
             return offer.Id;
         }
+
+        
     }
 }
 

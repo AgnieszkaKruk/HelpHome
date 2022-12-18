@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Data;
+using Domain.Entities;
 using Domain.Models;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
@@ -60,6 +61,18 @@ namespace Domain.Services
             var allOffersDto = _mapper.Map<List<CarpetWashingDto>>(allOffers);
             return allOffersDto;
         }
+
+        public List<OfferDto> GetAllOffers()
+        {
+            _logger.Info($"All CarpetWashing offers GET All action invoked");
+
+
+            var allOffers = _context.CarpetWashingOffers.Include(x => x.Address);
+
+            var allOffersDto = _mapper.Map<List<OfferDto>>(allOffers);
+            return allOffersDto;
+        }
+
 
         public int CreateOffer(CreateCarpetWashingDto dto, int seekerId)
         {

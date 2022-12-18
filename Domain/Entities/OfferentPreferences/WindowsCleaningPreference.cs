@@ -16,11 +16,14 @@ namespace Domain.Entities.OfferentPreferences
         public DateTime UpdateDate { get; set; }
         public Regularity Regularity { get; set; }
         public List<AdditionalServices>? additionalServices = new List<AdditionalServices>();
-       
+
         public List<WindowsType>? windowsType = new List<WindowsType>(); // kazdy typ okna ma swoja cene => jako słownik?
         public int PriceOffer { get; set; }
         public Offerent Offerent { get; set; }
         public int OfferentId { get; set; }
-       
+        public Location Location { get; set; }
+        public int LocationId { get; set; }
+
+
     }
 }

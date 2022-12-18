@@ -17,12 +17,13 @@ namespace Data
         public DbSet<Seeker> Seekers { get; set; }
         public DbSet<Offerent> Oferrents { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<Location> Locations { get; set; }
         public DbSet<Cleaning> CleaningOffers { get; set; }
         public DbSet<CleaningPreference> CleaningPreferences { get; set; }
         public DbSet<CarpetWashing> CarpetWashingOffers { get; set; }
         public DbSet<CarpetWashingPreference> CarpetWashingPreferences { get; set; }
         public DbSet<WindowsCleaning> WindowsCleaningOffers { get; set; }
-        public DbSet<WindowsCleaningPreference> windowsCleaningPreferences { get; set; }
+        public DbSet<WindowsCleaningPreference> WindowsCleaningPreferences { get; set; }
 
 
         
@@ -74,7 +75,18 @@ namespace Data
                 eb.Property(o => o.Regularity).IsRequired();
                 eb.Property(o => o.CreatedDate).HasDefaultValueSql("getutcdate()");
                 eb.Property(o => o.UpdateDate).ValueGeneratedOnUpdate();
-              
+                eb.HasOne(d => d.Offerent).WithMany(o => o.CleaningPreferences).HasForeignKey(d => d.OfferentId);
+
+
+            });
+            modelBuilder.Entity<CarpetWashingPreference>(eb =>
+            {
+                eb.Property(o => o.Name).IsRequired();
+                
+                eb.Property(o => o.CreatedDate).HasDefaultValueSql("getutcdate()");
+                eb.Property(o => o.UpdateDate).ValueGeneratedOnUpdate();
+                eb.HasOne(d => d.Offerent).WithMany(o => o.CarpetWashingPreferences).HasForeignKey(d => d.OfferentId);
+
 
             });
 
@@ -133,13 +145,38 @@ namespace Data
                    Street = "Głogowa",
                    PostalCode = "43-190"
                });
+            modelBuilder.Entity<Location>()
+            .HasData(new Location
+                {
+                    Id = 1,
+                    City = "Katowice",
+                    District = "Bogucice"
+
+            });
+            modelBuilder.Entity<Location>()
+               .HasData(new Location
+               {
+                   Id = 2,
+                   City = "Bytom",
+                   District = "Szombierki"
+
+            });
+        
+            modelBuilder.Entity<Location>()
+               .HasData(new Location
+               {
+                   Id = 3,
+                   City = "Katowice",
+                   District = "Ligota"
+
+            });
 
             modelBuilder.Entity<Cleaning>()
                 .HasData(new Cleaning {
                     Id = 1, 
                     CreatedDate = DateTime.UtcNow,
                     SeekerId = 1, 
-                    PriceOffer = 50,
+         
                     Regularity = Domain.Entities.Utils.Regularity.OnceAWeek,
                     SurfaceToClean = 100,
                     AddressId = 1
@@ -151,7 +188,7 @@ namespace Data
                     Id = 1,
                     CreatedDate = DateTime.UtcNow,
                     SeekerId = 1,
-                    PriceOffer = 110,
+                    
                     CarpetCount = 1,
                     AddressId = 2
                 });
@@ -161,20 +198,43 @@ namespace Data
                    Id = 1,
                    CreatedDate = DateTime.UtcNow,
                    SeekerId = 1,
-                   PriceOffer = 50,
+                   
                    WindowsCount = 15,
                    AddressId = 3
 
                });
-            modelBuilder.Entity<WindowsCleaningPreference>()
-               .HasData(new WindowsCleaningPreference
+            
+            modelBuilder.Entity<CleaningPreference>()
+               .HasData(new CleaningPreference
                {
                    Id = 1,
                    CreatedDate = DateTime.UtcNow,
                    OfferentId = 1,
-                   PriceOffer = 300,
+                   PriceOffer = 800,
+                   LocationId = 1
 
                });
+            modelBuilder.Entity<CarpetWashingPreference>()
+              .HasData(new CarpetWashingPreference
+              {
+                  Id = 1,
+                  CreatedDate = DateTime.UtcNow,
+                  OfferentId = 2,
+                  PriceOffer = 200,
+                  LocationId = 2
+
+              });
+            modelBuilder.Entity<WindowsCleaningPreference>()
+              .HasData(new WindowsCleaningPreference
+              {
+                  Id = 1,
+                  CreatedDate = DateTime.UtcNow,
+                  OfferentId = 2,
+                  PriceOffer = 2000,
+                  LocationId = 3
+
+              });
+
 
 
         }

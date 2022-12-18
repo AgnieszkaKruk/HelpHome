@@ -1,4 +1,5 @@
-﻿using Domain.Entities.Utils;
+﻿using Domain.Entities;
+using Domain.Entities.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -10,11 +11,12 @@ namespace Domain.Models
 {
     public class CleaningDto
     {
-
+        public string Name = "Sprzątanie";
         [Required]
         public int SurfaceToClean { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdateDate { get; set; }
-        public int PriceOffer { get; set; }
+       
+        public virtual Address Address { get; set; }
     }
 }

@@ -4,8 +4,9 @@ namespace Data.Services
 {
     public interface ICleaningPreferencesServices
     {
-       // int CreateOffer(CreateCleaningDto dto, int offerentId);
-        List<CleaningPreferenceDto> GetAll(int offerentId);
-        CleaningPreferenceDto GetById(int offerentId, int preferenceId);
+       //int CreateOffer(CreateCleaningDto dto, int offerentId);
+        public List<CleaningPreferenceDto> GetAll(int offerentId);
+        public CleaningPreferenceDto GetById(int offerentId, int preferenceId);
+        public List<OfferDto> GetAllOffers();
     }
 }

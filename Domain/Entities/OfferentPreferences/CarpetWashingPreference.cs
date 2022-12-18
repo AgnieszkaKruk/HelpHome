@@ -18,7 +18,9 @@ namespace Domain.Entities.OfferentPreferences
         public int PriceOffer { get; set; }
         public Offerent Offerent { get; set; }
         public int OfferentId { get; set; }
-       
-        
+        public Location Location { get; set; }
+        public int LocationId { get;set; }
+
+
     }
 }
