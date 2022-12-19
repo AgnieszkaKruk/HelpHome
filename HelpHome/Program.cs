@@ -29,6 +29,7 @@ builder.Services.AddScoped<IWindowsCleaningServices, WindowsCleaningServices>();
 builder.Services.AddScoped<IAddressServices, AddressServices>();
 builder.Services.AddScoped<ICleaningPreferencesServices, CleaningPreferenceServices>();
 builder.Services.AddScoped<ICarpetWashingPreferenceServices, CarpetWashingPreferenceServices>();
+builder.Services.AddScoped<IWindowsCleaningPreferenceServices, WindowsCleaningPreferenceServices>();
 builder.Services.AddSingleton<ILog,Log>();
 builder.Services.AddScoped<ErrorHandlingMiddleware>();
 

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Data.Services;
 using Domain.Entities.OfferTypes;
 using Domain.Entities.Utils;
 using Domain.Models;
@@ -9,13 +10,8 @@ namespace HelpHomeApi.Controllers
 {
     [ApiController]
     [Route("api/offers")]
-    public class AllOffersController : Controller
+    public class AllOffersController : ControllerBase
     {
-        private const int DefaultOffersPageNumber = 1;
-        private const int DefaultOffersPageSize = 10;
-        private const int MaxOffersPageSize = 100;
-
-
         public readonly ICarpetWashingServices _carpetServices;
         public readonly ICleaningServices _cleaningServices;    
         public readonly IWindowsCleaningServices _windowsCleaningServices;
@@ -26,30 +22,23 @@ namespace HelpHomeApi.Controllers
             _carpetServices = carpetWashingServices;
             _cleaningServices = cleaningServices;
             _windowsCleaningServices = windowsCleaningServices;
-            _mapper = mapper;
+            _mapper = mapper;    
         }
 
 
 
         [HttpGet]
         
-        public ActionResult<IEnumerable<OfferDto>> GetAll( //offer Dto
-        [FromQuery(Name = "filter_name")] string? name,
-        [FromQuery(Name = "filter_city")] string? city,
-        [FromQuery(Name = "filter_regularity")] Regularity? regularity,
-        [FromQuery] int pageNumber = DefaultOffersPageNumber,
-        [FromQuery] int pageSize = DefaultOffersPageSize
-        )
+        public ActionResult<IEnumerable<OfferDto>> GetAll() 
 
         {
-            var carpetoffers = _carpetServices.GetAllOffers(); // zmapowac do ofert ogolnej, nie pobierac szczegolow, offer DTO
-            var windowsoffers = _windowsCleaningServices.GetAllOffers();
-            var cleaningoffers = _cleaningServices.GetAllOffers();
+            var carpetoffers =  _carpetServices.GetAllOffers(); 
+            var cleaning = _cleaningServices.GetAllOffers();
+            var windows = _windowsCleaningServices.GetAllOffers();
 
-            carpetoffers.AddRange(windowsoffers);
-            carpetoffers.AddRange(cleaningoffers);
+            carpetoffers.AddRange(cleaning);
+            carpetoffers.AddRange(windows);
             return Ok(carpetoffers);
-
         }
         
 

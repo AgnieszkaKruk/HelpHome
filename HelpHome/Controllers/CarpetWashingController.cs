@@ -36,6 +36,8 @@ namespace HelpHomeApi.Controllers
             var alloffers = _carpetServices.GetAll(seekerId);
             return Ok(alloffers);
         }
+
         
+
     }
 }

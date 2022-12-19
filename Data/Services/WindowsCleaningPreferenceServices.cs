@@ -3,6 +3,7 @@ using Domain.Models;
 using HelpHomeApi.Exeptions;
 using HelpHomeApi;
 using System.Data.Entity;
+using HelpHome.Entities;
 
 namespace Data.Services
 {
@@ -51,6 +52,15 @@ namespace Data.Services
             var allPreferences = _context.WindowsCleaningPreferences.Include(x => x.Location).Where(x => x.OfferentId == offerentId);
 
             var allPreferencesDto = _mapper.Map<List<WindowsCleaningPreferenceDto>>(allPreferences);
+            return allPreferencesDto;
+        }
+        public List<PreferenceDto> GetAllOffers()
+        {
+
+
+            var allPreferences = _context.WindowsCleaningPreferences.Include(x => x.Location);
+
+            var allPreferencesDto = _mapper.Map<List<PreferenceDto>>(allPreferences);
             return allPreferencesDto;
         }
     }

@@ -37,6 +37,6 @@ namespace HelpHomeApi.Controllers
             var allpreferences= _cleaningPreferenceServices.GetAll(offerentId);
             return Ok(allpreferences);
         }
-
+       
     }
 }

@@ -7,6 +7,8 @@ namespace Data.Services
         
         //int CreateOffer(CreateCleaningDto dto, int seekerId);
         List<CarpetWashingPreferenceDto> GetAll(int offerentId);
+
+        List<PreferenceDto> GetAllOffers();
         // List<OfferDto> GetAllOffers();
         CarpetWashingPreferenceDto GetById(int offerentId, int preferenceId);
         

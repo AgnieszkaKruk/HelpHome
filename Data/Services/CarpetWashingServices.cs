@@ -1,17 +1,13 @@
 ﻿using AutoMapper;
 using Data;
-using Domain.Entities;
+
 using Domain.Models;
-using HelpHome.Entities;
+
 using HelpHome.Entities.OfferTypes;
 using HelpHomeApi;
 using HelpHomeApi.Exeptions;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Domain.Services
 {

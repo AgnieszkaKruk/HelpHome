@@ -6,6 +6,7 @@ using HelpHomeApi;
 using System.Data.Entity;
 using Domain.Entities.OfferTypes;
 using HelpHome.Entities;
+using Domain.Entities.Utils;
 
 namespace Data.Services
 {
@@ -57,14 +58,12 @@ namespace Data.Services
         }
 
 
-        public List<OfferDto> GetAllOffers()
+        public List<PreferenceDto> GetAllOffers()
         {
-            _logger.Info($"All CarpetWashing offers GET All action invoked");
-
-
+ 
             var allOffers = _context.CleaningPreferences.Include(x => x.Location.City);
 
-            var allOffersDto = _mapper.Map<List<OfferDto>>(allOffers);
+            var allOffersDto = _mapper.Map<List<PreferenceDto>>(allOffers);
             return allOffersDto;
         }
 

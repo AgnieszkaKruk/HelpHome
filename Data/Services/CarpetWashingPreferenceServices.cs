@@ -55,20 +55,15 @@ namespace Data.Services
             return allPreferencesDto;
         }
 
-        //public List<OfferDto> GetAllOffers()
-        //{
-        //    _logger.Info($"All CarpetWashing offers from Seeker with id: {offerentId} GET All action invoked");
-        //    var offerent = _context.Oferrents.Include(x => x.CleaningPreferences).FirstOrDefault(u => u.Id == offerentId);
-        //    if (offerent is null)
-        //    {
-        //        throw new NotFoundExeption("Seeker is not found");
-        //    }
+        public List<PreferenceDto> GetAllOffers()
+        {
+            
 
-        //    var allPreferences = _context.CleaningPreferences.Include(x => x.Location).Where(x => x.OfferentId == offerentId);
+            var allPreferences = _context.CarpetWashingPreferences.Include(x => x.Location);
 
-        //    var allPreferencesDto = _mapper.Map<List<CleaningPreferenceDto>>(allPreferences);
-        //    return allPreferencesDto;
-        //}
+            var allPreferencesDto = _mapper.Map<List<PreferenceDto>>(allPreferences);
+            return allPreferencesDto;
+        }
     }
 
 }

@@ -26,6 +26,11 @@ namespace HelpHomeApi
             CreateMap<CleaningPreference, CleaningPreferenceDto>();
             CreateMap<CarpetWashingPreference, CarpetWashingPreferenceDto>();
             CreateMap<WindowsCleaningPreference, WindowsCleaningPreferenceDto>();
+
+            CreateMap<CleaningPreference, PreferenceDto>();
+            CreateMap<CarpetWashingPreference, PreferenceDto>();
+            CreateMap<WindowsCleaningPreference, PreferenceDto>();
+
         }
     }
 }
