@@ -1,0 +1,17 @@
+->(2022-12-20 09:09:12.0472) : Warn : The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+->(2022-12-20 09:17:26.5395) : Warn : The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+->(2022-12-20 09:19:05.4173) : Warn : The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+->(2022-12-20 09:19:42.1316) : Warn : The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+->(2022-12-20 09:20:04.1363) : Warn : The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+->(2022-12-20 09:23:24.0916) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:23:24.4099) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:23:24.4317) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:26:34.1398) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:26:36.8243) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:26:36.8903) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:27:05.4671) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:27:07.8909) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:27:07.9630) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:27:52.6876) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:27:55.6745) : Info : All CarpetWashing offers GET All action invoked
+->(2022-12-20 09:27:55.7397) : Info : All CarpetWashing offers GET All action invoked

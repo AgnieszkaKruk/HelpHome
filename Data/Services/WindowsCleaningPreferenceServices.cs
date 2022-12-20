@@ -57,7 +57,7 @@ namespace Data.Services
         public List<PreferenceDto> GetAllOffers()
         {
 
-
+           
             var allPreferences = _context.WindowsCleaningPreferences.Include(x => x.Location);
 
             var allPreferencesDto = _mapper.Map<List<PreferenceDto>>(allPreferences);

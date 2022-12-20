@@ -5,6 +5,7 @@ using Domain.Entities.Utils;
 using Domain.Models;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace HelpHomeApi.Controllers
 {
@@ -12,9 +13,15 @@ namespace HelpHomeApi.Controllers
     [Route("api/offers")]
     public class AllOffersController : ControllerBase
     {
+
+        private const int DefaultOffersPageNumber = 1;
+        private const int DefaultOffersPageSize = 10;
+        private const int MaxOffersPageSize = 100;
+
         public readonly ICarpetWashingServices _carpetServices;
         public readonly ICleaningServices _cleaningServices;    
         public readonly IWindowsCleaningServices _windowsCleaningServices;
+        public readonly IAllOffersServices<OfferDto> _allOffersServices;
         private readonly IMapper _mapper;
 
         public AllOffersController(IWindowsCleaningServices windowsCleaningServices, ICarpetWashingServices carpetWashingServices,ICleaningServices cleaningServices, IMapper mapper)
@@ -29,18 +36,45 @@ namespace HelpHomeApi.Controllers
 
         [HttpGet]
         
-        public ActionResult<IEnumerable<OfferDto>> GetAll() 
+        public async Task<ActionResult<IEnumerable<OfferDto>>> GetAllOffers(
+            [FromQuery(Name ="filter_name")] string?name,
+            [FromQuery(Name = "filter_city")] string? city,
+            [FromQuery(Name = "filter_regularity")] Regularity? regularity,
+            [FromQuery] int pageNumber = DefaultOffersPageNumber,
+            [FromQuery] int pageSize = DefaultOffersPageSize
+
+            ) 
 
         {
-            var carpetoffers =  _carpetServices.GetAllOffers(); 
-            var cleaning = _cleaningServices.GetAllOffers();
-            var windows = _windowsCleaningServices.GetAllOffers();
+            if (pageNumber <= 0)
+            {
+                ModelState.AddModelError(nameof(pageNumber), "Page number should be positive number!");
+                return BadRequest(ModelState);
+            }
 
-            carpetoffers.AddRange(cleaning);
-            carpetoffers.AddRange(windows);
-            return Ok(carpetoffers);
+            if (pageSize > MaxOffersPageSize)
+            {
+                pageSize = MaxOffersPageSize;
+            }
+
+            var (offers, paginationMetadata) = await _allOffersServices.GetOffersAsync();
+            return Ok(offers);  
+
+
+            //var carpetoffers =  _carpetServices.GetAllOffers(); 
+            //var cleaning = _cleaningServices.GetAllOffers();
+            //var windows = _windowsCleaningServices.GetAllOffers();
+
+            //carpetoffers.AddRange(cleaning);
+            //carpetoffers.AddRange(windows);
+            //return Ok(carpetoffers);
         }
+
         
+
+
+
+
 
     }
 }
