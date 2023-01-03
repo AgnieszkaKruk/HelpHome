@@ -1,0 +1,421 @@
+
+-------------- Error (2023-01-02 16:44:16.6863) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 37
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-02 16:44:34.0768) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 37
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-02 16:44:46.0022) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Program.cs:line 37
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-02 16:46:49.2871) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.NullReferenceException
+  Exception Message: Object reference not set to an instance of an object.
+  Stack Trace:    at HelpHomeApi.Controllers.AllOffersController.GetAllOffers(String name, String city, Nullable`1 regularity, Int32 pageNumber, Int32 pageSize) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Controllers\AllOffersController.cs:line 60
+   at lambda_method4(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+
+
+-------------- Error (2023-01-02 16:46:49.3551) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Object reference not set to an instance of an object.
+
+->(2023-01-02 16:50:09.2980) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 16:50:12.0785) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 16:50:12.1487) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 16:51:34.2181) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 16:51:36.3695) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 16:51:36.4240) : Info : All CarpetWashing offers GET All action invoked
+
+-------------- Error (2023-01-02 17:03:08.5841) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.NullReferenceException
+  Exception Message: Object reference not set to an instance of an object.
+  Stack Trace:    at HelpHomeApi.Controllers.AllOffersController.GetAllOffers(String name, String city, Nullable`1 regularity, Int32 pageNumber, Int32 pageSize) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Controllers\AllOffersController.cs:line 69
+   at lambda_method4(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+
+
+-------------- Error (2023-01-02 17:03:08.6473) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Object reference not set to an instance of an object.
+
+
+-------------- Error (2023-01-02 17:04:46.9303) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.NullReferenceException
+  Exception Message: Object reference not set to an instance of an object.
+  Stack Trace:    at HelpHomeApi.Controllers.AllOffersController.GetAllOffers(String name, String city, Nullable`1 regularity, Int32 pageNumber, Int32 pageSize) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Controllers\AllOffersController.cs:line 69
+   at lambda_method4(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+
+
+-------------- Error (2023-01-02 17:04:46.9941) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Object reference not set to an instance of an object.
+
+
+-------------- Error (2023-01-02 17:18:40.4838) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.NullReferenceException
+  Exception Message: Object reference not set to an instance of an object.
+  Stack Trace:    at HelpHomeApi.Controllers.AllOffersController.GetAllOffers(String name, String city, Nullable`1 regularity, Int32 pageNumber, Int32 pageSize) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Controllers\AllOffersController.cs:line 69
+   at lambda_method4(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+
+
+-------------- Error (2023-01-02 17:18:40.5523) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Object reference not set to an instance of an object.
+
+->(2023-01-02 17:20:11.1227) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 17:20:13.2315) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 17:20:13.2884) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 17:21:09.4022) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 17:21:11.5102) : Info : All CarpetWashing offers GET All action invoked
+->(2023-01-02 17:21:11.5619) : Info : All CarpetWashing offers GET All action invoked
+
+-------------- Error (2023-01-02 17:24:28.7550) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.NullReferenceException
+  Exception Message: Object reference not set to an instance of an object.
+  Stack Trace:    at HelpHomeApi.Controllers.AllOffersController.GetAllOffers(String name, String city, Nullable`1 regularity, Int32 pageNumber, Int32 pageSize) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Controllers\AllOffersController.cs:line 69
+   at lambda_method4(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+
+
+-------------- Error (2023-01-02 17:24:28.8177) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Object reference not set to an instance of an object.
+
+
+-------------- Error (2023-01-02 17:28:15.7665) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method8(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:28:15.8357) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:30:43.8959) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method8(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:30:43.9825) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:35:37.5176) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method8(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:35:37.5806) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:35:58.0035) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method8(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:35:58.0711) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:41:54.3483) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method8(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:41:54.4167) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:42:17.6092) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method8(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 17:42:17.6778) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 19:57:05.0860) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method8(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+
+
+-------------- Error (2023-01-02 19:57:05.1656) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.AllOffersServices' while attempting to activate 'HelpHomeApi.Controllers.AllOffersController'.
+

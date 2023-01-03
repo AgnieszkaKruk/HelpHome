@@ -1,0 +1,32 @@
+
+-------------- Error (2022-12-21 20:07:48.1874) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: System.NullReferenceException
+  Exception Message: Object reference not set to an instance of an object.
+  Stack Trace:    at HelpHomeApi.Controllers.AllOffersController.GetAllOffers(String name, String city, Nullable`1 regularity, Int32 pageNumber, Int32 pageSize) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Controllers\AllOffersController.cs:line 60
+   at lambda_method4(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at HelpHomeApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Ewa\source\Grande\HelpHome\HelpHome\Middleware\ErrorHandlingMiddleware.cs:line 16
+  Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+
+
+-------------- Error (2022-12-21 20:07:48.2674) --------------
+
+  Call Site: HelpHomeApi.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Object reference not set to an instance of an object.
+

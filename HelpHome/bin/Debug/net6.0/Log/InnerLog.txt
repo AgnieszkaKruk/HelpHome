@@ -2296,3 +2296,138 @@
 2022-12-20 10:45:07.4421 Info Adding target FileTarget(Name=otherFile-web)
 2022-12-20 10:45:07.4745 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
 2022-12-20 10:45:08.5180 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-21 20:07:27.4754 Info Message Template Auto Format enabled
+2022-12-21 20:07:27.4877 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-21 20:07:27.5531 Info Adding target FileTarget(Name=errorFile-web)
+2022-12-21 20:07:27.5557 Info Adding target FileTarget(Name=otherFile-web)
+2022-12-21 20:07:27.5909 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2022-12-21 20:07:28.5916 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:44:16.1124 Info Message Template Auto Format enabled
+2023-01-02 16:44:16.1124 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 16:44:16.1616 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 16:44:16.1616 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 16:44:16.1857 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:44:16.6863 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:44:16.7514 Info Shutdown() called. Logger closing...
+2023-01-02 16:44:16.7514 Info Closing old configuration.
+2023-01-02 16:44:16.7645 Info Logger has been closed down.
+2023-01-02 16:44:33.6078 Info Message Template Auto Format enabled
+2023-01-02 16:44:33.6078 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 16:44:33.6547 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 16:44:33.6547 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 16:44:33.6795 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:44:34.0675 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:44:34.1128 Info Shutdown() called. Logger closing...
+2023-01-02 16:44:34.1128 Info Closing old configuration.
+2023-01-02 16:44:34.1272 Info Logger has been closed down.
+2023-01-02 16:44:45.5322 Info Message Template Auto Format enabled
+2023-01-02 16:44:45.5322 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 16:44:45.5788 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 16:44:45.5788 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 16:44:45.6033 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:44:45.9926 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:44:46.0405 Info Shutdown() called. Logger closing...
+2023-01-02 16:44:46.0405 Info Closing old configuration.
+2023-01-02 16:44:46.0778 Info Logger has been closed down.
+2023-01-02 16:46:38.1950 Info Message Template Auto Format enabled
+2023-01-02 16:46:38.2118 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 16:46:38.2884 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 16:46:38.2884 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 16:46:38.3229 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:46:39.3004 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:50:01.9263 Info Message Template Auto Format enabled
+2023-01-02 16:50:01.9511 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 16:50:02.0636 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 16:50:02.0636 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 16:50:02.1220 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:50:03.5936 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:51:27.4399 Info Message Template Auto Format enabled
+2023-01-02 16:51:27.4953 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 16:51:27.7728 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 16:51:27.8004 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 16:51:27.9177 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 16:51:29.6431 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:02:58.3684 Info Message Template Auto Format enabled
+2023-01-02 17:02:58.3792 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:02:58.4833 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:02:58.5707 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:02:58.7205 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:03:00.4156 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:03:30.9817 Info Message Template Auto Format enabled
+2023-01-02 17:03:30.9946 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:03:31.0616 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:03:31.0616 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:03:31.1248 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:03:32.9586 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:04:32.4572 Info Message Template Auto Format enabled
+2023-01-02 17:04:32.4697 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:04:32.5375 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:04:32.5375 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:04:32.5692 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:04:34.2031 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:18:32.6480 Info Message Template Auto Format enabled
+2023-01-02 17:18:32.6672 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:18:32.7462 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:18:32.7462 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:18:32.8065 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:18:34.8597 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:20:03.7547 Info Message Template Auto Format enabled
+2023-01-02 17:20:03.7700 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:20:03.8395 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:20:03.8395 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:20:03.8768 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:20:05.7932 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:21:03.1463 Info Message Template Auto Format enabled
+2023-01-02 17:21:03.1573 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:21:03.2328 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:21:03.2328 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:21:03.2671 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:21:04.7914 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:24:20.9625 Info Message Template Auto Format enabled
+2023-01-02 17:24:20.9734 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:24:21.0485 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:24:21.0485 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:24:21.1211 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:24:22.9002 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:28:08.9081 Info Message Template Auto Format enabled
+2023-01-02 17:28:08.9294 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:28:09.0409 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:28:09.0678 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:28:09.1065 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:28:10.1339 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:30:37.8293 Info Message Template Auto Format enabled
+2023-01-02 17:30:37.8293 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:30:37.9415 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:30:37.9415 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:30:37.9858 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:30:40.0872 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:35:29.9858 Info Message Template Auto Format enabled
+2023-01-02 17:35:30.0264 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:35:30.2238 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:35:30.2418 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:35:30.2746 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:35:31.1901 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:35:51.2934 Info Message Template Auto Format enabled
+2023-01-02 17:35:51.3082 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:35:51.3914 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:35:51.3914 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:35:51.4271 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:35:53.3786 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:41:47.5593 Info Message Template Auto Format enabled
+2023-01-02 17:41:47.5842 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:41:47.6707 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:41:47.6707 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:41:47.7116 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:41:48.6775 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:42:09.8483 Info Message Template Auto Format enabled
+2023-01-02 17:42:09.8604 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 17:42:09.9213 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 17:42:09.9213 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 17:42:09.9516 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 17:42:11.8021 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 19:56:52.6322 Info Message Template Auto Format enabled
+2023-01-02 19:56:52.6460 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-02 19:56:52.7057 Info Adding target FileTarget(Name=errorFile-web)
+2023-01-02 19:56:52.7057 Info Adding target FileTarget(Name=otherFile-web)
+2023-01-02 19:56:52.7401 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config
+2023-01-02 19:56:54.0629 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\Grande\HelpHome\HelpHome\bin\Debug\net6.0\nlog.config

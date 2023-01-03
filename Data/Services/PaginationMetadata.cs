@@ -14,5 +14,7 @@
             CurrentPage = currentPage;
             TotalPageCount = (int)Math.Ceiling(totalItemCount / (double)pageSize);
         }
+
+        
     }
 }

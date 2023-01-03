@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.Entities.OfferentPreferences;
+using Domain.Models;
 using HelpHome.Entities;
 using HelpHome.Entities.OfferTypes;
 using Microsoft.EntityFrameworkCore;
@@ -24,8 +25,9 @@ namespace Data
         public DbSet<CarpetWashingPreference> CarpetWashingPreferences { get; set; }
         public DbSet<WindowsCleaning> WindowsCleaningOffers { get; set; }
         public DbSet<WindowsCleaningPreference> WindowsCleaningPreferences { get; set; }
+        public DbSet<OfferDto> AllOffers { get; set; }
 
-
+        // zrobic db set z wszystkimi ofertami!!!
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
